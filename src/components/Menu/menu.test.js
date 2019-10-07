@@ -1,6 +1,6 @@
 import React from 'react';
 import { render, fireEvent, cleanup } from '@testing-library/react';
-import Menu from './menu';
+import Menu from './Menu';
 
 afterEach(cleanup);
 
