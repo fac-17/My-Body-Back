@@ -10,7 +10,7 @@ This project relies on Jane's research and [My Body Back.]( http://www.mybodybac
 
 ### Dev Team
 
-* **Gregor Thomson:** srcum master & developer [@albadylic](https://github.com/Albadylic) 
+* **Gregor Thomson:** scrum master & developer [@albadylic](https://github.com/Albadylic) 
 * **Sarah Kharraz:** QA & developer [@sarahyjja](https://github.com/sarahyjja)
 * **Francesca De Laurentis:** UI/UX & developer [@frannyfra](https://github.com/frannyfra)
 * **Martha Nolan:** DevOps & developer [@mkatenolan](https://github.com/mkatenolan)
