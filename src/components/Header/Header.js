@@ -9,9 +9,9 @@ const Header = () => {
 
     <header className="header">
         <img src={logo} data-testid="MyBodyBack-logo" id="header__title" alt="My Body Back Logo" />
-        {/* <Link to='/About'> */}
+        <Link to='/about'>
         <img src={butterfly} data-testid="butterfly-button" id="header__butterfly" alt="Butterfly" />
-        {/* </Link> */}
+        </Link>
     </header>
     
     )
