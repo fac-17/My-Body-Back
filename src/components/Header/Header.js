@@ -9,9 +9,9 @@ const Header = () => {
 
     <header>
         <img src={logo} alt="My Body Back Logo" />
-        <Link to='/About'>
-        <img src={butterfly} alt="Butterfly" />
-        </Link>
+        {/* <Link to='/About'> */}
+        <img src={butterfly} data-testid="butterfly-button" alt="Butterfly" />
+        {/* </Link> */}
     </header>
     
     )
