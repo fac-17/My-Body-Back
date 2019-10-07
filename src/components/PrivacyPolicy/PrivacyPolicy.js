@@ -1,6 +1,6 @@
 import React from 'react';
 import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
-import butterfly from '.Assets/butterfly-first-page.svg';
+import butterfly from './Assets/butterfly-first-page.svg';
 
 const PrivacyPolicy = () => {
   return (
