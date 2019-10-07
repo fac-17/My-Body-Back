@@ -12,7 +12,6 @@ function App() {
       <Router>
         <Route exact path="/" component={PrivacyPolicy} />
         <Route path="/welcome" component={Welcome} />
-        <Route path="/about" component={PrivacyPolicy} />
       </Router>
     </div>
   );
