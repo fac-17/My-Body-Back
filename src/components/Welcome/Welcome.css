@@ -1,0 +1,35 @@
+html{
+  background-color: white;
+}
+
+.welcome__header{
+  font-size: 2em;
+  font-family: 'Yellowtail', cursive;
+}
+
+.welcome__text {
+  text-align: left;
+  max-width: 60%;
+  font-size: 0.7em;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.welcome__text__main{
+  padding: 0.3em;
+  font-size: 0.7em;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.welcome__container{
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}
+.welcome__icon__container{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.welcome__icon{
+  max-width: 10%;
+}

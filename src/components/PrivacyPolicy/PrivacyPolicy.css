@@ -1,0 +1,30 @@
+body{
+  background-color: #614870;
+}
+
+.privacy__container{
+  margin: 0.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
+.privacy__title{
+  font-family: 'Yellowtail', cursive;
+  color: white;
+  font-size: 2em;
+}
+
+.privacy__text,
+.privacy__instructions{
+  font-size: 0.8em;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+}
+
+.privacy__instructions{
+  margin-bottom: 1em;
+}
+.privacy__button {
+  cursor: pointer;
+}
