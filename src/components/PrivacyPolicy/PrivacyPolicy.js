@@ -1,9 +1,13 @@
 import React from 'react';
 
 
+
 const PrivacyPolicy = () => {
   return (
+    
     <p> HELLOOOOO </p>
+  
+
   )
 }
 

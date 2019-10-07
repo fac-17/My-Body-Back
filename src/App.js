@@ -9,6 +9,7 @@ function App() {
 
     <Router>
     <Route exact path="/" component={PrivacyPolicy} />
+    
     </Router>
     </div>
   );
