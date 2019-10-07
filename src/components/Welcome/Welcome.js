@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from '../Header/Header';
+import Menu from '../Menu/Menu';
 
 const Welcome = () => {
   return (
@@ -11,6 +12,7 @@ const Welcome = () => {
     <img src="#"/><p>This icon will take you to the "Support & Techniques" section </p>
     <img src="#"/><p>This icon will take you to the "Feeling Overwhelmed" section </p>
     <img src="#"/><p>This icon will take you to the "My Appointment" section </p>
+    <Menu/>
 </div>
   )
 }
