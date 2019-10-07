@@ -13,8 +13,8 @@ test('if the three buttons are rendered', () => {
   const { getByTestId } = render(<Menu />);
   const leftButton = getByTestId('leftButton-menu')
   const middleButton = getByTestId('middleButton-menu')
-  // const rightButton = getByTestId('rightButton-menu')
+  const rightButton = getByTestId('rightButton-menu')
   expect(leftButton).toBeInTheDocument()
   expect(middleButton).toBeInTheDocument()
-  // expect(getByTestId('rightButton-menu')).toBeInTheDocument()
+  expect(rightButton).toBeInTheDocument()
 })
