@@ -1,5 +1,18 @@
 /* here css */
 .nav__background{
   background-color: blue;
-  color: yellow;
+  display: flex;
+  flex-direction: row;
+}
+
+.menu__leftbutton {
+height: 3em;
+}
+
+.menu__middlebutton {
+  height: 3em;
+}
+
+.menu__rightbutton {
+  height: 3em;
 }
