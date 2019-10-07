@@ -4,9 +4,9 @@ const Menu = () => {
   return(
     <nav>
       <ul>
-        <li>left</li>
-        <li>middle</li>
-        <li>right</li>
+        <li data-testid='leftButton-menu'>left</li>
+        <li data-testid='middleButton-menu'>middle</li>
+        <li data-testid='rightButton-menu'>right</li>
       </ul>
     </nav>
   )
