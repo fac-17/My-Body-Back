@@ -1,8 +1,9 @@
 import React from 'react';
+import './Menu.css';
 
 const Menu = () => {
   return(
-    <nav>
+    <nav className='nav__background'>
       <ul>
         <li data-testid='leftButton-menu'>left</li>
         <li data-testid='middleButton-menu'>middle</li>

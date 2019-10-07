@@ -1,4 +1,5 @@
 /* here css */
-html {
+.nav__background{
   background-color: blue;
+  color: yellow;
 }
