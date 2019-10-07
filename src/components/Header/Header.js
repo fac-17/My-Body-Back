@@ -7,10 +7,10 @@ const Header = () => {
     
     return (
 
-    <header>
-        <img src={logo} data-testid="MyBodyBack-logo" alt="My Body Back Logo" />
+    <header className="header">
+        <img src={logo} data-testid="MyBodyBack-logo" id="header__title" alt="My Body Back Logo" />
         {/* <Link to='/About'> */}
-        <img src={butterfly} data-testid="butterfly-button" alt="Butterfly" />
+        <img src={butterfly} data-testid="butterfly-button" id="header__butterfly" alt="Butterfly" />
         {/* </Link> */}
     </header>
     
