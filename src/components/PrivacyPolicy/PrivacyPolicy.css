@@ -15,8 +15,16 @@ body{
   font-size: 2em;
 }
 
-.privacy__text{
+.privacy__text,
+.privacy__instructions{
   font-size: 0.8em;
   font-family: 'Montserrat', sans-serif;
   color: white;
+}
+
+.privacy__instructions{
+  margin-bottom: 1em;
+}
+.privacy__button {
+  cursor: pointer;
 }
