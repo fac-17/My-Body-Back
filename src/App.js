@@ -9,6 +9,7 @@ import Welcome from './components/Welcome/Welcome';
 function App() {
   return (
     <div className="App">
+    
 
     <Router>
     <Route exact path="/" component={PrivacyPolicy} />
