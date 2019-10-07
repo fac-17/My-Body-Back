@@ -1,6 +1,6 @@
 import React from 'react';
-import logo from '../Assets/MyBodyBackLogo.svg';
-import butterfly from '../Assets/Butterfly.svg';
+import logo from '../assets/myBodyBackLogo.svg';
+import butterfly from '../assets/butterfly.svg';
 import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
 
 const Header = () => {
