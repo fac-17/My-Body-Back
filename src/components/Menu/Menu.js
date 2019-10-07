@@ -1,12 +1,16 @@
 import React from 'react';
+import './Menu.css';
+import brain from '../assets/brain.svg';
+import wave from '../assets/wave.svg';
+import flower from '../assets/flower.svg';
 
 const Menu = () => {
   return(
-    <nav>
+    <nav className='nav__background'>
       <ul>
-        <li data-testid='leftButton-menu'>left</li>
-        <li data-testid='middleButton-menu'>middle</li>
-        <li data-testid='rightButton-menu'>right</li>
+        <img src={brain} data-testid='leftButton-menu' className='menu__leftbutton'/>
+        <img src={wave} data-testid='middleButton-menu' className='menu__middlebutton'/>
+        <img src={flower} data-testid='rightButton-menu' className='menu__rightbutton'/>
       </ul>
     </nav>
   )
