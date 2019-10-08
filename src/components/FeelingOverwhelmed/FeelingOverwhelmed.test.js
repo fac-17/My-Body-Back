@@ -20,7 +20,7 @@ describe("Feeling Overwhelmed component renders correctly", () => {
       </Router>
     );
 
-    const header = getByTestId("welcome-header");
+    const header = getByTestId("header");
     expect(header).toBeInTheDocument();
   });
 });
