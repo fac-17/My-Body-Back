@@ -11,6 +11,9 @@ import Adapter from 'enzyme-adapter-react-16';
 import Menu from './Menu';
 import App from '../../App';
 import FeelingOverwhelmed from '../../App';
+import HelpingOurselves from '../../App';
+import MyAppointment from '../../App';
+
 
 afterEach(cleanup);
 
@@ -34,14 +37,23 @@ test('should show FeelingOverwhelmed component for /feelingoverwhelmed route (us
       </MemoryRouter>
     );
     expect(component.find(FeelingOverwhelmed)).toHaveLength(1);
-   // })
-   // test('should show Support component for /Support route (using memory router)', () => {
-   //     const component = mount(<MemoryRouter initialEntries = {['/feelingoverwhelmed']} >
-   //         <FeelingOverwhelmed />
-   //       </MemoryRouter>
-   //     );
-   //     expect(component.find(FeelingOverwhelmed)).toHaveLength(1);
-      // })
+ })
+
+   test('should show HelpingOurselves component for /HelpingOurselves route (using memory router)', () => {
+       const component = mount(<MemoryRouter initialEntries = {['/HelpingOurselves']} >
+           <HelpingOurselves />
+         </MemoryRouter>
+       );
+       expect(component.find(HelpingOurselves)).toHaveLength(1);
+    })
+
+    test('should show MyAppointment component for /MyAppointment route (using memory router)', () => {
+        const component = mount(<MemoryRouter initialEntries = {['/MyAppointment']} >
+            <MyAppointment />
+          </MemoryRouter>
+        );
+        expect(component.find(MyAppointment)).toHaveLength(1);
+       // })
 
   // it('should show No match component for route not defined', () => {
   //   const component = mount( <MemoryRouter initialEntries = {['/unknown']} >
