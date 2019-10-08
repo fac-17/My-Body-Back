@@ -6,18 +6,17 @@ import Menu from "./components/Menu/Menu";
 import Welcome from "./components/Welcome/Welcome";
 import Header from "./components/Header/Header";
 import About from "./components/About/About";
+import FeelingOverwhelmed from "./components/FeelingOverwhelmed/FeelingOverwhelmed";
 
 function App() {
   return (
     <div className="App">
-
-
-    <Router>
-    <Route exact path="/" component={PrivacyPolicy} />
-    <Route path="/welcome" component={Welcome} />
-    <Route path="/about" component={About} />
-
-    </Router>
+      <Router>
+        <Route exact path="/" component={PrivacyPolicy} />
+        <Route path="/welcome" component={Welcome} />
+        <Route path="/about" component={About} />
+        <Route path="/feelingoverwhelmed" component={FeelingOverwhelmed} />
+      </Router>
     </div>
   );
 }
