@@ -14,7 +14,7 @@ describe("Feeling Overwhelmed component renders correctly", () => {
       </Router>
     );
 
-    const header = getByTestId("header");
+    const header = getByTestId("butterfly-header");
     expect(header).toBeInTheDocument();
   });
 
