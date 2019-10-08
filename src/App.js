@@ -7,6 +7,7 @@ import Welcome from "./components/Welcome/Welcome";
 import Header from "./components/Header/Header";
 import About from "./components/About/About";
 import FeelingOverwhelmed from "./components/FeelingOverwhelmed/FeelingOverwhelmed";
+import HelpingOurselves from "./components/HelpingOurselves/HelpingOurselves";
 import PageNotFound from './components/PageNotFound/PageNotFound';
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <Route path="/about" component={About} />
         <Route path="/feelingoverwhelmed" component={FeelingOverwhelmed} />
         <Route path="*" component={PageNotFound} />
+        <Route path="/helpingourselves" component={HelpingOurselves} />
         </Switch>
       </Router>
     </div>
