@@ -1,0 +1,8 @@
+.helping-ourselves__icon {
+  width: 5vw;
+}
+
+#helping-ourselves__icon-container {
+  display: flex;
+  justify-content: center;
+}

@@ -1,3 +1,21 @@
+html, body {
+  margin: auto;
+  padding: 0;
+  background-color: white;
+}
+
+h2 {
+  font-family: 'Yellowtail', cursive;
+  font-size: 2em;
+  color: black;
+}
+
+p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.8em;
+  color: black;
+}
+
 .App {
   text-align: center;
 }

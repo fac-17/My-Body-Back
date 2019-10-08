@@ -22,7 +22,7 @@ test("About component renders about page", () => {
             <About />
         </Router>
     );
-    const header = getByTestId("about-header");
+    const header = getByTestId("about-title");
     expect(header).toBeInTheDocument();
 });
 

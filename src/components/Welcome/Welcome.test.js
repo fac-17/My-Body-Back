@@ -23,7 +23,7 @@ describe("Welcome component renders to page", () => {
         <Welcome />
       </Router>
     );
-    const header = getByTestId("welcome-header");
+    const header = getByTestId("welcome-title");
     expect(header).toBeInTheDocument();
   });
 });

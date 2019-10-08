@@ -7,6 +7,7 @@ import Welcome from "./components/Welcome/Welcome";
 import Header from "./components/Header/Header";
 import About from "./components/About/About";
 import FeelingOverwhelmed from "./components/FeelingOverwhelmed/FeelingOverwhelmed";
+import HelpingOurselves from "./components/HelpingOurselves/HelpingOurselves";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/welcome" component={Welcome} />
         <Route path="/about" component={About} />
         <Route path="/feelingoverwhelmed" component={FeelingOverwhelmed} />
+        <Route path="/helpingourselves" component={HelpingOurselves} />
       </Router>
     </div>
   );
