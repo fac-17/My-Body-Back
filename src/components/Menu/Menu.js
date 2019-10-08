@@ -6,8 +6,8 @@ import flower from '../assets/flower.svg';
 
 const Menu = () => {
   return(
-    <nav className='nav__background'>
-      <ul>
+    <nav className='menu__nav'>
+      <ul className="menu__list">
         <img src={brain} data-testid='leftButton-menu' className='menu__leftbutton'/>
         <img src={wave} data-testid='middleButton-menu' className='menu__middlebutton'/>
         <img src={flower} data-testid='rightButton-menu' className='menu__rightbutton'/>
