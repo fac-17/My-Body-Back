@@ -25,9 +25,3 @@ test("does the logo 'My Body Back' exists?", () => {
   const MyBodyBackLogo = getByTestId("MyBodyBack-logo");
   expect(MyBodyBackLogo).toBeInTheDocument();
 });
-
-// test("butterfly svg links you to another page", () => {
-//     const { getByTestId } = render(<Header />);
-//     const MyBodyBackLogo = getByTestId("MyBodyBack-logo");
-//     expect(MyBodyBackLogo).toBeInTheDocument()
-// });

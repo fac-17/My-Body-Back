@@ -8,6 +8,7 @@ import Header from "./components/Header/Header";
 import About from "./components/About/About";
 import FeelingOverwhelmed from "./components/FeelingOverwhelmed/FeelingOverwhelmed";
 import HelpingOurselves from "./components/HelpingOurselves/HelpingOurselves";
+import MyAppointment from "./components/MyAppointment/MyAppointment";
 import PageNotFound from './components/PageNotFound/PageNotFound';
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
         <Route path="/feelingoverwhelmed" component={FeelingOverwhelmed} />
         <Route path="*" component={PageNotFound} />
         <Route path="/helpingourselves" component={HelpingOurselves} />
+        <Route path="/myappointment" component={MyAppointment} />
         </Switch>
       </Router>
     </div>
