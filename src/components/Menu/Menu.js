@@ -3,14 +3,17 @@ import './Menu.css';
 import brain from '../assets/brain.svg';
 import wave from '../assets/wave.svg';
 import flower from '../assets/flower.svg';
+import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
+
 
 const Menu = () => {
   return(
-    <nav className='nav__background'>
-      <ul>
-        <img src={brain} data-testid='leftButton-menu' className='menu__leftbutton'/>
-        <img src={wave} data-testid='middleButton-menu' className='menu__middlebutton'/>
-        <img src={flower} data-testid='rightButton-menu' className='menu__rightbutton'/>
+    <nav className='menu__nav'>
+      <ul className="menu__list">
+      <Link to="/"><img src={brain} data-testid='leftButton-menu' className='menu__leftbutton'/></Link>
+        <span className="menu__circle"></span>
+        <Link to="/"><img src={wave} data-testid='middleButton-menu' className='menu__middlebutton'/></Link>
+        <Link to="/"><img src={flower} data-testid='rightButton-menu' className='menu__rightbutton'/></Link>
       </ul>
     </nav>
   )

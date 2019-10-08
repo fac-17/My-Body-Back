@@ -10,14 +10,14 @@ import About from "./components/About/About";
 function App() {
   return (
     <div className="App">
-    
+
 
     <Router>
     <Route exact path="/" component={PrivacyPolicy} />
     <Route path="/welcome" component={Welcome} />
     <Route path="/about" component={About} />
+
     </Router>
-    
     </div>
   );
 }
