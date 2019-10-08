@@ -25,6 +25,7 @@
 }
 
 .menu__circle{
+  z-index:-1;
   width:85px;
   height:85px;
   border-radius:50px;
@@ -39,7 +40,6 @@
   /* padding-bottom: 1em; */
   padding-left: 0.9em;
   height: 3.5em;
-  z-index:3;
 }
 
 .menu__rightbutton {
