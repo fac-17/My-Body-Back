@@ -10,13 +10,18 @@ import { toBeInTheDocument } from "@testing-library/jest-dom/extend-expect";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Welcome from "./Welcome.js";
 
+
 afterEach(cleanup);
+
+// Jest works test
 
 test("Jest works ok", () => {
   expect(true).toBeTruthy();
 });
 
-describe("Welcome component renders to page", () => {
+//Test that the Welcome component renders necessary content
+
+describe("Welcome component renders to page with menu", () => {
   test("Welcome component renders header", () => {
     const { getByTestId } = render(
       <Router>
@@ -25,5 +30,14 @@ describe("Welcome component renders to page", () => {
     );
     const header = getByTestId("welcome-header");
     expect(header).toBeInTheDocument();
+  });
+  test("Welcome component renders menu", () => {
+    const { getByTestId } = render(
+      <Router>
+        <Welcome />
+      </Router>
+    );
+    const menuButton = getByTestId("middleButton-menu");
+    expect(menuButton).toBeInTheDocument();
   });
 });
