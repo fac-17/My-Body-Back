@@ -1,7 +1,7 @@
-.image-carousel{
+.my-appointment__section {
   display: none;
 }
 
-.image-carousel-active{
+.active {
   display: block;
 }

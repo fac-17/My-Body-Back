@@ -11,22 +11,19 @@ import feelingbetter from "../assets/feelingbetter.svg";
 const MyAppointment = () => {
   const [index, setIndex] = React.useState(0);
 
-  React.useEffect(
-    () => {
-      const image = document.querySelectorAll(".image-carousel");
-      const imageArray = Array.from(image);
+  React.useEffect(() => {
+    const image = document.querySelectorAll(".my-appointment__section");
+    const imageArray = Array.from(image);
 
-      imageArray.forEach(element => {
-        element.id == index
-          ? element.classList.add("image-carousel-active")
-          : element.classList.remove("image-carousel-active");
-      });
-    },
-    [index]
-  );
+    imageArray.forEach(element => {
+      element.id === index
+        ? element.classList.add("active")
+        : element.classList.remove("active");
+    });
+  }, [index]);
 
   const swipingLeft = () => {
-    index < 5 ? setIndex(index + 1) : setIndex(index);
+    index < 4 ? setIndex(index + 1) : setIndex(index);
     console.log(index);
   };
 
@@ -36,12 +33,17 @@ const MyAppointment = () => {
   };
 
   return (
-    <Swipeable onSwipedLeft={swipingLeft} onSwipedRight={swipingRight}>
-      <img className="image-carousel" id="0" src={notesOfLove} />
-      <img className="image-carousel" id="1" src={helpAndSupport} />
-      <img className="image-carousel" id="2" src={emotions} />
-      <img className="image-carousel" id="3" src={feelingbetter} />
-    </Swipeable>
+    <section id="my-appointment__container">
+      <Header />
+      <Swipeable onSwipedLeft={swipingLeft} onSwipedRight={swipingRight}>
+        <section className="my-appointment__section" id="0"></section>
+        <section className="my-appointment__section" id="1"></section>
+        <section className="my-appointment__section" id="2"></section>
+        <section className="my-appointment__section" id="3"></section>
+        <section className="my-appointment__section" id="4"></section>
+      </Swipeable>
+      <Menu />
+    </section>
   );
 };
 
