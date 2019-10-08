@@ -18,18 +18,28 @@ const FeelingOverwhelmed = () => {
           time. You may even decide that you don’t want to have a smear test at
           all. You have the right to make this choice.
         </p>
-        <figure>
-          <Link to="/notesoflove">
-            <img src={notesOfLove} alt="Notes of Love" />
-            <figcaption>Notes Of Love</figcaption>
-          </Link>
-        </figure>
-        <figure>
-          <Link to="/helpandsupport">
-            <img src={helpAndSupport} alt="Help and Support" />
-            <figcaption>Help And Support</figcaption>
-          </Link>
-        </figure>
+        <section id="feeling-overwhelmed__icon-container">
+          <figure>
+            <Link to="/notesoflove">
+              <img
+                src={notesOfLove}
+                alt="Notes of Love"
+                className="feeling-overwhelmed__icon"
+              />
+              <figcaption>Notes Of Love</figcaption>
+            </Link>
+          </figure>
+          <figure>
+            <Link to="/helpandsupport">
+              <img
+                src={helpAndSupport}
+                alt="Help and Support"
+                className="feeling-overwhelmed__icon"
+              />
+              <figcaption>Help And Support</figcaption>
+            </Link>
+          </figure>
+        </section>
       </section>
 
       <Menu />

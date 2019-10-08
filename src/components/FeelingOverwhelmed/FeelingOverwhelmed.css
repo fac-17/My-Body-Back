@@ -1,0 +1,8 @@
+.feeling-overwhelmed__icon {
+  width: 5vw;
+}
+
+#feeling-overwhelmed__icon-container {
+  display: flex;
+  justify-content: center;
+}
