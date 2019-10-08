@@ -17,4 +17,18 @@ describe("Feeling Overwhelmed component renders correctly", () => {
     const header = getByTestId("butterfly-header");
     expect(header).toBeInTheDocument();
   });
+
+  test("Check text is render for each icon", () => {
+    const { getByText } = render(
+      <Router>
+        <HelpingOurselves />
+      </Router>
+    );
+
+    const emotions = getByText("Our Emotions");
+    const feelingBetter = getByText("Feeling Better");
+
+    expect(emotions).toBeInTheDocument();
+    expect(feelingBetter).toBeInTheDocument();
+  });
 });
