@@ -9,6 +9,7 @@ const Menu = () => {
     <nav className='menu__nav'>
       <ul className="menu__list">
         <img src={brain} data-testid='leftButton-menu' className='menu__leftbutton'/>
+        <span className="menu__circle"></span> 
         <img src={wave} data-testid='middleButton-menu' className='menu__middlebutton'/>
         <img src={flower} data-testid='rightButton-menu' className='menu__rightbutton'/>
       </ul>
