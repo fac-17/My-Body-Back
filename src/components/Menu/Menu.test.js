@@ -34,7 +34,15 @@ test('should show FeelingOverwhelmed component for /feelingoverwhelmed route (us
       </MemoryRouter>
     );
     expect(component.find(FeelingOverwhelmed)).toHaveLength(1);
-  // })
+   // })
+   // test('should show Support component for /Support route (using memory router)', () => {
+   //     const component = mount(<MemoryRouter initialEntries = {['/feelingoverwhelmed']} >
+   //         <FeelingOverwhelmed />
+   //       </MemoryRouter>
+   //     );
+   //     expect(component.find(FeelingOverwhelmed)).toHaveLength(1);
+      // })
+
   // it('should show No match component for route not defined', () => {
   //   const component = mount( <MemoryRouter initialEntries = {['/unknown']} >
   //       <Routes/>
