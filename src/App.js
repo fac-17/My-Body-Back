@@ -8,6 +8,7 @@ import Header from "./components/Header/Header";
 import About from "./components/About/About";
 import FeelingOverwhelmed from "./components/FeelingOverwhelmed/FeelingOverwhelmed";
 import HelpingOurselves from "./components/HelpingOurselves/HelpingOurselves";
+import MyAppointment from "./components/MyAppointment/MyAppointment";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/about" component={About} />
         <Route path="/feelingoverwhelmed" component={FeelingOverwhelmed} />
         <Route path="/helpingourselves" component={HelpingOurselves} />
+        <Route path="/myappointment" component={MyAppointment} />
       </Router>
     </div>
   );
