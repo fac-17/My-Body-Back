@@ -10,9 +10,9 @@ const Welcome = () => {
   return (
     <div className="welcome__container">
       <Header />
-      <h1 className="welcome__header" data-testid="welcome-header">
+      <h2 className="welcome__header" data-testid="welcome-header">
         Welcome
-      </h1>
+      </h2>
       <p className="welcome__text__main">
         {" "}
         Welcome to the My Body Back app! Here's an overview of how to navigate
