@@ -36,8 +36,24 @@ const MyAppointment = () => {
     <section id="my-appointment__container">
       <Header />
       <Swipeable onSwipedLeft={swipingLeft} onSwipedRight={swipingRight}>
-        <section className="my-appointment__section" id="0"></section>
-        <section className="my-appointment__section" id="1"></section>
+        <section className="my-appointment__section" id="0">
+          <h2>My Appointment</h2>
+          <p>
+            You may find that just thinking about the possibility of a smear
+            test triggers some difficult memories. If these feel particularly
+            distressing it is important to speak to someone you trust. Please
+            check out our ‘I need help’ page for some suggestions of places you
+            can contact for support. Find here some practical tips to prepare
+            for your appointment.
+          </p>
+        </section>
+        <section className="my-appointment__section" id="1">
+          <h2>Preparation</h2>
+          <p>
+            Firstly, and most importantly, you don’t have to do anything until
+            you feel ready
+          </p>
+        </section>
         <section className="my-appointment__section" id="2"></section>
         <section className="my-appointment__section" id="3"></section>
         <section className="my-appointment__section" id="4"></section>
