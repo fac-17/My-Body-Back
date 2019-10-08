@@ -2,6 +2,6 @@
   display: none;
 }
 
-.active {
+.my-appointment__section-active {
   display: block;
 }

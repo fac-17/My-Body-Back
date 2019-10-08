@@ -16,9 +16,9 @@ const MyAppointment = () => {
     const imageArray = Array.from(image);
 
     imageArray.forEach(element => {
-      element.id === index
-        ? element.classList.add("active")
-        : element.classList.remove("active");
+      element.id == index
+        ? element.classList.add("my-appointment__section-active")
+        : element.classList.remove("my-appointment__section-active");
     });
   }, [index]);
 
@@ -36,6 +36,8 @@ const MyAppointment = () => {
     <section id="my-appointment__container">
       <Header />
       <Swipeable onSwipedLeft={swipingLeft} onSwipedRight={swipingRight}>
+        <p>Swipe here</p>
+
         <section className="my-appointment__section" id="0">
           <h2>My Appointment</h2>
           <p>
@@ -73,15 +75,15 @@ const MyAppointment = () => {
             helpful for me today:
           </p>
           <form id="my-appointment__card">
-            <textarea>
+            <p>
               Please ask me what I need: - I may need more time than usual.
               Please take this slowly. Please stop if I say stop. - I have been
               practising some strategies that may help with this appointment. -
               If I look really scared or upset, please stop and ask how and if
               we should continue. - At the end, please check that I’m safe to
               go. - If I am very upset, please help me to call a friend or
-              family member.
-            </textarea>
+              family member."
+            </p>
             <button>Download</button>
           </form>
         </section>
