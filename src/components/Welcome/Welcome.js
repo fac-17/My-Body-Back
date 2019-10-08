@@ -10,7 +10,7 @@ const Welcome = () => {
   return (
     <div className="welcome__container">
       <Header />
-      <h2 className="welcome__header" data-testid="welcome-header">
+      <h2 className="welcome__header" data-testid="welcome-title">
         Welcome
       </h2>
       <p className="welcome__text__main">
