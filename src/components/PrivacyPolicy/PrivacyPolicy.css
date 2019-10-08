@@ -1,8 +1,5 @@
-
 body{
   background-color: #614870;
-  margin: 0;
-  padding: 0;
 }
 
 .privacy__container{
@@ -12,10 +9,11 @@ body{
   justify-content: center;
   height: 100vh;
 }
+
 .privacy__title{
-  font-family: 'Yellowtail', cursive;
+  /* font-family: 'Yellowtail', cursive; */
   color: #ffffff;
-  font-size: 2em;
+  /* font-size: 2em; */
 }
 
 .privacy__text,
@@ -23,11 +21,12 @@ body{
   font-size: 0.8em;
   font-family: 'Montserrat', sans-serif;
   color: white;
-}
-
-.privacy__instructions{
   margin-bottom: 1em;
 }
+
+/* .privacy__instructions{
+  margin-bottom: 1em;
+} */
 .privacy__button {
   cursor: pointer;
 }
