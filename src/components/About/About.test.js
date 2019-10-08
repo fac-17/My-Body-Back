@@ -1,9 +1,9 @@
 import React from "react";
 import {
-    render, 
-    fireEvent, 
-    cleanup, 
-    waitForElement, 
+    render,
+    fireEvent,
+    cleanup,
+    waitForElement,
     queryByTestid } from "@testing-library/react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import About from "./About.js";
@@ -34,14 +34,4 @@ test("Does the header exist in the About page?", () => {
     );
     const header = getByTestId("butterfly-header");
     expect(header).toBeInTheDocument();
-  });
-
-  test("Does the Menu exist in the About page?", () => {
-    const { getByTestId } = render(
-      <Router>
-        <About />
-      </Router>
-    );
-    const menu = getByTestId("leftButton-menu");
-    expect(menu).toBeInTheDocument();
   });

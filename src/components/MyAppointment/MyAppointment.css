@@ -1,0 +1,7 @@
+.my-appointment__section {
+  display: none;
+}
+
+.my-appointment__section-active {
+  display: block;
+}

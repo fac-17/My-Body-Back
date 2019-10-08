@@ -19,6 +19,7 @@ const PrivacyPolicy = () => {
       </span>
       <Link to="/welcome">
         <img
+          data-testid="butterfly-test-id"
           className="privacy__button"
           src={butterfly}
           alt="Go to welcome page"
