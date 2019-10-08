@@ -1,6 +1,9 @@
 html{
   background-color: white;
+  margin: 0;
 }
+
+
 
 .welcome__header{
   font-size: 2em;
