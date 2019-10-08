@@ -36,7 +36,7 @@ const FeelingOverwhelmed = () => {
                 alt="Help and Support"
                 className="feeling-overwhelmed__icon"
               />
-              <figcaption>Help And Support</figcaption>
+              <figcaption>Help & Support</figcaption>
             </Link>
           </figure>
         </section>
