@@ -28,7 +28,7 @@ describe("Welcome component renders to page with menu", () => {
         <Welcome />
       </Router>
     );
-    const header = getByTestId("welcome-header");
+    const header = getByTestId("welcome-title");
     expect(header).toBeInTheDocument();
   });
   test("Welcome component renders menu", () => {
