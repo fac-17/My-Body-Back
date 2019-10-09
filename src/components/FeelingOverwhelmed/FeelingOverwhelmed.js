@@ -12,7 +12,6 @@ const FeelingOverwhelmed = () => {
   const swipingLeft = () => {
     window.location.assign("/helpandsupport");
   };
-
   const swipingRight = () => {
    window.location.assign("/notesoflove");
   };

@@ -25,20 +25,16 @@ const MyAppointment = () => {
 
   const swipingLeft = () => {
     index < 4 ? setIndex(index + 1) : setIndex(index);
-    console.log(index);
   };
 
   const swipingRight = () => {
     index > 0 ? setIndex(index - 1) : setIndex(index);
-    console.log(index);
   };
 
   return (
     <section id="my-appointment__container">
       <Header />
       <Swipeable onSwipedLeft={swipingLeft} onSwipedRight={swipingRight}>
-        <p>Swipe here</p>
-
         <section className="my-appointment__section" id="0">
           <h2>My Appointment</h2>
           <p>
