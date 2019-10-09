@@ -12,8 +12,8 @@ const Emotions = () => {
         <h2> Trauma, the Brain and our Emotions </h2>
         <section id="emotions__section-one">
           <h3>Why is this so difficult?!</h3>
-          <figure>
-            <video width="360" height="240" controls>
+          <figure className="emotions__figure">
+            <video width="330" height="220" controls>
               <source src={traumaVideo} type="video/mp4" />
               Your browser does not support video.
             </video>
@@ -26,8 +26,8 @@ const Emotions = () => {
 
         <section id="emotions__section-two">
           <h3>How our emotions work</h3>
-          <figure>
-            <video width="360" height="240" controls>
+          <figure className="emotions__figure">
+            <video width="330" height="220" controls>
               <source src={emotionsVideo} type="video/mp4" />
               Your browser does not support video.
             </video>
