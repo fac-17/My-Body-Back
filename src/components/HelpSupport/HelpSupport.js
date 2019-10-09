@@ -6,7 +6,21 @@ import call from "../assets/call-mbb.svg";
 
 import "./HelpSupport.css";
 
+
 const HelpSupport = () => {
+
+
+
+const copyNumber = number => {
+const numberToCopy = document.createElement('textarea');
+    numberToCopy.textContent = number;
+    document.body.appendChild(numberToCopy);
+    console.log("this is number", numberToCopy);
+    numberToCopy.select();
+    document.execCommand('copy');
+    document.body.removeChild(numberToCopy);
+  };
+
   return (
     <div className="help-support__container">
       <Header />
@@ -28,9 +42,9 @@ const HelpSupport = () => {
       <a href="mailto:jo@samaritans.org" target="_top">
             <img src={email} className="help-support__icon" />
           </a>
-          <a href="#">
-            <img src={call} className="help-support__icon" />
-          </a>
+
+            <img src={call} className="help-support__icon" onClick={() => copyNumber("116123")} />
+
           <a href="https://www.samaritans.org/" target="_blank"><h3 className="help-support__heading">The Samaritans</h3></a>
           <p className="help-supoprt__text">
             The Samaritans provide free, 24-hour emotional support and
@@ -105,9 +119,9 @@ const HelpSupport = () => {
         <a href="mailto:help@galop.org.uk" target="_top">
           <img src={email} className="help-support__icon" />
         </a>
-        <a href="#">
+
           <img src={call} className="help-support__icon" />
-        </a>
+
         </li>
         <p className="help-supoprt__text"> If you are experiencing emotional distress and would like to access psychological therapy, you can find your local NHS Improving Access to Psychological Therapies service online <a href="#">here.</a></p>
 
