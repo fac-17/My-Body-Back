@@ -34,8 +34,8 @@ const MyAppointment = () => {
   return (
     <section id="my-appointment__container">
       <Header />
-      <section className="my-appointment__body">
       <Swipeable onSwipedLeft={swipingLeft} onSwipedRight={swipingRight}>
+      <section className="my-appointment__body">
         <section className="my-appointment__section" id="0">
           <h2>My Appointment</h2>
           <p>
@@ -90,8 +90,9 @@ const MyAppointment = () => {
           <audio>Audio here</audio>
           <p>See the Notes of LOVE section before your appointment</p>
         </section>
+        </section>
       </Swipeable>
-      </section>
+      
       <Menu />
     </section>
   );

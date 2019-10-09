@@ -1,3 +1,6 @@
+#my-appointment__container{
+  height: 100vh;
+}
 .my-appointment__section {
   display: none;
 }
@@ -7,8 +10,16 @@
 }
 
 .my-appointment__body{
-  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 1em;
+  height: 80vh;
+  background-color:red;
+  align-content: flex-start;
+
 }
 
-
-
+h2 {
+  margin: 0;
+}
