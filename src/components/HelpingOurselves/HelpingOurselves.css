@@ -1,13 +1,21 @@
 .helping-ourselves__icon {
-  width: 5vw;
+  width: 2.5em;
 }
 
 #helping-ourselves__container{
-  height:100vh;
   background-color: white;
+  padding-bottom: 6em;
 }
 
 #helping-ourselves__icon-container {
   display: flex;
   justify-content: center;
+}
+
+a{
+  color: black;
+}
+
+.helping-ourselves__text{
+  padding: 1em;
 }

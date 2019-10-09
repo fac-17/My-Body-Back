@@ -24,9 +24,10 @@ const rightLink = () => {
       <Header />
       <section id="helping-ourselves__body">
         <h2 id="helping-ourselves__title">Helping Ourselves</h2>
-        <p>
-          ed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium,
+        <p className="helping-ourselves__text">
+        In this section we explain a bit about what happens in the brain when you are faced with a triggering situation, like thinking about a cervical screening.
+It's normal to find it difficult to attend a smear test. No-one likes going for their cervical screening and after experiencing sexual assault, your emotions and body may react strongly against it.
+
         </p>
         <section id="helping-ourselves__icon-container">
           <Link to="/emotions">
@@ -36,7 +37,7 @@ const rightLink = () => {
                 alt="our emotions"
                 className="helping-ourselves__icon"
               />
-              <figcaption>Our Emotions</figcaption>
+              <figcaption className="helping-ourselves__image-text">Our Emotions</figcaption>
             </figure>
           </Link>
           <Link to="/feelingbetter">
@@ -46,7 +47,7 @@ const rightLink = () => {
                 alt="feeling better"
                 className="helping-ourselves__icon"
               />
-              <figcaption>Feeling Better</figcaption>
+              <figcaption className="helping-ourselves__image-text" >Feeling Better</figcaption>
             </figure>
           </Link>
         </section>
