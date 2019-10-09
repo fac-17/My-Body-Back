@@ -2,8 +2,6 @@ p{
   line-height: 2em;
 }
 
-
-
 #my-appointment__container{
   height: 100vh;
 }
@@ -63,7 +61,10 @@ p{
   color: white;
   line-height: 1.6em;
   list-style-type: none;
+}
 
+.my-appointment__card p{
+  color: white;
 }
 
 .my-appointment__button{
