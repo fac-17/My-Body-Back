@@ -9,12 +9,8 @@ afterEach(cleanup);
 
 describe("DUMMY TEST : Feeling Overwhelmed component renders correctly", () => {
   test("FO component renders header", () => {
-    const { getByTestId, getByAltText } = render(
       <Router>
-        <HelpingOurselves />
+        <FeelingBetter />
       </Router>
-    );
-
-    const header = getByAltText("My Body Back Logo");
-    expect(header).toBeInTheDocument();
   });
+})
