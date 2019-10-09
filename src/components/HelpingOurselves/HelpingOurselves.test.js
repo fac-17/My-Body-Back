@@ -8,13 +8,13 @@ afterEach(cleanup);
 
 describe("Feeling Overwhelmed component renders correctly", () => {
   test("FO component renders header", () => {
-    const { getByTestId } = render(
+    const { getByTestId, getByAltText } = render(
       <Router>
         <HelpingOurselves />
       </Router>
     );
 
-    const header = getByTestId("butterfly-header");
+    const header = getByAltText("My Body Back Logo");
     expect(header).toBeInTheDocument();
   });
 
