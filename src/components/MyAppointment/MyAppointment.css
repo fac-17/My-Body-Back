@@ -1,3 +1,9 @@
+p{
+  line-height: 2em;
+}
+
+
+
 #my-appointment__container{
   height: 100vh;
 }
@@ -17,7 +23,7 @@
   flex-direction: column;
   justify-content: center;
   margin: 1em;
-  height: 70vh;
+  /* height: 70vh; */
   align-content: flex-start;
 
 }
@@ -32,10 +38,43 @@
  border-radius: 0 2.5em;
 }
 
-p{
-  line-height: 1.5em;
-}
-#my-appointment__page-one p{
+#my-appointment__page-one p
+{
   padding: 0.2em;
   color: white;
 }
+
+/* ----- my appointment section n3 ----- */
+
+.my-appointment__card {
+  display: flex;
+  flex-direction: column;
+  margin: 2em;
+  align-items: center;
+  width: 75vw;
+  height: auto;
+  background: #614870;
+  border-radius: 0 2.5em;
+   
+}
+
+.my-appointment__card ul{
+  padding: 1.5em;
+  color: white;
+  line-height: 1.6em;
+  list-style-type: none;
+
+}
+
+.my-appointment__button{
+  width: 40vw;
+  height: 33px;
+  background-color: #614870;
+  border-radius: 0 0.8em;
+  margin: 2em;
+  color: white; 
+ 
+}
+ 
+
+

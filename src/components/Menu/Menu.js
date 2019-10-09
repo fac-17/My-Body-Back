@@ -13,6 +13,7 @@ configure({ adapter: new Adapter() });
 
 const Menu = () => {
   return(
+    <footer className="footer">
     <nav className='menu__nav'>
       <ul className="menu__list">
       <Link to="/"><img src={brain} data-testid='leftButton-menu' className='menu__leftbutton'/></Link>
@@ -21,6 +22,7 @@ const Menu = () => {
         <Link to="/"><img src={flower} data-testid='rightButton-menu' className='menu__rightbutton'/></Link>
       </ul>
     </nav>
+    </footer>
   )
 }
 

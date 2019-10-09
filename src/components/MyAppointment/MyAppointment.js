@@ -66,6 +66,7 @@ const MyAppointment = () => {
             device.
           </p>
         </section>
+
         <section className="my-appointment__section" id="3">
           <h2>Your Appointment</h2>
           <p id="my-appointment__page-three">
@@ -75,21 +76,27 @@ const MyAppointment = () => {
             helpful for me today:
           </p>
           <form id="my-appointment__card">
-          <div>
+          <div className="my-appointment__card">
             <p>
-              Please ask me what I need: - I may need more time than usual.
-              Please take this slowly. Please stop if I say stop. - I have been
-              practising some strategies that may help with this appointment. -
-              If I look really scared or upset, please stop and ask how and if
-              we should continue. - At the end, please check that I’m safe to
-              go. - If I am very upset, please help me to call a friend or
-              family member."
+              Please ask me what I need:
             </p>
+            <ul>
+              <li>I may need more time than usual</li>
+              <li>Please take this slowly. Please stop if I say stop</li>
+              <li>I have been
+              practising some strategies that may help with this appointment</li>
+              If I look really scared or upset, please stop and ask how and if
+              we should continue.<li>At the end, please check that I’m safe to
+              go.</li> 
+              <li>If I am very upset, please help me to call a friend or
+              family member</li>
+            </ul>
             </div>
-            <button>Download</button>
+            <button className="my-appointment__button">Download</button>
 
           </form>
         </section>
+
         <section className="my-appointment__section" id="4">
           <h2>After your appointment</h2>
           <audio>Audio here</audio>
