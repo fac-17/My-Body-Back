@@ -27,10 +27,8 @@ describe("Feeling Overwhelmed component renders correctly", () => {
 
     const emotions = getByText("Our Emotions");
     const feelingBetter = getByText("Feeling Better");
-    const myappointment = getByText("My appointment");
 
     expect(emotions).toBeInTheDocument();
     expect(feelingBetter).toBeInTheDocument();
-    expect(myappointment).toBeInTheDocument();
   });
 });
