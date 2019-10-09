@@ -8,13 +8,13 @@ afterEach(cleanup);
 
 describe("Feeling Overwhelmed component renders correctly", () => {
   test("FO component renders header", () => {
-    const { getByTestId } = render(
+    const { getByTestId, getByAltText } = render(
       <Router>
         <HelpingOurselves />
       </Router>
     );
 
-    const header = getByTestId("butterfly-header");
+    const header = getByAltText("My Body Back Logo");
     expect(header).toBeInTheDocument();
   });
 
@@ -27,8 +27,10 @@ describe("Feeling Overwhelmed component renders correctly", () => {
 
     const emotions = getByText("Our Emotions");
     const feelingBetter = getByText("Feeling Better");
+    const myappointment = getByText("My appointment");
 
     expect(emotions).toBeInTheDocument();
     expect(feelingBetter).toBeInTheDocument();
+    expect(myappointment).toBeInTheDocument();
   });
 });
