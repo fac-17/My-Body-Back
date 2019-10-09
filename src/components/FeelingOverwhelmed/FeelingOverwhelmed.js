@@ -8,6 +8,14 @@ import { Link } from "react-router-dom";
 import { useSwipeable, Swipeable } from "react-swipeable";
 
 const FeelingOverwhelmed = () => {
+
+  const swipingLeft = () => {
+    window.location.assign("/helpandsupport");
+  };
+
+  const swipingRight = () => {
+   window.location.assign("/notesoflove");
+  };
   return (
     <section id="feeling-overwhelmed__container">
       <Header />
