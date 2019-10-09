@@ -18,7 +18,9 @@ const numberToCopy = document.createElement('textarea');
     console.log("this is number", numberToCopy);
     numberToCopy.select();
     document.execCommand('copy');
+      alert(`Number was copied to clipboard: ${numberToCopy.textContent}`);
     document.body.removeChild(numberToCopy);
+
   };
 
   return (
@@ -43,7 +45,7 @@ const numberToCopy = document.createElement('textarea');
             <img src={email} className="help-support__icon" />
           </a>
 
-            <img src={call} className="help-support__icon" onClick={() => copyNumber("116123")} />
+            <img src={call} className="help-support__icon" onClick={() => copyNumber("116 123")} />
 
           <a href="https://www.samaritans.org/" target="_blank"><h3 className="help-support__heading">The Samaritans</h3></a>
           <p className="help-supoprt__text">
@@ -55,7 +57,7 @@ const numberToCopy = document.createElement('textarea');
         <li className="help-support__list-item">
 
           <a href="#">
-            <img src={call} className="help-support__icon" />
+            <img src={call} className="help-support__icon" onClick={() => copyNumber("0808 802 9999")}/>
           </a>
           <a href="https://rapecrisis.org.uk" target="_blank">
 <h3 className="help-support__heading">Rape Crisis</h3></a>
@@ -71,7 +73,7 @@ const numberToCopy = document.createElement('textarea');
             <img src={email} className="help-support__icon" />
           </a>
           <a href="#">
-            <img src={call} className="help-support__icon" />
+            <img src={call} className="help-support__icon" onClick={() => copyNumber("08088 01 03 02")}/>
           </a>
           <a href="https://www.rapecrisisscotland.org.uk/" target="_blank"><h3 className="help-support__heading">Rape Crisis</h3></a>
           <p className="help-support__small-text">Scotland</p>
@@ -87,7 +89,7 @@ const numberToCopy = document.createElement('textarea');
             <img src={email} className="help-support__icon" />
           </a>
           <a href="#">
-            <img src={call} className="help-support__icon" />
+            <img src={call} className="help-support__icon" onClick={() => copyNumber("020 7034 0303")}/>
           </a>
           <a href="http://womanstrust.org.uk/
 " target="_blank"><h3 className="help-support__heading">Women's Trust</h3></a>
@@ -103,7 +105,7 @@ const numberToCopy = document.createElement('textarea');
             <img src={email} className="help-support__icon" />
           </a>
           <a href="#">
-            <img src={call} className="help-support__icon" />
+            <img src={call} className="help-support__icon" onClick={() => copyNumber("0207 704 2040")} />
           </a>
           <a href="http://www.galop.org.uk/domesticabuse/" target="_blank"><h3 className="help-support__heading">
             London LGBT Domestic Abuse Partnership
@@ -120,7 +122,7 @@ const numberToCopy = document.createElement('textarea');
           <img src={email} className="help-support__icon" />
         </a>
 
-          <img src={call} className="help-support__icon" />
+          <img src={call} className="help-support__icon" onClick={() => copyNumber("0800 999 5428")}/>
 
         </li>
         <p className="help-supoprt__text"> If you are experiencing emotional distress and would like to access psychological therapy, you can find your local NHS Improving Access to Psychological Therapies service online <a href="#">here.</a></p>
