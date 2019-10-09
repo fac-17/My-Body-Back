@@ -25,7 +25,7 @@ const HelpSupport = () => {
       </p>
       <ul className="help-support__list">
         <li className="help-support__list-item">
-          <a href="#">
+      <a href="mailto:jo@samaritans.org" target="_top">
             <img src={email} className="help-support__icon" />
           </a>
           <a href="#">
@@ -39,9 +39,7 @@ const HelpSupport = () => {
         </li>
 
         <li className="help-support__list-item">
-          <a href="#">
-            <img src={email} className="help-support__icon" />
-          </a>
+
           <a href="#">
             <img src={call} className="help-support__icon" />
           </a>
@@ -55,7 +53,7 @@ const HelpSupport = () => {
         </li>
 
         <li className="help-support__list-item">
-          <a href="#">
+          <a href="mailto:support@rapecrisisscotland.org.uk" target="_top">
             <img src={email} className="help-support__icon" />
           </a>
           <a href="#">
@@ -71,7 +69,7 @@ const HelpSupport = () => {
         </li>
 
         <li className="help-support__list-item">
-          <a href="#">
+          <a href="mailto:office@womanstrust.org.uk" target="_top">
             <img src={email} className="help-support__icon" />
           </a>
           <a href="#">
@@ -87,7 +85,7 @@ const HelpSupport = () => {
         </li>
 
         <li className="help-support__list-item">
-          <a href="#">
+          <a href="mailto:referrals@galop.org.uk" target="_top">
             <img src={email} className="help-support__icon" />
           </a>
           <a href="#">
@@ -104,7 +102,7 @@ const HelpSupport = () => {
         </li>
         <li>
         <h4 className="help-support__small-heading">If you're outside London:</h4>
-        <a href="#">
+        <a href="mailto:help@galop.org.uk" target="_top">
           <img src={email} className="help-support__icon" />
         </a>
         <a href="#">
