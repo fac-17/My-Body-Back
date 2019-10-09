@@ -26,11 +26,64 @@ const HelpSupport = () => {
       </p>
       <ul className="help-support__list">
         <li className="help-support__list-item">
-          <span className="help-supoprt__text" />
+        <a href="#">
+          <img src={email} className="help-support__icon" />
+        </a>
+        <a href="#">
+          <img src={call} className="help-support__icon" />
+        </a>
+        <h3 className="help-support__heading">The Samaritans</h3>
+          <p className="help-supoprt__text" >The Samaritans provide free, 24-hour emotional support and listening.</p>
+          </li>
+
+          <li className="help-support__list-item">
           <a href="#">
-            <img src="#" className="help-support__icon" />
+            <img src={email} className="help-support__icon" />
           </a>
-        </li>
+          <a href="#">
+            <img src={call} className="help-support__icon" />
+          </a>
+          <h3 className="help-support__heading">Rape Crisis</h3>
+          <p className="help-support__small-text">England & Wales</p>
+            <p className="help-supoprt__text" >Rape Crisis have 44 centres across the UK offering support, advocacy, information and counselling.</p>
+            </li>
+
+            <li className="help-support__list-item">
+            <a href="#">
+              <img src={email} className="help-support__icon" />
+            </a>
+            <a href="#">
+              <img src={call} className="help-support__icon" />
+            </a>
+            <h3 className="help-support__heading">Rape Crisis</h3>
+            <p className="help-support__small-text">Scotland</p>
+              <p className="help-supoprt__text" >Rape Crisis Scotland provides a national rape crisis helpline and email support for anyone affected by sexual violence.
+There are also member centres across Scotland.</p>
+              </li>
+
+              <li className="help-support__list-item">
+              <a href="#">
+                <img src={email} className="help-support__icon" />
+              </a>
+              <a href="#">
+                <img src={call} className="help-support__icon" />
+              </a>
+              <h3 className="help-support__heading">Women's Trust</h3>
+                <p className="help-supoprt__text" >Woman’s Trust is a charity that provides free counselling and therapy for female survivors of domestic violence, emotional abuse, sexual abuse, and other forms of domestic abuse.</p>
+                </li>
+
+                <li className="help-support__list-item">
+                <a href="#">
+                  <img src={email} className="help-support__icon" />
+                </a>
+                <a href="#">
+                  <img src={call} className="help-support__icon" />
+                </a>
+                <h3 className="help-support__heading">London LGBT Domestic Abuse Partnership</h3>
+                  <p className="help-supoprt__text" >London LGBT Domestic Abuse Partnership offer practical, emotional and legal advice and signposting to LGBT + individuals who have experienced
+domestic abuse.</p>
+                  </li>
+
       </ul>
       <Menu />
     </div>

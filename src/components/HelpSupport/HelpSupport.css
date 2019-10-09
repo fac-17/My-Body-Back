@@ -11,9 +11,42 @@
   font-weight: lighter;
   font-style:italic;
   font-size: 0.7em;
-  padding: 0.6em;
+  padding-bottom: 0.7em;
+  margin: 0;
 }
 
 .help-support__sub-text{
   padding: 0.6em;
+}
+
+.help-support__list{
+  padding: 0;
+  margin:0;
+}
+
+.help-support__list-item{
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+.help-support__icon{
+  width: 1.4em;
+  padding: 0.5em 1.3em 0 1.3em;
+}
+
+.help-support__heading{
+  font-family: Montserrat, cursive;
+  text-transform: uppercase;
+  margin:0;
+  font-size: 1em;
+  padding: 0.4em 3.3em 0 3.3em;
+
+}
+
+.help-supoprt__text{
+  margin:0;
+  padding: 0 1em 1em 1em;
 }
