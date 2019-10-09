@@ -32,9 +32,10 @@
  border-radius: 0 2.5em;
 }
 
+p{
+  line-height: 1.5em;
+}
 #my-appointment__page-one p{
   padding: 0.2em;
   color: white;
-  line-height: 1.5em;
-
 }
