@@ -1,0 +1,19 @@
+.help-support__container{
+  padding-bottom: 6em;
+}
+
+.help-support__main-text{
+  font-weight:bold;
+  padding: 0.6em;
+}
+
+.help-support__small-text{
+  font-weight: lighter;
+  font-style:italic;
+  font-size: 0.7em;
+  padding: 0.6em;
+}
+
+.help-support__sub-text{
+  padding: 0.6em;
+}
