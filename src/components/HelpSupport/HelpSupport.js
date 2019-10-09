@@ -31,7 +31,7 @@ const HelpSupport = () => {
           <a href="#">
             <img src={call} className="help-support__icon" />
           </a>
-          <h3 className="help-support__heading">The Samaritans</h3>
+          <a href="https://www.samaritans.org/" target="_blank"><h3 className="help-support__heading">The Samaritans</h3></a>
           <p className="help-supoprt__text">
             The Samaritans provide free, 24-hour emotional support and
             listening.
@@ -45,7 +45,8 @@ const HelpSupport = () => {
           <a href="#">
             <img src={call} className="help-support__icon" />
           </a>
-          <h3 className="help-support__heading">Rape Crisis</h3>
+          <a href="https://rapecrisis.org.uk" target="_blank">
+<h3 className="help-support__heading">Rape Crisis</h3></a>
           <p className="help-support__small-text">England & Wales</p>
           <p className="help-supoprt__text">
             Rape Crisis have 44 centres across the UK offering support,
@@ -60,7 +61,7 @@ const HelpSupport = () => {
           <a href="#">
             <img src={call} className="help-support__icon" />
           </a>
-          <h3 className="help-support__heading">Rape Crisis</h3>
+          <a href="https://www.rapecrisisscotland.org.uk/" target="_blank"><h3 className="help-support__heading">Rape Crisis</h3></a>
           <p className="help-support__small-text">Scotland</p>
           <p className="help-supoprt__text">
             Rape Crisis Scotland provides a national rape crisis helpline and
@@ -76,7 +77,8 @@ const HelpSupport = () => {
           <a href="#">
             <img src={call} className="help-support__icon" />
           </a>
-          <h3 className="help-support__heading">Women's Trust</h3>
+          <a href="http://womanstrust.org.uk/
+" target="_blank"><h3 className="help-support__heading">Women's Trust</h3></a>
           <p className="help-supoprt__text">
             Woman’s Trust is a charity that provides free counselling and
             therapy for female survivors of domestic violence, emotional abuse,
@@ -91,9 +93,9 @@ const HelpSupport = () => {
           <a href="#">
             <img src={call} className="help-support__icon" />
           </a>
-          <h3 className="help-support__heading">
+          <a href="http://www.galop.org.uk/domesticabuse/" target="_blank"><h3 className="help-support__heading">
             London LGBT Domestic Abuse Partnership
-          </h3>
+          </h3></a>
           <p className="help-supoprt__text">
             London LGBT Domestic Abuse Partnership offer practical, emotional
             and legal advice and signposting to LGBT + individuals who have
