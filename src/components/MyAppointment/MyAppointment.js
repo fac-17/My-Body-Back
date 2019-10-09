@@ -75,6 +75,7 @@ const MyAppointment = () => {
             helpful for me today:
           </p>
           <form id="my-appointment__card">
+          <div>
             <p>
               Please ask me what I need: - I may need more time than usual.
               Please take this slowly. Please stop if I say stop. - I have been
@@ -84,7 +85,9 @@ const MyAppointment = () => {
               go. - If I am very upset, please help me to call a friend or
               family member."
             </p>
+            </div>
             <button>Download</button>
+
           </form>
         </section>
         <section className="my-appointment__section" id="4">
