@@ -16,6 +16,9 @@ import FeelingOverwhelmed from "./components/FeelingOverwhelmed/FeelingOverwhelm
 import HelpingOurselves from "./components/HelpingOurselves/HelpingOurselves";
 import MyAppointment from "./components/MyAppointment/MyAppointment";
 import PageNotFound from "./components/PageNotFound/PageNotFound";
+import Emotions from "./components/Emotions/Emotions";
+import FeelingBetter from "./components/FeelingBetter/FeelingBetter";
+
 
 function App() {
   return (
@@ -28,6 +31,8 @@ function App() {
           <Route path="/feelingoverwhelmed" component={FeelingOverwhelmed} />
           <Route path="/helpingourselves" component={HelpingOurselves} />
           <Route path="/myappointment" component={MyAppointment} />
+          <Route path="/emotions" component={Emotions} />
+          <Route path="/feelingbetter" component={FeelingBetter} />
           <Route path="*" component={PageNotFound} />
         </Switch>
       </Router>

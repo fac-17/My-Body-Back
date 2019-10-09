@@ -17,7 +17,7 @@ const HelpingOurselves = () => {
           accusantium doloremque laudantium,
         </p>
         <section id="helping-ourselves__icon-container">
-          <Link to="/">
+          <Link to="/emotions">
             <figure>
               <img
                 src={emotions}
@@ -27,7 +27,7 @@ const HelpingOurselves = () => {
               <figcaption>Our Emotions</figcaption>
             </figure>
           </Link>
-          <Link to="/">
+          <Link to="/feelingbetter">
             <figure>
               <img
                 src={feelingbetter}
