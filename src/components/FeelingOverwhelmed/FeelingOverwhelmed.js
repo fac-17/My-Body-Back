@@ -5,11 +5,20 @@ import Menu from "../Menu/Menu";
 import notesOfLove from "../assets/nol.svg";
 import helpAndSupport from "../assets/has.svg";
 import { Link } from "react-router-dom";
+import { useSwipeable, Swipeable } from "react-swipeable";
 
 const FeelingOverwhelmed = () => {
+
+  const swipingLeft = () => {
+    window.location.assign("/helpandsupport");
+  };
+  const swipingRight = () => {
+   window.location.assign("/notesoflove");
+  };
   return (
     <section id="feeling-overwhelmed__container">
       <Header />
+      <Swipeable onSwipedLeft={swipingLeft} onSwipedRight={swipingRight}>
       <section id="feeling-overwhelmed__body">
         <h2 id="feeling-overwhelmed__title">Feeling Overwhelmed</h2>
         <p>
@@ -41,6 +50,7 @@ const FeelingOverwhelmed = () => {
           </figure>
         </section>
       </section>
+      </Swipeable>
 
       <Menu />
     </section>
