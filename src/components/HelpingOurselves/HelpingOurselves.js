@@ -5,9 +5,21 @@ import Menu from "../Menu/Menu";
 import { Link } from "react-router-dom";
 import emotions from "../assets/emotions.svg";
 import feelingbetter from "../assets/feelingbetter.svg";
+import { useSwipeable, Swipeable } from "react-swipeable";
+
 
 const HelpingOurselves = () => {
+
+const leftLink = () => {
+  window.location.assign("/feelingbetter")
+};
+const rightLink = () => {
+  window.location.assign("/emotions")
+};
+
   return (
+    <div>
+      <Swipeable onSwipedLeft={leftLink} onSwipedRight={rightLink}>
     <section id="helping-ourselves__container">
       <Header />
       <section id="helping-ourselves__body">
@@ -39,8 +51,10 @@ const HelpingOurselves = () => {
           </Link>
         </section>
       </section>
-      <Menu />
     </section>
+      </Swipeable>
+      <Menu />
+</div>
   );
 };
 
