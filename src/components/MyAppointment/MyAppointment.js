@@ -49,14 +49,16 @@ const MyAppointment = () => {
         </section>
         <section className="my-appointment__section" id="1">
           <h2>Preparation</h2>
+          <div id="my-appointment__page-one">
           <p>
             Firstly, and most importantly, you don’t have to do anything until
             you feel ready
           </p>
+          </div>
         </section>
         <section className="my-appointment__section" id="2">
           <h2>Your Appointment</h2>
-          <p>
+          <p id="my-appointment__page-two">
             If you would like the smear taker to know that you have been
             sexually assaulted, but don’t want to say it out loud, then you
             could show them our appointment card on your phone. If these words
@@ -66,7 +68,7 @@ const MyAppointment = () => {
         </section>
         <section className="my-appointment__section" id="3">
           <h2>Your Appointment</h2>
-          <p>
+          <p id="my-appointment__page-three">
             This appointment may be difficult for me. I’ve sought information
             from My Body Back Project, which works with people who have
             experienced sexual assault to access healthcare. What might be

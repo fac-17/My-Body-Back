@@ -6,7 +6,10 @@
 }
 
 .my-appointment__section-active {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
 }
 
 .my-appointment__body{
@@ -14,12 +17,24 @@
   flex-direction: column;
   justify-content: center;
   margin: 1em;
-  height: 80vh;
-  background-color:red;
+  height: 70vh;
   align-content: flex-start;
 
 }
 
-h2 {
-  margin: 0;
+#my-appointment__page-one {
+ display: flex;
+ margin: auto;
+ align-items: center;
+ width: 75vw;
+ height: 30vh;
+ background: #614870;
+ border-radius: 0 2.5em;
+}
+
+#my-appointment__page-one p{
+  padding: 0.2em;
+  color: white;
+  line-height: 1.5em;
+
 }
