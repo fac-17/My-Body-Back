@@ -1,7 +1,81 @@
+p{
+  line-height: 2em;
+}
+
+#my-appointment__container{
+  height: 100vh;
+}
 .my-appointment__section {
   display: none;
 }
 
 .my-appointment__section-active {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
 }
+
+.my-appointment__body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 1em;
+  /* height: 70vh; */
+  align-content: flex-start;
+
+}
+
+#my-appointment__page-one {
+ display: flex;
+ margin: auto;
+ align-items: center;
+ width: 75vw;
+ height: 30vh;
+ background: #614870;
+ border-radius: 0 2.5em;
+}
+
+#my-appointment__page-one p
+{
+  padding: 0.2em;
+  color: white;
+}
+
+/* ----- my appointment section n3 ----- */
+
+.my-appointment__card {
+  display: flex;
+  flex-direction: column;
+  margin: 2em;
+  align-items: center;
+  width: 75vw;
+  height: auto;
+  background: #614870;
+  border-radius: 0 2.5em;
+   
+}
+
+.my-appointment__card ul{
+  padding: 1.5em;
+  color: white;
+  line-height: 1.6em;
+  list-style-type: none;
+}
+
+.my-appointment__card p{
+  color: white;
+}
+
+.my-appointment__button{
+  width: 40vw;
+  height: 33px;
+  background-color: #614870;
+  border-radius: 0 0.8em;
+  margin: 2em;
+  color: white; 
+ 
+}
+ 
+
+

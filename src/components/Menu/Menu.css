@@ -50,3 +50,8 @@
 .menu__rightbutton {
   height: 1.5em;
 }
+
+.footer {
+  height: 9em;
+  margin-top: 5em;
+}
