@@ -19,5 +19,6 @@
 }
 
 .privacy__button {
+  margin: 0.8em;
   cursor: pointer;
 }

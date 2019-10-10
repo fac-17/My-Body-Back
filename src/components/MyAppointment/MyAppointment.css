@@ -1,5 +1,7 @@
 p{
   line-height: 2em;
+  display: flex;
+  justify-content: center;
 }
 
 #my-appointment__container{
@@ -21,12 +23,7 @@ p{
   flex-direction: column;
   justify-content: center;
   margin: 1em; 
-  /* height: 70vh; */
   align-content: flex-start;
-  
-
-
-
 }
 
 #my-appointment__page-one {
@@ -77,7 +74,6 @@ p{
   border-radius: 0 0.8em;
   margin: 2em;
   color: white; 
- 
 }
  
 
