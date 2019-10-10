@@ -18,6 +18,7 @@ import PageNotFound from "./components/PageNotFound/PageNotFound";
 import Emotions from "./components/Emotions/Emotions";
 import FeelingBetter from "./components/FeelingBetter/FeelingBetter";
 import HelpSupport from "./components/HelpSupport/HelpSupport";
+import NotesOfLove from "./components/NotesOfLove/NotesOfLove";
 
 function App() {
   return (

@@ -17,6 +17,7 @@ const Header = () => {
       <Link to="/about">
         <img
           src={butterfly}
+          className="butterfly"
           data-testid="butterfly-button"
           id="header__butterfly"
           alt="Butterfly"
