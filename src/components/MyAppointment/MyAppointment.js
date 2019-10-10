@@ -87,7 +87,7 @@ const MyAppointment = () => {
               practising some strategies that may help with this appointment</li>
               If I look really scared or upset, please stop and ask how and if
               we should continue.<li>At the end, please check that I’m safe to
-              go.</li> 
+              go.</li>
               <li>If I am very upset, please help me to call a friend or
               family member</li>
             </ul>
@@ -104,7 +104,7 @@ const MyAppointment = () => {
         </section>
         </section>
       </Swipeable>
-      
+
       <Menu />
     </section>
   );

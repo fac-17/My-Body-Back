@@ -29,12 +29,13 @@ const swipeRight = () => {
   return (
     <section className="notes-of-love__container">
 <Header />
+<h2 className="notes-of-love__header">Notes of Love</h2>
   <Swipeable onSwipedLeft={swipeLeft} onSwipedRight={swipeRight}>
   {imageArray.map((image, i) => (
-    <img src={image}
-    id={i}
-    className={this.id == index ? "notes-of-love__image__active" : "notes-of-love__image"}
+    <div className="image__container"><img src={image}
+    className={i == index ? "notes-of-love__image__active" : "notes-of-love__image"}
     />
+    </div>
   ))}
   </Swipeable>
 <Menu />

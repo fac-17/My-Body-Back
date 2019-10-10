@@ -1,10 +1,23 @@
+.notes-of-love__container{
+  height: 100vh;
+}
+
+.notes-of-love__header{
+  margin-bottom: 0.5em;
+}
+
+.image__container{
+  height: 60%;
+}
+
 .notes-of-love__image{
   display: none;
-  width: 30%;
 }
 
 .notes-of-love__image__active{
-  display: block;
+  display: inline-block;
+  width: 80%;
+
 }
 
 .my-appointment__container{
