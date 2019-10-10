@@ -17,6 +17,7 @@ const NotesOfLove = () => {
 const [index, setIndex] = React.useState(0);
 
 const imageArray = [ noteOne, noteTwo, noteThree, noteFour, noteFive, noteSix, noteSeven ];
+const circleArray = [1, 2, 3, 4, 5, 6, 7];
 
 const swipeLeft = () => {
   index < 6 ? setIndex(index + 1) : setIndex(index);
@@ -38,6 +39,13 @@ const swipeRight = () => {
     </div>
   ))}
   </Swipeable>
+  <div class="notes-of-love__circle__container">
+{circleArray.map( (circle, i) =>
+  <span
+  className={i == index ? "notes-of-love__circle__active" : "notes-of-love__circle"}>
+  </span>
+ )}
+  </div>
 <Menu />
 </section>
 )
