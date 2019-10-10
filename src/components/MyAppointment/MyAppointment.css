@@ -20,9 +20,12 @@ p{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 1em;
+  margin: 1em; 
   /* height: 70vh; */
   align-content: flex-start;
+  
+
+
 
 }
 
