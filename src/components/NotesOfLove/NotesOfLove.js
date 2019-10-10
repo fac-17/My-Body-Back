@@ -41,7 +41,7 @@ const swipeRight = () => {
     </div>
   ))}
   </Swipeable>
-  <div class="notes-of-love__circle__container">
+  <div className="notes-of-love__circle__container">
 {circleArray.map( (circle, i) =>
   <span
   className={i == index ? "notes-of-love__circle__active" : "notes-of-love__circle"}>
