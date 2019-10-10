@@ -7,6 +7,7 @@ import noteFour from "../assets/notes-of-love/notes-of-love-four.png";
 import noteFive from "../assets/notes-of-love/notes-of-love-five.png";
 import noteSix from "../assets/notes-of-love/notes-of-love-six.png";
 import noteSeven from "../assets/notes-of-love/notes-of-love-seven.png";
+import noteEight from "../assets/notes-of-love/notes-of-love-eight.png";
 import instagram from "../assets/notes-of-love/instagram.svg";
 import Header from "../Header/Header";
 import Menu from "../Menu/Menu";
@@ -17,11 +18,11 @@ const NotesOfLove = () => {
 
 const [index, setIndex] = React.useState(0);
 
-const imageArray = [ noteOne, noteTwo, noteThree, noteFour, noteFive, noteSix, noteSeven ];
-const circleArray = [1, 2, 3, 4, 5, 6, 7];
+const imageArray = [ noteOne, noteTwo, noteThree, noteFour, noteFive, noteSix, noteSeven, noteEight ];
+const circleArray = [1, 2, 3, 4, 5, 6, 7, 8];
 
 const swipeLeft = () => {
-  index < 6 ? setIndex(index + 1) : setIndex(index);
+  index < 7 ? setIndex(index + 1) : setIndex(index);
 };
 
 const swipeRight = () => {
@@ -48,7 +49,7 @@ const swipeRight = () => {
  )}
   </div>
   <a href="https://www.instagram.com/mybodybackproject/"><img src={instagram} alt="instagram"/></a>
-  <p className="notes-of-love__small-text">See more on Instagram</p> 
+  <p className="notes-of-love__small-text">See more on Instagram</p>
 <Menu />
 </section>
 )
