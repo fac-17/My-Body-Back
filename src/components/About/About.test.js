@@ -16,22 +16,22 @@ test("Jest works ok", () => {
     expect(true).toBeTruthy();
 });
 
-test("About component renders about page", () => {
-    const { getByTestId } = render(
+test("About component renders the title of the about page", () => {
+    const { getByText } = render(
         <Router>
             <About />
         </Router>
     );
-    const header = getByTestId("about-title");
+    const header = getByText("About this App");
     expect(header).toBeInTheDocument();
 });
 
-test("Does the header exist in the About page?", () => {
-    const { getByTestId } = render(
+test("Does the butterfly of the header exist in the About page?", () => {
+    const { getByAltText } = render(
       <Router>
         <About />
       </Router>
     );
-    const header = getByTestId("butterfly-header");
+    const header = getByAltText("My Body Back Logo");
     expect(header).toBeInTheDocument();
   });
