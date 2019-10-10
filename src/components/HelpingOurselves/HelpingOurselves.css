@@ -1,14 +1,13 @@
 .helping-ourselves__icon__left{
-  /* width: 348.48px; */
-/* height: 315px; */
+  filter:sepia(1.6) saturate(6.5) hue-rotate(89deg);
+  transition:0.5s ease-out;
+  width: 15vh;
 }
 
 .helping-ourselves__icon__right {
-  width: 2.5em;
-  left: 96.76%;
-  right: -40.08%;
-  top: 60.21%;
-  bottom: 21.07%;
+  filter:sepia(1.6) saturate(6.5) hue-rotate(89deg);
+  transition:0.5s ease-out;
+  width: 15vh;
 }
 
 #helping-ourselves__container{
