@@ -12,6 +12,27 @@ const FeelingBetter = () => {
         <Header />
         <section id="feeling-better__body">
           <h2>Feeling Better</h2>
+          <button
+            className="feeling-better__button"
+            id="soothing"
+            onClick={() => setCurrentPage("soothing")}
+          >
+            Soothing
+          </button>
+          <button
+            className="feeling-better__button"
+            id="compassion"
+            onClick={() => setCurrentPage("compassion")}
+          >
+            Compassion
+          </button>
+          <button
+            className="feeling-better__button"
+            id="coping"
+            onClick={() => setCurrentPage("coping")}
+          >
+            Coping
+          </button>
         </section>
         <Menu />
       </section>
@@ -22,6 +43,13 @@ const FeelingBetter = () => {
         <Header />
         <section id="feeling-better__body">
           <h2>Activating your Soothing System</h2>
+          <button
+            className="feeling-better__button"
+            id="home"
+            onClick={() => setCurrentPage("home")}
+          >
+            home
+          </button>
         </section>
         <Menu />
       </section>
@@ -32,6 +60,13 @@ const FeelingBetter = () => {
         <Header />
         <section id="feeling-better__body">
           <h2>Building Self-Compassion</h2>
+          <button
+            className="feeling-better__button"
+            id="home"
+            onClick={() => setCurrentPage("home")}
+          >
+            home
+          </button>
         </section>
         <Menu />
       </section>
@@ -44,6 +79,13 @@ const FeelingBetter = () => {
           <h2>
             Tips for coping with anxiety, panic, flashbacks and dissociation
           </h2>
+          <button
+            className="feeling-better__button"
+            id="home"
+            onClick={() => setCurrentPage("home")}
+          >
+            home
+          </button>
         </section>
         <Menu />
       </section>
