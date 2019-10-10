@@ -3,3 +3,11 @@
     justify-content: center;
     background-color: #614870;
 }
+.butterfly{
+  /* filter:sepia(1.6) saturate(6.5) hue-rotate(89deg);
+  transition:0.5s ease-out; */
+}
+.butterfly:hover{
+  filter:sepia(1.6) saturate(6.5) hue-rotate(89deg);
+  /* transition:0.5s ease-out; */
+}
