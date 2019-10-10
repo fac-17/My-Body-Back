@@ -1,6 +1,7 @@
 import React from "react";
 import selfAudio from "../../assets/selfAudio.m4a";
 import focusAudio from "../../assets/focusAudio.m4a";
+import voiceVideo from "../../assets/voiceVideo.mp4";
 
 const Compassion = () => {
   return (
@@ -71,6 +72,12 @@ const Compassion = () => {
           Above all, look after yourself the way you would care for someone you
           loved. Know what works best for you when you need comfort and care.
         </p>
+      </section>
+      <section id="compassion-section-page__five">
+        <video width="330" height="220" controls>
+          <source src={voiceVideo} type="video/mp4" />
+          Video cannot be displayed
+        </video>
       </section>
     </section>
   );
