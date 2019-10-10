@@ -1,0 +1,12 @@
+.notes-of-love__image{
+  display: none;
+  width: 30%;
+}
+
+.notes-of-love__image__active{
+  display: block;
+}
+
+.my-appointment__container{
+  height: 100vh;
+}

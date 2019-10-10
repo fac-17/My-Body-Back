@@ -35,6 +35,7 @@ const MyAppointment = () => {
     <section id="my-appointment__container">
       <Header />
       <Swipeable onSwipedLeft={swipingLeft} onSwipedRight={swipingRight}>
+      <section className="my-appointment__body">
         <section className="my-appointment__section" id="0">
           <h2>My Appointment</h2>
           <p>
@@ -48,14 +49,16 @@ const MyAppointment = () => {
         </section>
         <section className="my-appointment__section" id="1">
           <h2>Preparation</h2>
+          <div id="my-appointment__page-one">
           <p>
             Firstly, and most importantly, you don’t have to do anything until
             you feel ready
           </p>
+          </div>
         </section>
         <section className="my-appointment__section" id="2">
           <h2>Your Appointment</h2>
-          <p>
+          <p id="my-appointment__page-two">
             If you would like the smear taker to know that you have been
             sexually assaulted, but don’t want to say it out loud, then you
             could show them our appointment card on your phone. If these words
@@ -63,33 +66,45 @@ const MyAppointment = () => {
             device.
           </p>
         </section>
+
         <section className="my-appointment__section" id="3">
           <h2>Your Appointment</h2>
-          <p>
+          <p id="my-appointment__page-three">
             This appointment may be difficult for me. I’ve sought information
             from My Body Back Project, which works with people who have
             experienced sexual assault to access healthcare. What might be
             helpful for me today:
           </p>
           <form id="my-appointment__card">
+          <div className="my-appointment__card">
             <p>
-              Please ask me what I need: - I may need more time than usual.
-              Please take this slowly. Please stop if I say stop. - I have been
-              practising some strategies that may help with this appointment. -
-              If I look really scared or upset, please stop and ask how and if
-              we should continue. - At the end, please check that I’m safe to
-              go. - If I am very upset, please help me to call a friend or
-              family member."
+              Please ask me what I need:
             </p>
-            <button>Download</button>
+            <ul>
+              <li>I may need more time than usual</li>
+              <li>Please take this slowly. Please stop if I say stop</li>
+              <li>I have been
+              practising some strategies that may help with this appointment</li>
+              If I look really scared or upset, please stop and ask how and if
+              we should continue.<li>At the end, please check that I’m safe to
+              go.</li> 
+              <li>If I am very upset, please help me to call a friend or
+              family member</li>
+            </ul>
+            </div>
+            <button className="my-appointment__button">Download</button>
+
           </form>
         </section>
+
         <section className="my-appointment__section" id="4">
           <h2>After your appointment</h2>
           <audio>Audio here</audio>
           <p>See the Notes of LOVE section before your appointment</p>
         </section>
+        </section>
       </Swipeable>
+      
       <Menu />
     </section>
   );
