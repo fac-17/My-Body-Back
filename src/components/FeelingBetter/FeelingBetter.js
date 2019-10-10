@@ -36,7 +36,6 @@ const FeelingBetter = () => {
           >
             Coping
           </button>
-          <Coping />
         </section>
         <Menu />
       </section>
@@ -92,6 +91,7 @@ const FeelingBetter = () => {
           >
             home
           </button>
+          <Coping />
         </section>
         <Menu />
       </section>
