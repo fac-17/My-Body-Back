@@ -3,6 +3,7 @@ import Header from "../Header/Header";
 import Menu from "../Menu/Menu";
 import traumaVideo from "../assets/Trauma.mp4";
 import emotionsVideo from "../assets/Emotions.mp4";
+import "./Emotions.css";
 
 const Emotions = () => {
   return (
@@ -13,7 +14,7 @@ const Emotions = () => {
         <section id="emotions__section-one">
           <h3>Why is this so difficult?!</h3>
           <figure className="emotions__figure">
-            <video width="330" height="220" controls>
+            <video width="300" height="200" controls>
               <source src={traumaVideo} type="video/mp4" />
               Your browser does not support video.
             </video>
@@ -27,7 +28,7 @@ const Emotions = () => {
         <section id="emotions__section-two">
           <h3>How our emotions work</h3>
           <figure className="emotions__figure">
-            <video width="330" height="220" controls>
+            <video width="300" height="200" controls>
               <source src={emotionsVideo} type="video/mp4" />
               Your browser does not support video.
             </video>
