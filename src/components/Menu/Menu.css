@@ -42,6 +42,7 @@
 .menu__middlebutton {
   padding-left: 0.9em;
   height: 3.5em;
+
 }
 
 .menu__middlebutton:hover{
@@ -61,4 +62,5 @@
 .footer {
   height: 9em;
   margin-top: 5em;
-}
+  
+} 
