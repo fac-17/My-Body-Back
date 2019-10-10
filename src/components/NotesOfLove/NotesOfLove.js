@@ -16,17 +16,7 @@ const NotesOfLove = () => {
 
 const [index, setIndex] = React.useState(0);
 
-React.useEffect(() => {
-    const image = document.querySelectorAll(".notes-of-love__image");
-    const imageArray = Array.from(image);
-
-    imageArray.forEach(element => {
-      element.id == index
-        ? element.classList.add("notes-of-love__image__active")
-        : element.classList.remove("notes-of-love__image__active");
-    });
-  }, [index]);
-
+const imageArray = [ noteOne, noteTwo, noteThree, noteFour, noteFive, noteSix, noteSeven ];
 
 const swipeLeft = () => {
   index < 6 ? setIndex(index + 1) : setIndex(index);
@@ -40,18 +30,16 @@ const swipeRight = () => {
     <section className="notes-of-love__container">
 <Header />
   <Swipeable onSwipedLeft={swipeLeft} onSwipedRight={swipeRight}>
-  <img className="notes-of-love__image" src={noteOne} alt="notes of love one" id="0" />
-  <img className="notes-of-love__image" src={noteTwo} alt="notes of love one" id="1" />
-  <img className="notes-of-love__image" src={noteThree} alt="notes of love one" id="2" />
-  <img className="notes-of-love__image" src={noteFour} alt="notes of love one" id="3" />
-  <img className="notes-of-love__image" src={noteFive} alt="notes of love one" id="4" />
-  <img className="notes-of-love__image" src={noteSix} alt="notes of love one" id="5" />
-  <img className="notes-of-love__image" src={noteSeven} alt="notes of love one" id="6" />
+  {imageArray.map((image, i) => (
+    <img src={image}
+    id={i}
+    className={this.id == index ? "notes-of-love__image__active" : "notes-of-love__image"}
+    />
+  ))}
   </Swipeable>
 <Menu />
 </section>
 )
-
 }
 
 export default NotesOfLove;
