@@ -4,6 +4,7 @@ import Menu from "../Menu/Menu";
 import "./FeelingBetter.css";
 import Soothing from "./Partials/Soothing";
 import Compassion from "./Partials/Compassion";
+import Coping from "./Partials/Coping";
 
 const FeelingBetter = () => {
   const [currentPage, setCurrentPage] = React.useState("home");
@@ -35,6 +36,7 @@ const FeelingBetter = () => {
           >
             Coping
           </button>
+          <Coping />
         </section>
         <Menu />
       </section>
