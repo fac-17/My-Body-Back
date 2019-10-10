@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../Header/Header";
 import Menu from "../Menu/Menu";
 import "./FeelingBetter.css";
+import Soothing from "./Partials/Soothing";
 
 const FeelingBetter = () => {
   const [currentPage, setCurrentPage] = React.useState("home");
@@ -50,6 +51,7 @@ const FeelingBetter = () => {
           >
             home
           </button>
+          <Soothing />
         </section>
         <Menu />
       </section>

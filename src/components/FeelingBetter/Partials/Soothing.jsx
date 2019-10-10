@@ -1,4 +1,6 @@
 import React from "react";
+import soothingAudio from "../../assets/Soothing.m4a";
+import slowDownAudio from "../../assets/slow-down.m4a";
 
 const Soothing = () => {
   return (
@@ -20,7 +22,7 @@ const Soothing = () => {
           Have there been any times in the past when you were able to activate
           your soothing system? What did you do? Perhaps you used meditation or
           yoga, remembered to breathe… or connected with a friend or loved one?
-          Make a list of any self-soothing skills you already use.{" "}
+          Make a list of any self-soothing skills you already use.
         </p>
       </section>
       <section id="soothing-section-page__three">
@@ -29,12 +31,19 @@ const Soothing = () => {
           consider spending some time practicing skills to activate your
           soothing system. Thinking about the test can trigger your threat
           system, so it is important to have these skills ready. We would
-          recommend that you try to practice the exercises on this page
+          recommend that you try to practice the exercises on the next page
           regularly (at least once a day) for the next two weeks.
         </p>
       </section>
 
-      <section id="soothing-section-page__four"></section>
+      <section id="soothing-section-page__four">
+        <audio controls>
+          <source src={soothingAudio} type="audio/mp4" />
+        </audio>
+        <audio controls>
+          <source src={slowDownAudio} type="audio/mp4" />
+        </audio>
+      </section>
     </section>
   );
 };
