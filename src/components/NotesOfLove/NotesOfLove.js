@@ -7,6 +7,7 @@ import noteFour from "../assets/notes-of-love/notes-of-love-four.png";
 import noteFive from "../assets/notes-of-love/notes-of-love-five.png";
 import noteSix from "../assets/notes-of-love/notes-of-love-six.png";
 import noteSeven from "../assets/notes-of-love/notes-of-love-seven.png";
+import instagram from "../assets/notes-of-love/instagram.svg";
 import Header from "../Header/Header";
 import Menu from "../Menu/Menu";
 import "./NotesOfLove.css";
@@ -46,6 +47,8 @@ const swipeRight = () => {
   </span>
  )}
   </div>
+  <a href="https://www.instagram.com/mybodybackproject/"><img src={instagram} alt="instagram"/></a>
+  <p className="notes-of-love__small-text">See more on Instagram</p> 
 <Menu />
 </section>
 )

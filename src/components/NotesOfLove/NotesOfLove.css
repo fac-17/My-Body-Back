@@ -17,7 +17,7 @@
 .notes-of-love__image__active{
   display: inline-block;
   width: auto;
-  height: 40vh;
+  height: 35vh;
 
 }
 
@@ -45,4 +45,11 @@ display: inline-block;
   background-color: #614870;
   border-radius: 50%;
   display: inline-block;
+}
+
+.notes-of-love__small-text{
+  margin: 0;
+  padding: 0;
+  font-size:0.6em;
+  font-style: italic;
 }
