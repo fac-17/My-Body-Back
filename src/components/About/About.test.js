@@ -16,22 +16,16 @@ test("Jest works ok", () => {
     expect(true).toBeTruthy();
 });
 
-test("About component renders the title of the about page", () => {
-    const { getByText } = render(
-        <Router>
-            <About />
-        </Router>
-    );
-    const header = getByText("About this App");
-    expect(header).toBeInTheDocument();
-});
-
-test("Does the butterfly of the header exist in the About page?", () => {
-    const { getByAltText } = render(
-      <Router>
-        <About />
-      </Router>
-    );
-    const header = getByAltText("My Body Back Logo");
-    expect(header).toBeInTheDocument();
+  describe("About component renders correctly", () => {
+    test("You see on the page: title, logo", () => {
+        const { getByText, getByAltText } = render(
+            <Router>
+                <About />
+            </Router>
+        );
+        const header = getByText("About this App");
+        const logo = getByAltText("My Body Back Logo");
+        expect(header).toBeInTheDocument();
+        expect(logo).toBeInTheDocument();
+    });
   });
