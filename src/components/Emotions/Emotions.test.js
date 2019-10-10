@@ -6,7 +6,7 @@ import Emotions from "./Emotions";
 
 afterEach(cleanup);
 
-describe("DUMMY TEST : Feeling Overwhelmed component renders correctly", () => {
+describe("Feeling Overwhelmed component renders correctly", () => {
   test("FO component renders header", () => {
       <Router>
         <Emotions />
