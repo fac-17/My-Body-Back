@@ -19,6 +19,7 @@ const FeelingBetter = () => {
             className="feeling-better__button"
             id="soothing"
             onClick={() => setCurrentPage("soothing")}
+            alt="soothing button"
           >
             Soothing
           </button>
