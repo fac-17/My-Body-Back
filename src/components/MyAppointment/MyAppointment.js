@@ -23,6 +23,9 @@ const MyAppointment = () => {
     });
   }, [index]);
 
+  // const imageArray = [ notesOfLove, helpAndSupport, emotions, feelingbetter];
+  const circleArray = [1, 2, 3, 4, 5];
+
   const swipingLeft = () => {
     index < 4 ? setIndex(index + 1) : setIndex(index);
   };
@@ -104,7 +107,12 @@ const MyAppointment = () => {
         </section>
         </section>
       </Swipeable>
-
+      <div className="my-appointment__circle__container">
+        {circleArray.map((circle, i) => 
+        <span className={i == index ? "my-appointment__circle__active" : "my-appointment__circle"}>
+          </span>
+        )}
+      </div>
       <Menu />
     </section>
   );
