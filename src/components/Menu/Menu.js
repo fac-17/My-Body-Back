@@ -13,6 +13,7 @@ configure({ adapter: new Adapter() });
 
 const Menu = () => {
   return (
+    <footer className="footer">
     <nav className="menu__nav">
       <ul className="menu__list">
         <Link to="/helpingourselves">
@@ -42,6 +43,7 @@ const Menu = () => {
         </Link>
       </ul>
     </nav>
+    </footer>
   );
 };
 
