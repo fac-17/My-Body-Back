@@ -10,10 +10,10 @@ const Coping = () => {
       <video controls width="300" height="200">
         <source src={groundingVideo} type="video/mp4" />
       </video>
-      <audio control>
+      <audio controls>
         <source src={pmrAudio} type="audio/mp4" />
       </audio>
-      <audio control>
+      <audio controls>
         <source src={groundingAudio} type="audio/mp4" />
       </audio>
     </section>
