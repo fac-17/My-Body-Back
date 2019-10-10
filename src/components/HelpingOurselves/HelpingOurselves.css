@@ -1,5 +1,14 @@
-.helping-ourselves__icon {
+.helping-ourselves__icon__left{
+  /* width: 348.48px; */
+/* height: 315px; */
+}
+
+.helping-ourselves__icon__right {
   width: 2.5em;
+  left: 96.76%;
+  right: -40.08%;
+  top: 60.21%;
+  bottom: 21.07%;
 }
 
 #helping-ourselves__container{

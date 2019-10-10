@@ -27,7 +27,6 @@ const rightLink = () => {
         <p className="helping-ourselves__text">
         In this section we explain a bit about what happens in the brain when you are faced with a triggering situation, like thinking about a cervical screening.
 It's normal to find it difficult to attend a smear test. No-one likes going for their cervical screening and after experiencing sexual assault, your emotions and body may react strongly against it.
-
         </p>
         <section id="helping-ourselves__icon-container">
           <Link to="/emotions">
@@ -35,7 +34,7 @@ It's normal to find it difficult to attend a smear test. No-one likes going for 
               <img
                 src={emotions}
                 alt="our emotions"
-                className="helping-ourselves__icon"
+                className="helping-ourselves__icon__right"
               />
               <figcaption className="helping-ourselves__image-text">Our Emotions</figcaption>
             </figure>
@@ -45,7 +44,7 @@ It's normal to find it difficult to attend a smear test. No-one likes going for 
               <img
                 src={feelingbetter}
                 alt="feeling better"
-                className="helping-ourselves__icon"
+                className="helping-ourselves__icon__left"
               />
               <figcaption className="helping-ourselves__image-text" >Feeling Better</figcaption>
             </figure>
