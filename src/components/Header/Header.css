@@ -1,7 +1,8 @@
 .header {
     display: flex;
     justify-content: center;
-    background-color: #614870;
+    background-color: white;
+    margin-top: 1em;
 }
 .butterfly{
   /* filter:sepia(1.6) saturate(6.5) hue-rotate(89deg);
