@@ -1,12 +1,56 @@
+.notes-of-love__container{
+  height: 100vh;
+}
+
+.notes-of-love__header{
+  margin-bottom: 0.5em;
+}
+
+.image__container{
+  height: 60%;
+}
+
 .notes-of-love__image{
   display: none;
-  width: 30%;
 }
 
 .notes-of-love__image__active{
-  display: block;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: inline-block;
+  width: auto;
+  height: 35vh;
+
 }
 
 .my-appointment__container{
   height: 100vh;
+}
+
+.notes-of-love__circle__container{
+  margin-top: 0.3em;
+}
+
+.notes-of-love__circle{
+margin: 0.1em;
+height: 0.5em;
+width: 0.5em;
+background-color: #bbb;
+border-radius: 50%;
+display: inline-block;
+}
+
+.notes-of-love__circle__active{
+  margin: 0.1em;
+  height: 0.5em;
+  width: 0.5em;
+  background-color: #614870;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.notes-of-love__small-text{
+  margin: 0;
+  padding: 0;
+  font-size:0.6em;
+  font-style: italic;
 }
