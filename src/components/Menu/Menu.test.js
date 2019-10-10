@@ -18,14 +18,14 @@ import MyAppointment from '../../App';
 afterEach(cleanup);
 
 test('if the three buttons are rendered', () => {
-  const { getByTestId } = render(
+  const { getByAltText } = render(
     <Router>
       <Menu />
     </Router>
   );
-  const leftButton = getByTestId('leftButton-menu')
-  const middleButton = getByTestId('middleButton-menu')
-  const rightButton = getByTestId('rightButton-menu')
+  const leftButton = getByAltText('helping ourselves')
+  const middleButton = getByAltText('feeling overwhelmed')
+  const rightButton = getByAltText('my appointment')
   expect(leftButton).toBeInTheDocument()
   expect(middleButton).toBeInTheDocument()
   expect(rightButton).toBeInTheDocument()
@@ -33,7 +33,7 @@ test('if the three buttons are rendered', () => {
 
 test('should show FeelingOverwhelmed component for /feelingoverwhelmed route (using memory router)', () => {
     const component = mount(<MemoryRouter initialEntries = {['/feelingoverwhelmed']} >
-        <FeelingOverwhelmed />
+        <App />
       </MemoryRouter>
     );
     expect(component.find(FeelingOverwhelmed)).toHaveLength(1);
@@ -41,7 +41,7 @@ test('should show FeelingOverwhelmed component for /feelingoverwhelmed route (us
 
    test('should show HelpingOurselves component for /HelpingOurselves route (using memory router)', () => {
        const component = mount(<MemoryRouter initialEntries = {['/HelpingOurselves']} >
-           <HelpingOurselves />
+           <App />
          </MemoryRouter>
        );
        expect(component.find(HelpingOurselves)).toHaveLength(1);
@@ -49,17 +49,8 @@ test('should show FeelingOverwhelmed component for /feelingoverwhelmed route (us
 
     test('should show MyAppointment component for /MyAppointment route (using memory router)', () => {
         const component = mount(<MemoryRouter initialEntries = {['/MyAppointment']} >
-            <MyAppointment />
+            <App />
           </MemoryRouter>
         );
         expect(component.find(MyAppointment)).toHaveLength(1);
-       // })
-
-  // it('should show No match component for route not defined', () => {
-  //   const component = mount( <MemoryRouter initialEntries = {['/unknown']} >
-  //       <Routes/>
-  //     </MemoryRouter>
-  //   );
-  //   expect(component.find(NoMatch)).toHaveLength(1);
-  // })
 })
