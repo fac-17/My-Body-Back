@@ -19,19 +19,19 @@ const Welcome = () => {
         the site.{" "}
       </p>
       <div className="welcome__icon__container">
-        <img className="welcome__icon" src={brain} />
+        <img className="welcome__icon" src={brain} alt="brain"/>
         <p className="welcome__text">
           This icon will take you to the "Support & Techniques" section{" "}
         </p>
       </div>
       <div className="welcome__icon__container">
-        <img className="welcome__icon" src={wave} />
+        <img className="welcome__icon" src={wave} alt="wave"/>
         <p className="welcome__text">
           This icon will take you to the "Feeling Overwhelmed" section{" "}
         </p>
       </div>
       <div className="welcome__icon__container">
-        <img className="welcome__icon" src={flower} />
+        <img className="welcome__icon" src={flower} alt="flower"/>
         <p className="welcome__text">
           This icon will take you to the "My Appointment" section{" "}
         </p>

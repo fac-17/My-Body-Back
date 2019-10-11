@@ -1,43 +1,43 @@
-import React from "react";
-import {
-  render,
-  fireEvent,
-  cleanup,
-  waitForElement,
-  queryByTestId
-} from "@testing-library/react";
-import { toBeInTheDocument } from "@testing-library/jest-dom/extend-expect";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import Welcome from "./Welcome.js";
+import React from 'react';
+import { render, fireEvent, cleanup } from '@testing-library/react';
+import { toBeInTheDocument } from '@testing-library/jest-dom/extend-expect';
 
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { MemoryRouter} from 'react-router';
+
+import { shallow, mount } from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
+
+import Welcome from "./Welcome.js";
+import App from '../../App';
 
 afterEach(cleanup);
 
-// Jest works test
+describe("Welcome renders correctly", () => {
+  test("Welcome page renders", () => {
+  const component = mount(
+    <MemoryRouter initialEntries = {['/welcome']} >
+      <App />
+    </MemoryRouter>
+  );
+  expect(component.find(Welcome)).toHaveLength(1);
+})
 
-test("Jest works ok", () => {
-  expect(true).toBeTruthy();
-});
+  test("You see on the page: title, logo, icons", () => {
+      const { getByText, getByAltText } = render(
+          <Router>
+              <Welcome />
+          </Router>
+      );
 
-//Test that the Welcome component renders necessary content
+      const title1 = getByText("Welcome");
+      const brainicon = getByAltText("brain");
+      const waveicon = getByAltText("wave");
+      const flowericon = getByAltText("flower");
 
-describe("Welcome component renders to page with menu", () => {
-  test("Welcome component renders header", () => {
-    const { getByTestId } = render(
-      <Router>
-        <Welcome />
-      </Router>
-    );
-    const header = getByTestId("welcome-title");
-    expect(header).toBeInTheDocument();
-  });
-  test("Welcome component renders menu", () => {
-    const { getByTestId } = render(
-      <Router>
-        <Welcome />
-      </Router>
-    );
-    const menuButton = getByTestId("middleButton-menu");
-    expect(menuButton).toBeInTheDocument();
+      expect(title1).toBeInTheDocument();
+      expect(brainicon).toBeInTheDocument();
+      expect(waveicon).toBeInTheDocument();
+      expect(flowericon).toBeInTheDocument();
   });
 });
