@@ -1,4 +1,5 @@
 import React from "react";
+import Contenteditable from 'react-contenteditable';
 import "./MyAppointment.css";
 import Header from "../Header/Header";
 import Menu from "../Menu/Menu";
@@ -79,7 +80,7 @@ const MyAppointment = () => {
             helpful for me today:
           </p>
           <form id="my-appointment__card">
-          <div contenteditable="true" className="my-appointment__card">
+          <div contentEditable="true" className="my-appointment__card">
             <p>
               Please ask me what I need:
             </p>
@@ -106,7 +107,6 @@ const MyAppointment = () => {
             </ul>
           </div>
             <button className="my-appointment__button">Download</button>
-
           </form>
         </section>
 
