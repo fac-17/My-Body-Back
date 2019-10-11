@@ -1,5 +1,13 @@
-.helping-ourselves__icon {
-  width: 2.5em;
+.helping-ourselves__icon__left{
+  filter:sepia(1.6) saturate(6.5) hue-rotate(89deg);
+  transition:0.5s ease-out;
+  width: 15vh;
+}
+
+.helping-ourselves__icon__right {
+  filter:sepia(1.6) saturate(6.5) hue-rotate(89deg);
+  transition:0.5s ease-out;
+  width: 15vh;
 }
 
 #helping-ourselves__container{

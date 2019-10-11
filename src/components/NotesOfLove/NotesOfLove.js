@@ -7,6 +7,8 @@ import noteFour from "../assets/notes-of-love/notes-of-love-four.png";
 import noteFive from "../assets/notes-of-love/notes-of-love-five.png";
 import noteSix from "../assets/notes-of-love/notes-of-love-six.png";
 import noteSeven from "../assets/notes-of-love/notes-of-love-seven.png";
+import noteEight from "../assets/notes-of-love/notes-of-love-eight.png";
+import instagram from "../assets/notes-of-love/instagram.svg";
 import Header from "../Header/Header";
 import Menu from "../Menu/Menu";
 import "./NotesOfLove.css";
@@ -16,20 +18,11 @@ const NotesOfLove = () => {
 
 const [index, setIndex] = React.useState(0);
 
-React.useEffect(() => {
-    const image = document.querySelectorAll(".notes-of-love__image");
-    const imageArray = Array.from(image);
-
-    imageArray.forEach(element => {
-      element.id == index
-        ? element.classList.add("notes-of-love__image__active")
-        : element.classList.remove("notes-of-love__image__active");
-    });
-  }, [index]);
-
+const imageArray = [ noteOne, noteTwo, noteThree, noteFour, noteFive, noteSix, noteSeven, noteEight ];
+const circleArray = [1, 2, 3, 4, 5, 6, 7, 8];
 
 const swipeLeft = () => {
-  index < 6 ? setIndex(index + 1) : setIndex(index);
+  index < 7 ? setIndex(index + 1) : setIndex(index);
 };
 
 const swipeRight = () => {
@@ -39,19 +32,27 @@ const swipeRight = () => {
   return (
     <section className="notes-of-love__container">
 <Header />
+<h2 className="notes-of-love__header">Notes of Love</h2>
   <Swipeable onSwipedLeft={swipeLeft} onSwipedRight={swipeRight}>
-  <img className="notes-of-love__image" src={noteOne} alt="notes of love one" id="0" />
-  <img className="notes-of-love__image" src={noteTwo} alt="notes of love one" id="1" />
-  <img className="notes-of-love__image" src={noteThree} alt="notes of love one" id="2" />
-  <img className="notes-of-love__image" src={noteFour} alt="notes of love one" id="3" />
-  <img className="notes-of-love__image" src={noteFive} alt="notes of love one" id="4" />
-  <img className="notes-of-love__image" src={noteSix} alt="notes of love one" id="5" />
-  <img className="notes-of-love__image" src={noteSeven} alt="notes of love one" id="6" />
+  {imageArray.map((image, i) => (
+    <div className="image__container"><img src={image}
+    className={i == index ? "notes-of-love__image__active" : "notes-of-love__image"}
+    />
+    </div>
+  ))}
   </Swipeable>
+  <div className="notes-of-love__circle__container">
+{circleArray.map( (circle, i) =>
+  <span
+  className={i == index ? "notes-of-love__circle__active" : "notes-of-love__circle"}>
+  </span>
+ )}
+  </div>
+  <a href="https://www.instagram.com/mybodybackproject/"><img src={instagram} alt="instagram"/></a>
+  <p className="notes-of-love__small-text">See more on Instagram</p>
 <Menu />
 </section>
 )
-
 }
 
 export default NotesOfLove;

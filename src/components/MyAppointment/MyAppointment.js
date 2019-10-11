@@ -23,6 +23,9 @@ const MyAppointment = () => {
     });
   }, [index]);
 
+  // const imageArray = [ notesOfLove, helpAndSupport, emotions, feelingbetter];
+  const circleArray = [1, 2, 3, 4, 5];
+
   const swipingLeft = () => {
     index < 4 ? setIndex(index + 1) : setIndex(index);
   };
@@ -87,7 +90,7 @@ const MyAppointment = () => {
               practising some strategies that may help with this appointment</li>
               If I look really scared or upset, please stop and ask how and if
               we should continue.<li>At the end, please check that I’m safe to
-              go.</li> 
+              go.</li>
               <li>If I am very upset, please help me to call a friend or
               family member</li>
             </ul>
@@ -104,7 +107,12 @@ const MyAppointment = () => {
         </section>
         </section>
       </Swipeable>
-      
+      <div className="my-appointment__circle__container">
+        {circleArray.map((circle, i) => 
+        <span className={i == index ? "my-appointment__circle__active" : "my-appointment__circle"}>
+          </span>
+        )}
+      </div>
       <Menu />
     </section>
   );

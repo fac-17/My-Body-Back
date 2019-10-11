@@ -23,6 +23,11 @@
 .menu__leftbutton {
  height: 1.7em;
 }
+.menu__leftbutton:active{
+  filter: sepia(3.6) saturate(13.5);
+  /* filter:sepia(3.6) saturate(13.5) hue-rotate(36deg); */
+  /* transition:0.5s ease-out; */
+}
 
 .menu__circle{
   z-index:-1;
@@ -32,14 +37,12 @@
   background-color: #614870;
   line-height:100px;
   position: fixed;
-
-
 }
 
 .menu__middlebutton {
-
   padding-left: 0.9em;
   height: 3.5em;
+
 }
 
 .menu__middlebutton:hover{
@@ -51,7 +54,13 @@
   height: 1.5em;
 }
 
+.menu__rightbutton:hover{
+  filter:sepia(1.6) saturate(6.5) hue-rotate(89deg);
+  transition:0.5s ease-out;
+}
+
 .footer {
   height: 9em;
   margin-top: 5em;
-}
+  
+} 

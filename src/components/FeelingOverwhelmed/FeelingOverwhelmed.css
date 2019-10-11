@@ -1,5 +1,7 @@
 .feeling-overwhelmed__icon {
   width: 5vw;
+  filter:sepia(1.6) saturate(6.5) hue-rotate(89deg);
+  transition:0.5s ease-out;
 }
 
 #feeling-overwhelmed__icon-container {

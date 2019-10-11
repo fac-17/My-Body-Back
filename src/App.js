@@ -1,7 +1,6 @@
 import React from "react";
 import "./App.css";
 import {
-  Redirect,
   BrowserRouter as Router,
   Route,
   Switch,
@@ -27,15 +26,14 @@ function App() {
       <Router>
         <Switch>
           <Route exact path="/" component={PrivacyPolicy} />
-          <Route path="/welcome" component={Welcome} />
-          <Route path="/about" component={About} />
-          <Route path="/feelingoverwhelmed" component={FeelingOverwhelmed} />
-          <Route path="/helpingourselves" component={HelpingOurselves} />
-          <Route path="/myappointment" component={MyAppointment} />
-          <Route path="/emotions" component={Emotions} />
-          <Route path="/feelingbetter" component={FeelingBetter} />
-          <Route path="/helpandsupport" component={HelpSupport} />
-          <Route path="/notesoflove" component={NotesOfLove} />
+          <Route exact path="/welcome" component={Welcome} />
+          <Route exact path="/about" component={About} />
+          <Route exact path="/feelingoverwhelmed" component={FeelingOverwhelmed} />
+          <Route exact path="/helpingourselves" component={HelpingOurselves} />
+          <Route exact path="/myappointment" component={MyAppointment} />
+          <Route exact path="/emotions" component={Emotions} />
+          <Route exact path="/feelingbetter" component={FeelingBetter} />
+          <Route exact path="/helpandsupport" component={HelpSupport} />
           <Route path="*" component={PageNotFound} />
         </Switch>
       </Router>
