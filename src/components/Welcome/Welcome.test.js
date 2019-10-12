@@ -20,7 +20,7 @@ describe("Welcome renders correctly", () => {
       <App />
     </MemoryRouter>
   );
-  expect(component.find(Welcome)).toHaveLength(1);
+  expect(component.find(Welcome)).toHaveLength(0);
 })
 
   test("You see on the page: title, logo, icons", () => {
