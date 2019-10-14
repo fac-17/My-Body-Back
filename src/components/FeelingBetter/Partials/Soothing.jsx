@@ -1,6 +1,6 @@
 import React from "react";
-import soothingAudio from "../../assets/Soothing.m4a";
-import slowDownAudio from "../../assets/slow-down.m4a";
+import soothingAudio from "../../assets/audio/Soothing.m4a";
+import slowDownAudio from "../../assets/audio/slow-down.m4a";
 
 const Soothing = () => {
   return (

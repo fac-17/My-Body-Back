@@ -1,7 +1,7 @@
 import React from "react";
-import selfAudio from "../../assets/selfAudio.m4a";
-import focusAudio from "../../assets/focusAudio.m4a";
-import voiceAudio from "../../assets/voiceVideo.mp4";
+import selfAudio from "../../assets/audio/selfAudio.m4a";
+import focusAudio from "../../assets/audio/focusAudio.m4a";
+import voiceAudio from "../../assets/video/voiceVideo.mp4";
 
 const Compassion = () => {
   return (

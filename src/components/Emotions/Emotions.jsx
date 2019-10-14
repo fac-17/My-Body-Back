@@ -1,8 +1,8 @@
 import React from "react";
 import Header from "../Header/Header";
 import Menu from "../Menu/Menu";
-import traumaVideo from "../assets/Trauma.mp4";
-import emotionsVideo from "../assets/Emotions.mp4";
+import traumaVideo from "../assets/video/Trauma.mp4";
+import emotionsVideo from "../assets/video/Emotions.mp4";
 import "./Emotions.css";
 
 const Emotions = () => {
