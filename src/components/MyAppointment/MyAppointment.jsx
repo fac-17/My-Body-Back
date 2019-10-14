@@ -4,6 +4,7 @@ import Header from "../Header/Header";
 import Menu from "../Menu/Menu";
 import { Link } from "react-router-dom";
 import { Swipeable } from "react-swipeable";
+import afterAudio from "../assets/audio/afterAudio.mp3";
 
 const MyAppointment = () => {
   const [index, setIndex] = React.useState(0);
@@ -99,7 +100,9 @@ const MyAppointment = () => {
 
           <section className="my-appointment__section" id="4">
             <h2>After your appointment</h2>
-            <audio>Audio here</audio>
+            <audio controls>
+              <source src={afterAudio} type="audio/mp3" />
+            </audio>
             <Link to="/notesoflove">
               <p>See the Notes of LOVE section before your appointment</p>
             </Link>
