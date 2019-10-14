@@ -1,8 +1,8 @@
 import React from "react";
 import Header from "../Header/Header";
 import Menu from "../Menu/Menu";
-import email from "../assets/email-mbb.svg";
-import call from "../assets/call-mbb.svg";
+import email from "../assets/icons/email-mbb.svg";
+import call from "../assets/icons/call-mbb.svg";
 
 import "./HelpSupport.css";
 

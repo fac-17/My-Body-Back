@@ -1,7 +1,7 @@
 import React from "react";
 import "./Header.css";
-import logo from "../assets/myBodyBackLogo.svg";
-import butterfly from "../assets/butterfly.svg";
+import logo from "../assets/icons/myBodyBackLogo.svg";
+import butterfly from "../assets/icons/butterfly.svg";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 const Header = () => {
