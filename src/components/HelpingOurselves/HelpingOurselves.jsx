@@ -3,8 +3,8 @@ import "./HelpingOurselves.css";
 import Header from "../Header/Header";
 import Menu from "../Menu/Menu";
 import { Link } from "react-router-dom";
-import emotions from "../assets/emotions.svg";
-import feelingbetter from "../assets/feelingbetter.svg";
+import emotions from "../assets/icons/emotions.svg";
+import feelingbetter from "../assets/icons/feelingbetter.svg";
 import { useSwipeable, Swipeable } from "react-swipeable";
 
 
