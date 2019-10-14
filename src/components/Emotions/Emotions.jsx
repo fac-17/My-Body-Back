@@ -1,8 +1,8 @@
 import React from "react";
 import Header from "../Header/Header";
 import Menu from "../Menu/Menu";
-import traumaVideo from "../assets/Trauma.mp4";
-import emotionsVideo from "../assets/Emotions.mp4";
+import traumaVideo from "../assets/video/Trauma.mp4";
+import emotionsVideo from "../assets/video/Emotions.mp4";
 import "./Emotions.css";
 
 const Emotions = () => {
@@ -14,10 +14,12 @@ const Emotions = () => {
         <section id="emotions__section-one">
           <h3>Why is this so difficult?!</h3>
           <figure className="emotions__figure">
-            <video width="300" height="200" controls>
-              <source src={traumaVideo} type="video/mp4" />
-              Your browser does not support video.
-            </video>
+            <div className="emotions__video-wrapper">
+              <video className="emotions__video" controls>
+                <source src={traumaVideo} type="video/mp4" />
+                Your browser does not support video.
+              </video>
+            </div>
             <figcaption>
               A video about what happens in the brain when you are faced with a
               triggering situation, like thinking about a cervical screening.
@@ -28,10 +30,12 @@ const Emotions = () => {
         <section id="emotions__section-two">
           <h3>How our emotions work</h3>
           <figure className="emotions__figure">
-            <video width="300" height="200" controls>
-              <source src={emotionsVideo} type="video/mp4" />
-              Your browser does not support video.
-            </video>
+            <div className="emotions__video-wrapper">
+              <video className="emotions__video" controls>
+                <source src={emotionsVideo} type="video/mp4" />
+                Your browser does not support video.
+              </video>
+            </div>
             <figcaption>
               Clinical Psychologist Dr Jane Vosper talks about the brain’s
               emotion systems.

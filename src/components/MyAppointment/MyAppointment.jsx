@@ -4,30 +4,36 @@ import Header from "../Header/Header";
 import Menu from "../Menu/Menu";
 import { Link } from "react-router-dom";
 import { Swipeable } from "react-swipeable";
+import afterAudio from "../assets/audio/afterAudio.mp3";
+import PreparationTips from "./Partials/PreparationTips";
 
 const MyAppointment = () => {
-  const [index, setIndex] = React.useState(0);
+  const [appointmentSection, setAppointmentSection] = React.useState(0);
 
   React.useEffect(() => {
     const image = document.querySelectorAll(".my-appointment__section");
     const imageArray = Array.from(image);
 
     imageArray.forEach(element => {
-      element.id == index
+      element.id == appointmentSection
         ? element.classList.add("my-appointment__section-active")
         : element.classList.remove("my-appointment__section-active");
     });
-  }, [index]);
+  }, [appointmentSection]);
 
   // const imageArray = [ notesOfLove, helpAndSupport, emotions, feelingbetter];
   const circleArray = [1, 2, 3, 4, 5];
 
   const swipingLeft = () => {
-    index < 4 ? setIndex(index + 1) : setIndex(index);
+    appointmentSection < 4
+      ? setAppointmentSection(appointmentSection + 1)
+      : setAppointmentSection(appointmentSection);
   };
 
   const swipingRight = () => {
-    index > 0 ? setIndex(index - 1) : setIndex(index);
+    appointmentSection > 0
+      ? setAppointmentSection(appointmentSection - 1)
+      : setAppointmentSection(appointmentSection);
   };
 
   return (
@@ -48,12 +54,8 @@ const MyAppointment = () => {
           </section>
           <section className="my-appointment__section" id="1">
             <h2>Preparation</h2>
-            <div id="my-appointment__page-one">
-              <p>
-                Firstly, and most importantly, you don’t have to do anything
-                until you feel ready
-              </p>
-            </div>
+            <PreparationTips />
+            <p>Tap for next Tip</p>
           </section>
           <section className="my-appointment__section" id="2">
             <h2>Your Appointment</h2>
@@ -99,10 +101,14 @@ const MyAppointment = () => {
 
           <section className="my-appointment__section" id="4">
             <h2>After your appointment</h2>
-            <audio>Audio here</audio>
-            <Link to="/notesoflove">
-              <p>See the Notes of LOVE section before your appointment</p>
-            </Link>
+            <audio controls>
+              <source src={afterAudio} type="audio/mp3" />
+            </audio>
+
+            <p>
+              See the <Link to="/notesoflove">Notes of LOVE</Link> section
+              before your appointment
+            </p>
           </section>
         </section>
       </Swipeable>
@@ -110,7 +116,7 @@ const MyAppointment = () => {
         {circleArray.map((circle, i) => (
           <span
             className={
-              i == index
+              i == appointmentSection
                 ? "my-appointment__circle__active"
                 : "my-appointment__circle"
             }
