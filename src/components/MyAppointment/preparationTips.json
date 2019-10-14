@@ -1,13 +1,31 @@
 {
-  "tips": {
-    "1": "Firstly, and most importantly, you don’t have to do anything until you feel ready.",
-    "2": "Think about the reasons why it is important to you to have a screening. Why are you here, using this app? By booking a test you are taking compassionate action to care for your health, which you deserve and are entitled to. But taking the process at the right pace for you is also compassionate.",
-    "3": "You could begin with contacting your GP surgery to find out when cervical screening clinics take place. They might be every day, or only at certain times.",
-    "4": "You might like to make an appointment just to talk about the test. If you have specific questions about the procedure, then you could write them down in advance to take with you. You could ask the clinician to show you the clinic room and the equipment they use.",
-    "5": "If you know the staff at your GP surgery, you can ask for a specific clinician that you feel comfortable with. You might want to specifically request a female.",
-    "6": "You could ask to book a longer appointment than usual, or to have more than one appointment, to enable you to take it at your own pace and not feel rushed.",
-    "7": "Consider planning what you will wear. For example, some people find that wearing a skirt feels less exposing because you don’t need to take it off for the test.",
-    "8": "Consider asking a trusted friend or family member to go to the appointment with you – just having them there might activate your soothing system.",
-    "9": "Plan a pleasant activity for after the appointment. This could be a walk in a park, watching your favourite movie at home and eating a nourishing meal, or treating yourself to an indulgent dessert – whatever feels right for you."
-  }
+  "content": [
+    {
+      "tip": "Firstly, and most importantly, you don’t have to do anything until you feel ready."
+    },
+    {
+      "tip": "Think about the reasons why it is important to you to have a screening. Why are you here, using this app? By booking a test you are taking compassionate action to care for your health, which you deserve and are entitled to. But taking the process at the right pace for you is also compassionate."
+    },
+    {
+      "tip": "You could begin with contacting your GP surgery to find out when cervical screening clinics take place. They might be every day, or only at certain times."
+    },
+    {
+      "tip": "You might like to make an appointment just to talk about the test. If you have specific questions about the procedure, then you could write them down in advance to take with you. You could ask the clinician to show you the clinic room and the equipment they use."
+    },
+    {
+      "tip": "If you know the staff at your GP surgery, you can ask for a specific clinician that you feel comfortable with. You might want to specifically request a female."
+    },
+    {
+      "tip": "You could ask to book a longer appointment than usual, or to have more than one appointment, to enable you to take it at your own pace and not feel rushed."
+    },
+    {
+      "tip": "Consider planning what you will wear. For example, some people find that wearing a skirt feels less exposing because you don’t need to take it off for the test."
+    },
+    {
+      "tip": "Consider asking a trusted friend or family member to go to the appointment with you – just having them there might activate your soothing system."
+    },
+    {
+      "tip": "Plan a pleasant activity for after the appointment. This could be a walk in a park, watching your favourite movie at home and eating a nourishing meal, or treating yourself to an indulgent dessert – whatever feels right for you."
+    }
+  ]
 }
