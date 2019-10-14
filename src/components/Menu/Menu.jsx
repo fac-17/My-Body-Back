@@ -1,9 +1,9 @@
 import React from "react";
 
 import "./Menu.css";
-import brain from "../assets/brain.svg";
-import wave from "../assets/wave.svg";
-import flower from "../assets/flower.svg";
+import brain from "../assets/icons/brain.svg";
+import wave from "../assets/icons/wave.svg";
+import flower from "../assets/icons/flower.svg";
 
 import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 
