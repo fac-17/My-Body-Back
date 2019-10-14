@@ -1,7 +1,7 @@
 import React from "react";
 import { render, cleanup, fireEvent } from "@testing-library/react";
 import { toBeInTheDocument } from "@testing-library/jest-dom/extend-expect";
-import Header from "./Header.js";
+import Header from "./Header";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 afterEach(cleanup);
