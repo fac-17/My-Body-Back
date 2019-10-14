@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "axios": "^0.19.0",
     "netlify-lambda": "^1.6.3",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
@@ -15,8 +16,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lambda-serve": "netlify-lambda serve functions",
-    "lambda-build": "netlify-lambda build functions" 
+    "lambda-serve": "netlify-lambda serve src/functions",
+    "lambda-build": "netlify-lambda build src/functions"
   },
   "eslintConfig": {
     "extends": "react-app"
