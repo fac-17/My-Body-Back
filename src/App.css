@@ -24,12 +24,15 @@ figcaption {
   font-size: 0.8em;
   color: black;
   margin: 1em 1em 2em 1em;
+  line-height: 1.2em;
 }
 
 p {
   font-family: 'Montserrat', sans-serif;
   font-size: 0.8em;
   color: black;
+  margin-left: 2em;
+  margin-right: 2em;
 }
 
 .App {
