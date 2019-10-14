@@ -51,7 +51,7 @@ const FeelingBetter = () => {
             id="home"
             onClick={() => setCurrentPage("home")}
           >
-            home
+            Feeling better
           </button>
           <Soothing />
         </section>
