@@ -1,10 +1,8 @@
-p{
+p {
   line-height: 2em;
-  display: flex;
-  justify-content: center;
 }
 
-#my-appointment__container{
+#my-appointment__container {
   height: 100vh;
 }
 .my-appointment__section {
@@ -18,26 +16,25 @@ p{
   align-content: center;
 }
 
-.my-appointment__body{
+.my-appointment__body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 1em; 
+  margin: 1em;
   align-content: flex-start;
 }
 
 #my-appointment__page-one {
- display: flex;
- margin: auto;
- align-items: center;
- width: 75vw;
- height: 30vh;
- background: #614870;
- border-radius: 0 2.5em;
+  display: flex;
+  margin: auto;
+  align-items: center;
+  width: 75vw;
+  height: 30vh;
+  background: #614870;
+  border-radius: 0 2.5em;
 }
 
-#my-appointment__page-one p
-{
+#my-appointment__page-one p {
   padding: 0.2em;
   color: white;
 }
@@ -53,43 +50,41 @@ p{
   height: auto;
   background: #614870;
   border-radius: 0 2.5em;
-   
 }
 
-.my-appointment__card ul{
+.my-appointment__card ul {
   padding: 1.5em;
   color: white;
   line-height: 1.6em;
   list-style-type: none;
 }
 
-.my-appointment__card p{
+.my-appointment__card p {
   color: white;
 }
 
-.my-appointment__button{
+.my-appointment__button {
   width: 40vw;
   height: 33px;
   background-color: #614870;
   border-radius: 0 0.8em;
   margin: 2em;
-  color: white; 
+  color: white;
 }
- .my-appointment__circle__container {
+.my-appointment__circle__container {
   margin-top: 0.3em;
- }
-
-
- .my-appointment__circle{
-margin: 0.1em;
-height: 0.5em;
-width: 0.5em;
-background-color: #bbb;
-border-radius: 50%;
-display: inline-block;
 }
 
-.my-appointment__circle__active{
+.my-appointment__circle {
+  margin: 0.1em;
+  height: 0.5em;
+  width: 0.5em;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.my-appointment__circle__active {
   margin: 0.1em;
   height: 0.5em;
   width: 0.5em;
@@ -97,4 +92,3 @@ display: inline-block;
   border-radius: 50%;
   display: inline-block;
 }
-

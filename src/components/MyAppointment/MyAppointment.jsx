@@ -103,9 +103,11 @@ const MyAppointment = () => {
             <audio controls>
               <source src={afterAudio} type="audio/mp3" />
             </audio>
-            <Link to="/notesoflove">
-              <p>See the Notes of LOVE section before your appointment</p>
-            </Link>
+
+            <p>
+              See the <Link to="/notesoflove">Notes of LOVE</Link> section
+              before your appointment
+            </p>
           </section>
         </section>
       </Swipeable>
