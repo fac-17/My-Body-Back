@@ -1,5 +1,6 @@
 import React from "react";
 import { preparationContent } from "./preparationTips.json";
+import "./PreparationTips.css";
 
 const PreparationTips = () => {
   const [

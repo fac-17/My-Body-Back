@@ -54,6 +54,7 @@ const MyAppointment = () => {
           <section className="my-appointment__section" id="1">
             <h2>Preparation</h2>
             <PreparationTips />
+            <p>Tap for next Tip</p>
           </section>
           <section className="my-appointment__section" id="2">
             <h2>Your Appointment</h2>

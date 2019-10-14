@@ -26,21 +26,6 @@ p {
   align-content: flex-start;
 }
 
-#my-appointment__page-one {
-  display: flex;
-  margin: auto;
-  align-items: center;
-  width: 75vw;
-  height: 30vh;
-  background: #614870;
-  border-radius: 0 2.5em;
-}
-
-#my-appointment__page-one p {
-  padding: 0.2em;
-  color: white;
-}
-
 /* ----- my appointment section n3 ----- */
 
 .my-appointment__card {
