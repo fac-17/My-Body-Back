@@ -12,6 +12,8 @@ import Emotions from "./components/Emotions/Emotions";
 import FeelingBetter from "./components/FeelingBetter/FeelingBetter";
 import HelpSupport from "./components/HelpSupport/HelpSupport";
 import NotesOfLove from "./components/NotesOfLove/NotesOfLove";
+import ExtraResources from "./components/ExtraResources/ExtraResources";
+
 
 function App() {
   return (
@@ -32,6 +34,7 @@ function App() {
           <Route exact path="/feelingbetter" component={FeelingBetter} />
           <Route exact path="/helpandsupport" component={HelpSupport} />
           <Route exact path="/notesoflove" component={NotesOfLove} />
+          <Route exact path="/extraresources" component={ExtraResources} />
           <Route path="*" component={PageNotFound} />
         </Switch>
       </Router>
