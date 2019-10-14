@@ -8,8 +8,7 @@ import {
 } from "@testing-library/react";
 import { toBeInTheDocument } from "@testing-library/jest-dom/extend-expect";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import Welcome from "./Welcome.js";
-
+import Welcome from "./Welcome";
 
 afterEach(cleanup);
 
