@@ -4,11 +4,12 @@ import Header from "../Header/Header";
 import Menu from "../Menu/Menu";
 import { Link } from "react-router-dom";
 import { Swipeable } from "react-swipeable";
-import { content } from "./preparationTips.json";
+import { preparationContent } from "./preparationTips.json";
 
 const MyAppointment = () => {
-  console.log(content);
+  console.log(preparationContent[0]);
   const [appointmentSection, setAppointmentSection] = React.useState(0);
+  let currentPreparationTipIndex = 0;
 
   React.useEffect(() => {
     const image = document.querySelectorAll(".my-appointment__section");
@@ -36,6 +37,15 @@ const MyAppointment = () => {
       : setAppointmentSection(appointmentSection);
   };
 
+  const nextTip = () => {
+    if (currentPreparationTipIndex < preparationContent.length) {
+      currentPreparationTipIndex++;
+    } else {
+      currentPreparationTipIndex = 0;
+    }
+    console.log(preparationContent[currentPreparationTipIndex].tip);
+  };
+
   return (
     <section id="my-appointment__container">
       <Header />
@@ -54,11 +64,8 @@ const MyAppointment = () => {
           </section>
           <section className="my-appointment__section" id="1">
             <h2>Preparation</h2>
-            <div id="my-appointment__page-one">
-              <p>
-                Firstly, and most importantly, you don’t have to do anything
-                until you feel ready
-              </p>
+            <div id="my-appointment__page-one" onClick={nextTip}>
+              <p>{preparationContent[currentPreparationTipIndex].tip}</p>
             </div>
           </section>
           <section className="my-appointment__section" id="2">
