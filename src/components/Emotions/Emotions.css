@@ -1,22 +1,20 @@
 .emotions__figure {
   margin: 0;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #emotions__section-one {
-  
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-content: center;
 
 }
 
 .emotions__video-wrapper {
   width: 12.5em;
-  background-color: green;
   height: 9em;
-  display:flex;
-  justify-content: center;
 }
 
 .emotions__video {
