@@ -2,9 +2,22 @@
     display: none;
   }
   
-  .coping__section-active {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-  }
+.coping__section-active {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  width: 18em;
+  height: 15em;
+}
+
+#coping-section__container {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.coping-section__file {
+  width: 100%;
+  height: 100%;
+}

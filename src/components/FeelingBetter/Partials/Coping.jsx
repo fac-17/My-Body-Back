@@ -25,7 +25,7 @@ const swipingRight = () => {
         <h3>Tips for coping with anxiety, panic, flashbacks and dissociation</h3>
         <Swipeable onSwipedLeft={swipingLeft} onSwipedRight={swipingRight}>
         <section className={index == 0  ? "coping__section-active" : "coping__section"} id="0">
-          <video controls width="300" height="200" >
+          <video className="coping-section__file" controls>
             <source src={groundingVideo} type="video/mp4" />
           </video>
         </section>
