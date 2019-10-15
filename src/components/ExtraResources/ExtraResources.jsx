@@ -5,6 +5,8 @@ import Menu from "../Menu/Menu";
 
 const ExtraResources = () => {
   const [data, setData] = React.useState([]);
+  const [urls, setUrls] = React.useState([]);
+  const [titles, setTitles] = React.useState([]);
 
   React.useEffect(() => {
     async function getInfo() {
@@ -14,15 +16,23 @@ const ExtraResources = () => {
   }
 
 getInfo()
-.then(json => setData(json.records[0].fields))
+.then(json => setData(json.records))
+
+// let Urls = data.forEach((record) => {
+//   return record.fields.Link
+// })
+//
+// return Urls;
 
 }, []);
 
-// console.log("This is data", data.Link);
+console.log("This is data", data);
 
-const youtubeurl = data.Link;
+
+// const youtubeurl = data.Link;
 // const youtubeId = youtubeurl.split('v=', 2)[1];
-console.log("This is URL", youtubeurl);
+// console.log("This is URL", youtubeurl);
+
 const youtubeId = "drJwMlD9Mjo";
 
   return(
