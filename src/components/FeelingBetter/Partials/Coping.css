@@ -1,6 +1,6 @@
-/* .coping__section {
+.coping__section {
     display: none;
-  } */
+  }
   
   .coping__section-active {
     display: flex;

@@ -16,8 +16,8 @@ const Coping = () => {
     videoArray.forEach(element => {
       console.log(videoArray)
       element.id == index
-      ? element.classList.add(".coping__section-active")
-      : element.classList.remove(".coping__section-active");
+      ? element.classList.add("coping__section-active")
+      : element.classList.remove("coping__section-active");
   });
 }, [index]);
 
