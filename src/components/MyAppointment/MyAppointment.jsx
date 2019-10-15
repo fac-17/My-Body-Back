@@ -7,6 +7,7 @@ import { Swipeable } from "react-swipeable";
 import afterAudio from "../assets/audio/afterAudio.mp3";
 import duringAudio from "../assets/audio/duringAudio.wav";
 import PreparationTips from "./Partials/PreparationTips.jsx";
+import { motion } from "framer-motion";
 
 const MyAppointment = () => {
   const [appointmentSection, setAppointmentSection] = React.useState(0);
@@ -123,7 +124,13 @@ const MyAppointment = () => {
                   </li>
                 </ul>
               </div>
-              <button className="my-appointment__button">Download</button>
+              <motion.button className="my-appointment__button"
+    style={MyAppointment.css}
+    whileHover={{ scale: 1.1 }}
+    whileTap={{ scale: 0.9, x: "-5px", y: "5px" }}
+  >Download
+              {/* <button className="my-appointment__button">Download</button> */}
+              </motion.button>
             </form>
           </section>
 
