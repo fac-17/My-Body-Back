@@ -13,7 +13,7 @@ const MyAppointment = () => {
     const imageArray = Array.from(image);
 
     imageArray.forEach(element => {
-      element.id == index
+      element.id === index
         ? element.classList.add("my-appointment__section-active")
         : element.classList.remove("my-appointment__section-active");
     });
@@ -110,7 +110,7 @@ const MyAppointment = () => {
         {circleArray.map((circle, i) => (
           <span
             className={
-              i == index
+              i === index
                 ? "my-appointment__circle__active"
                 : "my-appointment__circle"
             }

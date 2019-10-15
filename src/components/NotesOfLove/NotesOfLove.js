@@ -38,7 +38,7 @@ const swipeRight = () => {
     <div className="image__container">
     <img
     src={image}
-    className={i == index ? "notes-of-love__image__active" : "notes-of-love__image"}
+    className={i === index ? "notes-of-love__image__active" : "notes-of-love__image"}
     alt="Note of love"/>
     </div>
   ))}
@@ -46,7 +46,7 @@ const swipeRight = () => {
   <div className="notes-of-love__circle__container">
 {circleArray.map( (circle, i) =>
   <span
-  className={i == index ? "notes-of-love__circle__active" : "notes-of-love__circle"}>
+  className={i === index ? "notes-of-love__circle__active" : "notes-of-love__circle"}>
   </span>
  )}
   </div>
