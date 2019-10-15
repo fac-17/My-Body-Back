@@ -9,6 +9,7 @@ import pmrAudio from "../../assets/audio/pmrAudio.m4a";
 const Coping = () => {
   
   const [index, setIndex] = React.useState(0);
+  const circleArray = [1, 2, 3];
  
   const swipingLeft = () => {
   index < 3 ? setIndex(index + 1) : setIndex(index);
@@ -42,6 +43,15 @@ const swipingRight = () => {
       </audio>
       </section>
     </Swipeable>
+    <div className="coping__circle__container">
+          <span
+            className={
+              index == 0
+                ? "coping__section-active"
+                : "coping__section"
+            }
+          />
+      </div>
     </section>
   );
 };
