@@ -4,11 +4,8 @@ import Menu from "../Menu/Menu";
 
 
 const ExtraResources = () => {
-  const [data, setData] = React.useState([]);
-  const [urls, setUrls] = React.useState([]);
-  const [titles, setTitles] = React.useState([]);
-
-  React.useEffect(() => {
+  const [data, setData] = React.useState(null);
+  React.useMemo(() => {
     async function getInfo() {
     const response = await fetch("http://localhost:9000/getData")
     const json = await response.json();
@@ -18,30 +15,35 @@ const ExtraResources = () => {
 getInfo()
 .then(json => setData(json.records))
 
-// let Urls = data.forEach((record) => {
-//   return record.fields.Link
-// })
-//
-// return Urls;
-
 }, []);
 
-console.log("This is data", data);
+let urlsArray = [];
+let descriptionArray = [];
+let titleArray = [];
 
+if(data !== null){
+  data.forEach((record) => {
+  urlsArray.push(record.fields.Link);
+  descriptionArray.push(record.fields.Decription);
+  titleArray.push(record.fields.Title);
+  })
+}
 
-// const youtubeurl = data.Link;
-// const youtubeId = youtubeurl.split('v=', 2)[1];
-// console.log("This is URL", youtubeurl);
+console.log(titleArray);
 
 const youtubeId = "drJwMlD9Mjo";
 
-  return(
+    if(data === null) {
+      return(<div><h1>...loading</h1></div>)
+    } else {
+    return(
     <div>
     <Header />
     <iframe src={`https://www.youtube.com/embed/${youtubeId}`} />
     <Menu />
   </div>
 )
+}
 };
 
 export default ExtraResources;
