@@ -7,6 +7,7 @@ import { Swipeable } from "react-swipeable";
 import afterAudio from "../assets/audio/afterAudio.mp3";
 import duringAudio from "../assets/audio/duringAudio.wav";
 import PreparationTips from "./Partials/PreparationTips.jsx";
+import MyAppointmentCopy from "./MyAppointmentCopy.json";
 
 const MyAppointment = () => {
   const [appointmentSection, setAppointmentSection] = React.useState(0);
@@ -37,14 +38,7 @@ const MyAppointment = () => {
             }
           >
             <h2>My Appointment</h2>
-            <p>
-              You may find that just thinking about the possibility of a smear
-              test triggers some difficult memories. If these feel particularly
-              distressing it is important to speak to someone you trust. Please
-              check out our ‘I need help’ page for some suggestions of places
-              you can contact for support. Find here some practical tips to
-              prepare for your appointment.
-            </p>
+            <p>{MyAppointmentCopy.pageOneContent[0].text}</p>
           </section>
           <section
             className={
