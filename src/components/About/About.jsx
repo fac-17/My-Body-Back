@@ -2,7 +2,7 @@ import React from "react";
 import "./About.css";
 import Menu from "../Menu/Menu";
 import Header from "../Header/Header";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 // import Zoom from 'react-reveal/Fade';
 
 const About = () => {

@@ -108,7 +108,7 @@ const MyAppointment = () => {
               <div className="my-appointment__card">
                 <p>Please ask me what I need:</p>
                 <ul>
-                  <li>I may need more time than usual</li>
+                  <li>"I may need more time than usual</li>
                   <li>Please take this slowly. Please stop if I say stop</li>
                   <li>
                     I have been practising some strategies that may help with
@@ -150,7 +150,7 @@ const MyAppointment = () => {
         {circleArray.map((circle, i) => (
           <span
             className={
-              i == appointmentSection
+              i === appointmentSection
                 ? "my-appointment__circle__active"
                 : "my-appointment__circle"
             }

@@ -21,11 +21,7 @@ function App() {
           <Route exact path="/" component={PrivacyPolicy} />
           <Route exact path="/welcome" component={Welcome} />
           <Route exact path="/about" component={About} />
-          <Route
-            exact
-            path="/feelingoverwhelmed"
-            component={FeelingOverwhelmed}
-          />
+          <Route exact path="/feelingoverwhelmed" component={FeelingOverwhelmed} />
           <Route exact path="/helpingourselves" component={HelpingOurselves} />
           <Route exact path="/myappointment" component={MyAppointment} />
           <Route exact path="/emotions" component={Emotions} />
