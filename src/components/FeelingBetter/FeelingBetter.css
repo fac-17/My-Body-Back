@@ -1,0 +1,15 @@
+#feeling-better__body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.feeling-better__button {
+    width: 7em;
+    height: 3em;
+    border-radius: 5em;
+    margin: 1.5em;
+    background-color:614870;
+    
+}
