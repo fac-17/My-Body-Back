@@ -9,12 +9,7 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import About from "./About.js";
 import { toBeInTheDocument } from "@testing-library/jest-dom/extend-expect";
 
-
 afterEach(cleanup);
-
-test("Jest works ok", () => {
-    expect(true).toBeTruthy();
-});
 
   describe("About component renders correctly", () => {
     test("You see on the page: title, logo", () => {
@@ -28,4 +23,13 @@ test("Jest works ok", () => {
         expect(header).toBeInTheDocument();
         expect(logo).toBeInTheDocument();
     });
+
+    // test("Is there any header on the page?", () => {
+    //   const [title] = await waitForElement(() => [
+    //     getByText('About', { exact: true }),
+    //     getByText('hello', { exact: false })
+    //   ]);
+    //
+    //   expect(title).toHaveContent('About');
+    // });
   });

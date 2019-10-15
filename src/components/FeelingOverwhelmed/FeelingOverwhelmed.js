@@ -5,7 +5,7 @@ import Menu from "../Menu/Menu";
 import notesOfLove from "../assets/nol.svg";
 import helpAndSupport from "../assets/has.svg";
 import { Link } from "react-router-dom";
-import { useSwipeable, Swipeable } from "react-swipeable";
+import { Swipeable } from "react-swipeable";
 
 const FeelingOverwhelmed = () => {
 

@@ -5,7 +5,7 @@ import brain from "../assets/brain.svg";
 import wave from "../assets/wave.svg";
 import flower from "../assets/flower.svg";
 
-import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
+import { BrowserRouter as Link } from "react-router-dom";
 
 import { configure } from "enzyme";
 import Adapter from "enzyme-adapter-react-16";
