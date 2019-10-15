@@ -6,14 +6,16 @@ const ExtraResources = () => {
   React.useEffect(() => {
     fetch("http://localhost:9000/getData")
       .then(res => res.json())
-      .then( res => {console.log(res)})
-      .then(res => setData(data))
-      // .then(res => console.log(data));
+      .then(res => setData(res.records[0].fields))
   }, []);
+
+
+console.log(data.Link);
+const youtubeId = "drJwMlD9Mjo";
 
   return(
   <div>
-    <h1>HELLO</h1>
+    <iframe src={`https://www.youtube.com/embed/${youtubeId}`} />
   </div>
 )
 };

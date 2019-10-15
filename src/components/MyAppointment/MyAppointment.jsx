@@ -5,7 +5,7 @@ import Menu from "../Menu/Menu";
 import { Link } from "react-router-dom";
 import { Swipeable } from "react-swipeable";
 import afterAudio from "../assets/audio/afterAudio.mp3";
-import PreparationTips from "./Partials/PreparationTips";
+import PreparationTips from "./Partials/PreparationTips.jsx";
 
 const MyAppointment = () => {
   const [appointmentSection, setAppointmentSection] = React.useState(0);
