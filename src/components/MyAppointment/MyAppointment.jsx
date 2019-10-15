@@ -60,8 +60,7 @@ const MyAppointment = () => {
           >
             <h2>During Your Appointment</h2>
             <p id="my-appointment__page-two">
-              Louise Cadman, Nurse Specialist outlines some practical tips for
-              your screening appointment.
+            {MyAppointmentCopy.pageTwoContent[0].text}
             </p>
             <audio controls>
               <source src={duringAudio} type="audio/wav" />
@@ -76,11 +75,7 @@ const MyAppointment = () => {
           >
             <h2>Your Appointment</h2>
             <p id="my-appointment__page-three">
-              If you would like the smear taker to know that you have been
-              sexually assaulted, but don’t want to say it out loud, then you
-              could show them our appointment card on your phone. If these words
-              aren’t right for you, you’ll be able to edit it and save it to
-              your device.
+            {MyAppointmentCopy.pageThreeContent[0].text}
             </p>
           </section>
 
