@@ -124,13 +124,7 @@ const MyAppointment = () => {
                   </li>
                 </ul>
               </div>
-              <motion.button className="my-appointment__button"
-    style={MyAppointment.css}
-    whileHover={{ scale: 1.1 }}
-    whileTap={{ scale: 0.9, x: "-5px", y: "5px" }}
-  >Download
-              {/* <button className="my-appointment__button">Download</button> */}
-              </motion.button>
+              <button className="my-appointment__button">Download</button> 
             </form>
           </section>
 
