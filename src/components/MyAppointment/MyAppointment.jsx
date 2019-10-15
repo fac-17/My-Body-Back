@@ -10,19 +10,6 @@ import PreparationTips from "./Partials/PreparationTips.jsx";
 
 const MyAppointment = () => {
   const [appointmentSection, setAppointmentSection] = React.useState(0);
-
-  React.useEffect(() => {
-    const image = document.querySelectorAll(".my-appointment__section");
-    const imageArray = Array.from(image);
-
-    imageArray.forEach(element => {
-      element.id == appointmentSection
-        ? element.classList.add("my-appointment__section-active")
-        : element.classList.remove("my-appointment__section-active");
-    });
-  }, [appointmentSection]);
-
-  // const imageArray = [ notesOfLove, helpAndSupport, emotions, feelingbetter];
   const circleArray = [1, 2, 3, 4, 5, 6];
 
   const swipingLeft = () => {
@@ -42,7 +29,13 @@ const MyAppointment = () => {
       <Header />
       <Swipeable onSwipedLeft={swipingLeft} onSwipedRight={swipingRight}>
         <section className="my-appointment__body">
-          <section className="my-appointment__section" id="0">
+          <section
+            className={
+              appointmentSection === 0
+                ? "my-appointment__section_active"
+                : "my-appointment__section"
+            }
+          >
             <h2>My Appointment</h2>
             <p>
               You may find that just thinking about the possibility of a smear
@@ -53,12 +46,24 @@ const MyAppointment = () => {
               prepare for your appointment.
             </p>
           </section>
-          <section className="my-appointment__section" id="1">
+          <section
+            className={
+              appointmentSection === 1
+                ? "my-appointment__section_active"
+                : "my-appointment__section"
+            }
+          >
             <h2>Preparation</h2>
             <PreparationTips />
             <p>Tap for next Tip</p>
           </section>
-          <section className="my-appointment__section" id="2">
+          <section
+            className={
+              appointmentSection === 2
+                ? "my-appointment__section_active"
+                : "my-appointment__section"
+            }
+          >
             <h2>During Your Appointment</h2>
             <p id="my-appointment__page-two">
               Louise Cadman, Nurse Specialist outlines some practical tips for
@@ -68,7 +73,13 @@ const MyAppointment = () => {
               <source src={duringAudio} type="audio/wav" />
             </audio>
           </section>
-          <section className="my-appointment__section" id="3">
+          <section
+            className={
+              appointmentSection === 3
+                ? "my-appointment__section_active"
+                : "my-appointment__section"
+            }
+          >
             <h2>Your Appointment</h2>
             <p id="my-appointment__page-three">
               If you would like the smear taker to know that you have been
@@ -79,7 +90,13 @@ const MyAppointment = () => {
             </p>
           </section>
 
-          <section className="my-appointment__section" id="4">
+          <section
+            className={
+              appointmentSection === 4
+                ? "my-appointment__section_active"
+                : "my-appointment__section"
+            }
+          >
             <h2>Your Appointment</h2>
             <p id="my-appointment__page-four">
               This appointment may be difficult for me. I’ve sought information
@@ -110,7 +127,13 @@ const MyAppointment = () => {
             </form>
           </section>
 
-          <section className="my-appointment__section" id="5">
+          <section
+            className={
+              appointmentSection === 5
+                ? "my-appointment__section_active"
+                : "my-appointment__section"
+            }
+          >
             <h2>After your appointment</h2>
             <audio controls>
               <source src={afterAudio} type="audio/mp3" />
@@ -131,7 +154,7 @@ const MyAppointment = () => {
                 ? "my-appointment__circle__active"
                 : "my-appointment__circle"
             }
-          ></span>
+          />
         ))}
       </div>
       <Menu />
