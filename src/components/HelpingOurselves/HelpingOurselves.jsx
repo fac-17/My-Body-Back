@@ -2,10 +2,11 @@ import React from "react";
 import "./HelpingOurselves.css";
 import Header from "../Header/Header.jsx";
 import Menu from "../Menu/Menu";
-import { Router, Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import emotions from "../assets/icons/emotions.svg";
 import feelingbetter from "../assets/icons/feelingbetter.svg";
 import { Swipeable } from "react-swipeable";
+
 
 
 const HelpingOurselves = () => {
@@ -38,6 +39,8 @@ It's normal to find it difficult to attend a smear test. No-one likes going for 
               />
               <figcaption className="helping-ourselves__image-text">Our Emotions</figcaption>
             </figure>
+
+
           </Link>
           <Link to="/feelingbetter">
             <figure>

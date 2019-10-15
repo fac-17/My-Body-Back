@@ -1,7 +1,8 @@
 import React from "react";
-import { BrowserRouter as Router, Link } from "react-router-dom";
+import { BrowserRouter as Link } from "react-router-dom";
 import butterfly from "../assets/icons/butterfly-first-page.svg";
 import "./PrivacyPolicy.css";
+
 
 const PrivacyPolicy = () => {
   return (

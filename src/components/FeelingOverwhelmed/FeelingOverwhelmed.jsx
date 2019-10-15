@@ -4,7 +4,7 @@ import Header from "../Header/Header.jsx";
 import Menu from "../Menu/Menu";
 import notesOfLove from "../assets/icons/nol.svg";
 import helpAndSupport from "../assets/icons/has.svg";
-import { Router, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { Swipeable } from "react-swipeable";
 
 const FeelingOverwhelmed = () => {

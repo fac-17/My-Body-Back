@@ -2,7 +2,8 @@ import React from "react";
 import "./About.css";
 import Menu from "../Menu/Menu";
 import Header from "../Header/Header";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
+// import Zoom from 'react-reveal/Fade';
 
 const About = () => {
   return (
@@ -10,6 +11,7 @@ const About = () => {
       <Header />
       <div className="about__container" data-testid="about-title">
         <h2 className="about__title">About this App</h2>
+        {/* <Zoom bottom cascade> */}
         <p className="about__text__main">
           This app is not about making you go for a cervical screening before
           you are ready, but about helping you to take small steps, in your own
@@ -33,6 +35,7 @@ const About = () => {
         <Link to="/">
           <p>privacy</p>
         </Link>
+        {/* </Zoom> */}
       </div>
 
       <Menu />
