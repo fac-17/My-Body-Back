@@ -2,20 +2,22 @@
     display: none;
   }
   
-.coping__section-active {
+#coping-section__container {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-content: center;
+  align-items: center;
+
+}
+
+.coping__section-active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 18em;
   height: 15em;
 }
 
-#coping-section__container {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-}
 
 .coping-section__file {
   width: 100%;
