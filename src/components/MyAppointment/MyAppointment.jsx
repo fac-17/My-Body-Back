@@ -5,7 +5,8 @@ import Menu from "../Menu/Menu";
 import { Link } from "react-router-dom";
 import { Swipeable } from "react-swipeable";
 import afterAudio from "../assets/audio/afterAudio.mp3";
-import PreparationTips from "./Partials/PreparationTips";
+import duringAudio from "../assets/audio/duringAudio.wav";
+import PreparationTips from "./Partials/PreparationTips.jsx";
 
 const MyAppointment = () => {
   const [appointmentSection, setAppointmentSection] = React.useState(0);
@@ -22,10 +23,10 @@ const MyAppointment = () => {
   }, [appointmentSection]);
 
   // const imageArray = [ notesOfLove, helpAndSupport, emotions, feelingbetter];
-  const circleArray = [1, 2, 3, 4, 5];
+  const circleArray = [1, 2, 3, 4, 5, 6];
 
   const swipingLeft = () => {
-    appointmentSection < 4
+    appointmentSection < 5
       ? setAppointmentSection(appointmentSection + 1)
       : setAppointmentSection(appointmentSection);
   };
@@ -58,8 +59,18 @@ const MyAppointment = () => {
             <p>Tap for next Tip</p>
           </section>
           <section className="my-appointment__section" id="2">
-            <h2>Your Appointment</h2>
+            <h2>During Your Appointment</h2>
             <p id="my-appointment__page-two">
+              Louise Cadman, Nurse Specialist outlines some practical tips for
+              your screening appointment.
+            </p>
+            <audio controls>
+              <source src={duringAudio} type="audio/wav" />
+            </audio>
+          </section>
+          <section className="my-appointment__section" id="3">
+            <h2>Your Appointment</h2>
+            <p id="my-appointment__page-three">
               If you would like the smear taker to know that you have been
               sexually assaulted, but don’t want to say it out loud, then you
               could show them our appointment card on your phone. If these words
@@ -68,9 +79,9 @@ const MyAppointment = () => {
             </p>
           </section>
 
-          <section className="my-appointment__section" id="3">
+          <section className="my-appointment__section" id="4">
             <h2>Your Appointment</h2>
-            <p id="my-appointment__page-three">
+            <p id="my-appointment__page-four">
               This appointment may be difficult for me. I’ve sought information
               from My Body Back Project, which works with people who have
               experienced sexual assault to access healthcare. What might be
@@ -99,7 +110,7 @@ const MyAppointment = () => {
             </form>
           </section>
 
-          <section className="my-appointment__section" id="4">
+          <section className="my-appointment__section" id="5">
             <h2>After your appointment</h2>
             <audio controls>
               <source src={afterAudio} type="audio/mp3" />
