@@ -5,6 +5,8 @@ import "./FeelingBetter.css";
 import Soothing from "./Partials/Soothing";
 import Compassion from "./Partials/Compassion";
 import Coping from "./Partials/Coping";
+import Fade from "react-reveal/Fade";
+
 
 const FeelingBetter = () => {
   const [currentPage, setCurrentPage] = React.useState("home");
@@ -15,6 +17,7 @@ const FeelingBetter = () => {
         <Header />
         <section id="feeling-better__body">
           <h2>Feeling Better</h2>
+          <Fade bottom>
           <button
             className="feeling-better__button"
             id="soothing"
@@ -22,6 +25,8 @@ const FeelingBetter = () => {
           >
             Soothing
           </button>
+          </Fade>
+          <Fade delay={0.500}>
           <button
             className="feeling-better__button"
             id="compassion"
@@ -29,6 +34,8 @@ const FeelingBetter = () => {
           >
             Compassion
           </button>
+          </Fade>
+          <Fade top>
           <button
             className="feeling-better__button"
             id="coping"
@@ -36,6 +43,7 @@ const FeelingBetter = () => {
           >
             Coping
           </button>
+          </Fade>
         </section>
         <Menu />
       </section>
@@ -51,7 +59,7 @@ const FeelingBetter = () => {
             id="home"
             onClick={() => setCurrentPage("home")}
           >
-            home
+            Feeling better
           </button>
           <Soothing />
         </section>
@@ -69,7 +77,7 @@ const FeelingBetter = () => {
             id="home"
             onClick={() => setCurrentPage("home")}
           >
-            home
+            Feeling better
           </button>
           <Compassion />
         </section>
@@ -89,7 +97,7 @@ const FeelingBetter = () => {
             id="home"
             onClick={() => setCurrentPage("home")}
           >
-            home
+            Feeling better
           </button>
           <Coping />
         </section>

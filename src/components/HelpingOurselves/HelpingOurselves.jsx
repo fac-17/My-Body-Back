@@ -8,6 +8,7 @@ import feelingbetter from "../assets/icons/feelingbetter.svg";
 import { useSwipeable, Swipeable } from "react-swipeable";
 
 
+
 const HelpingOurselves = () => {
 
 const leftLink = () => {
@@ -38,6 +39,8 @@ It's normal to find it difficult to attend a smear test. No-one likes going for 
               />
               <figcaption className="helping-ourselves__image-text">Our Emotions</figcaption>
             </figure>
+
+            
           </Link>
           <Link to="/feelingbetter">
             <figure>

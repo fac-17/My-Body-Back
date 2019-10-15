@@ -2,10 +2,12 @@ import React from "react";
 import selfAudio from "../../assets/audio/selfAudio.m4a";
 import focusAudio from "../../assets/audio/focusAudio.m4a";
 import voiceAudio from "../../assets/video/voiceVideo.mp4";
+import Fade from 'react-reveal/Fade';
 
 const Compassion = () => {
   return (
     <section id="compassion-section__container">
+      <Fade top cascade>
       <section id="compassion-section-page__one">
         <p>
           As human beings, we all need to feel cared for, protected and valued.
@@ -79,6 +81,7 @@ const Compassion = () => {
           Audio cannot be displayed
         </audio>
       </section>
+      </Fade>
     </section>
   );
 };
