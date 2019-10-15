@@ -1,7 +1,7 @@
 import React from "react";
-import groundingVideo from "../../assets/groundingVideo.mp4";
-import groundingAudio from "../../assets/groundingAudio.mp4";
-import pmrAudio from "../../assets/pmrAudio.m4a";
+import groundingVideo from "../../assets/video/groundingVideo.mp4";
+import groundingAudio from "../../assets/audio/groundingAudio.mp4";
+import pmrAudio from "../../assets/audio/pmrAudio.m4a";
 
 const Coping = () => {
   return (
