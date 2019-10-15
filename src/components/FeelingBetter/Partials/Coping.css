@@ -1,0 +1,10 @@
+/* .coping__section {
+    display: none;
+  } */
+  
+  .coping__section-active {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }

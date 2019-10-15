@@ -1,8 +1,8 @@
-p{
+/* p{
   line-height: 2em;
   display: flex;
   justify-content: center;
-}
+} */
 
 #my-appointment__container{
   height: 100vh;
