@@ -60,7 +60,7 @@ const MyAppointment = () => {
           >
             <h2>During Your Appointment</h2>
             <p id="my-appointment__page-two">
-            {MyAppointmentCopy.pageTwoContent[0].text}
+              {MyAppointmentCopy.pageTwoContent[0].text}
             </p>
             <audio controls>
               <source src={duringAudio} type="audio/wav" />
@@ -75,7 +75,7 @@ const MyAppointment = () => {
           >
             <h2>Your Appointment</h2>
             <p id="my-appointment__page-three">
-            {MyAppointmentCopy.pageThreeContent[0].text}
+              {MyAppointmentCopy.pageThreeContent[0].text}
             </p>
           </section>
 
@@ -88,28 +88,19 @@ const MyAppointment = () => {
           >
             <h2>Your Appointment</h2>
             <p id="my-appointment__page-four">
-              This appointment may be difficult for me. I’ve sought information
-              from My Body Back Project, which works with people who have
-              experienced sexual assault to access healthcare. What might be
-              helpful for me today:
+              {MyAppointmentCopy.pageFourContent[0].text}
             </p>
             <form id="my-appointment__card">
               <div className="my-appointment__card">
-                <p>Please ask me what I need:</p>
+                <p>
+                  {MyAppointmentCopy.pageFourContent[0].cardContent[0].context}
+                </p>
                 <ul>
-                  <li>I may need more time than usual</li>
-                  <li>Please take this slowly. Please stop if I say stop</li>
-                  <li>
-                    I have been practising some strategies that may help with
-                    this appointment
-                  </li>
-                  If I look really scared or upset, please stop and ask how and
-                  if we should continue.
-                  <li>At the end, please check that I’m safe to go.</li>
-                  <li>
-                    If I am very upset, please help me to call a friend or
-                    family member
-                  </li>
+                  {MyAppointmentCopy.pageFourContent[0].cardContent[0].listItems.map(
+                    item => (
+                      <li>{item.text}</li>
+                    )
+                  )}
                 </ul>
               </div>
               <button className="my-appointment__button">Download</button>
