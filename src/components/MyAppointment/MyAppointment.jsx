@@ -60,9 +60,7 @@ const MyAppointment = () => {
             }
           >
             <h2>During Your Appointment</h2>
-            <p id="my-appointment__page-two">
-              {MyAppointmentCopy.pageTwoContent[0].text}
-            </p>
+            <p id="my-appointment__page-two">{content[1].text}</p>
             <audio controls>
               <source src={duringAudio} type="audio/wav" />
             </audio>
@@ -75,9 +73,7 @@ const MyAppointment = () => {
             }
           >
             <h2>Your Appointment</h2>
-            <p id="my-appointment__page-three">
-              {MyAppointmentCopy.pageThreeContent[0].text}
-            </p>
+            <p id="my-appointment__page-three">{content[2].text}</p>
           </section>
 
           <section
@@ -88,20 +84,14 @@ const MyAppointment = () => {
             }
           >
             <h2>Your Appointment</h2>
-            <p id="my-appointment__page-four">
-              {MyAppointmentCopy.pageFourContent[0].text}
-            </p>
+            <p id="my-appointment__page-four">{content[3].text}</p>
             <form id="my-appointment__card">
               <div className="my-appointment__card">
-                <p>
-                  {MyAppointmentCopy.pageFourContent[0].cardContent[0].context}
-                </p>
+                <p>{content[3].cardContent.context}</p>
                 <ul>
-                  {MyAppointmentCopy.pageFourContent[0].cardContent[0].listItems.map(
-                    item => (
-                      <li>{item.text}</li>
-                    )
-                  )}
+                  {content[3].cardContent.listItems.map(item => (
+                    <li>{item.text}</li>
+                  ))}
                 </ul>
               </div>
               <button className="my-appointment__button">Download</button>
