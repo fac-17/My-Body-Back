@@ -14,11 +14,13 @@ import HelpSupport from "./components/HelpSupport/HelpSupport";
 import NotesOfLove from "./components/NotesOfLove/NotesOfLove";
 import Menu from "./components/Menu/Menu";
 function App() {
+
+    const [menuDisplay, setMenuDisaplay] = React.useState(false);
   return (
     <div className="App">
       <Router>
         <Switch>
-          <Route exact path="/" component={PrivacyPolicy} />
+          <Route exact path="/" render={(props) => <PrivacyPolicy {...props} menuDisplay={menuDisplay} />} />
           <Route exact path="/welcome" component={Welcome} />
           <Route exact path="/about" component={About} />
           <Route exact path="/feelingoverwhelmed" component={FeelingOverwhelmed} />

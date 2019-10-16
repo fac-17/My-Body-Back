@@ -17,6 +17,8 @@ const Menu = () => {
   const [middleDisable, setMiddleDisabled] = React.useState(false);
   const [rightDisable, setRightDisabled] = React.useState(false);
 
+
+
   const disableLeftButton = () => {
     setLeftDisabled(true);
     setRightDisabled(false);
@@ -35,12 +37,9 @@ const Menu = () => {
     setRightDisabled(true);
   }
 
-  // if(window.location = '/'){
-  //
-  // }
 
   return (
-    <footer className={window.location === '/' ? "footer__hidden" : "footer"}>
+    <footer className={ window.location.pathname === '/' ? "footer__hidden" : window.location.pathname === '/welcome' ?  "footer" : "footer"}>
       <nav className="menu__nav">
         <ul className="menu__list">
           <Link to="/helpingourselves">
