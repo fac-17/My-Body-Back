@@ -6,9 +6,12 @@ import groundingAudio from "../../assets/audio/groundingAudio.mp4";
 import pmrAudio from "../../assets/audio/pmrAudio.m4a";
 
 
+
 const Coping = () => {
 
   const [index, setIndex] = React.useState(0);
+  const circleArray = [1, 2, 3];
+ 
 
   const swipingLeft = () => {
   index < 3 ? setIndex(index + 1) : setIndex(index);
@@ -42,6 +45,18 @@ const swipingRight = () => {
       </audio>
       </section>
     </Swipeable>
+    <div className="coping__circle__container">
+      {circleArray.map((circle, i) => (
+        <span
+        className={
+          i == index
+          ? "coping__circle__active"
+          : "coping__circle"
+        }
+        />
+
+      ))}
+      </div>
     </section>
   );
 };
