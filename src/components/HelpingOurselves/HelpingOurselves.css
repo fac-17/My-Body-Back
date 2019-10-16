@@ -1,29 +1,35 @@
 .helping-ourselves__icon__left{
-  filter:sepia(1.6) saturate(6.5) hue-rotate(89deg);
+  filter:sepia(1.6) saturate(20) hue-rotate(-45deg);
   transition:0.5s ease-out;
-  width: 15vh;
+  width: 30vw;
+  height: 20vh;
 }
 
 .helping-ourselves__icon__right {
   filter:sepia(1.6) saturate(6.5) hue-rotate(89deg);
   transition:0.5s ease-out;
-  width: 15vh;
+  width: 30vw;
+    height: 20vh;
 }
 
 #helping-ourselves__container{
   background-color: white;
-  padding-bottom: 6em;
 }
 
-#helping-ourselves__icon-container {
+#helping-ourselves__icon-container{
   display: flex;
   justify-content: center;
 }
 
 a{
   color: black;
+  text-decoration: none;
 }
 
-.helping-ourselves__text{
-  padding: 1em;
+.helping-ourselves__image-text{
+  margin: 0;
+}
+
+.helping-ourselves__arrow{
+  font-size: 2em;
 }
