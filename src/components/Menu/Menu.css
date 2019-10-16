@@ -64,6 +64,7 @@
 }
 
 .menu__middlebutton__disabled{
+    padding-left: 0.9em;
   height: 3.5em;
   filter: sepia(3.6) saturate(13.5);
 }

@@ -11,7 +11,7 @@ configure({ adapter: new Adapter() });
 
 
 
-const Menu = () => {
+const Menu = ({menuDisplay, setMenuDisplay}) => {
 
   const [leftDisable, setLeftDisabled] = React.useState(false);
   const [middleDisable, setMiddleDisabled] = React.useState(false);
@@ -39,7 +39,7 @@ const Menu = () => {
 
 
   return (
-    <footer className={ window.location.pathname === '/' ? "footer__hidden" : window.location.pathname === '/welcome' ?  "footer" : "footer"}>
+    <footer className={ menuDisplay === false ? "footer__hidden" : "footer"}>
       <nav className="menu__nav">
         <ul className="menu__list">
           <Link to="/helpingourselves">
