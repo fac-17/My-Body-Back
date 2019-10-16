@@ -12,7 +12,7 @@ import Emotions from "./components/Emotions/Emotions";
 import FeelingBetter from "./components/FeelingBetter/FeelingBetter";
 import HelpSupport from "./components/HelpSupport/HelpSupport";
 import NotesOfLove from "./components/NotesOfLove/NotesOfLove";
-
+import Menu from "./components/Menu/Menu";
 function App() {
   return (
     <div className="App">
@@ -30,6 +30,7 @@ function App() {
           <Route exact path="/notesoflove" component={NotesOfLove} />
           <Route path="*" component={PageNotFound} />
         </Switch>
+          <Menu/>
       </Router>
     </div>
   );
