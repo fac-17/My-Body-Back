@@ -32,11 +32,15 @@ const Menu = () => {
   const disableRightButton = () => {
     setLeftDisabled(false);
     setMiddleDisabled(false);
-    setRightDisabled(true); 
+    setRightDisabled(true);
   }
 
+  // if(window.location = '/'){
+  //
+  // }
+
   return (
-    <footer className="footer">
+    <footer className={window.location === '/' ? "footer__hidden" : "footer"}>
       <nav className="menu__nav">
         <ul className="menu__list">
           <Link to="/helpingourselves">
@@ -57,7 +61,7 @@ const Menu = () => {
               className={middleDisable === true ? "menu__middlebutton__disabled" : "menu__middlebutton"}
               alt="feeling overwhelmed"
               disabled={middleDisable === true ? true : false}
-              onClick={() => setMiddleDisabled(true)}
+              onClick={() => disableMiddleButton()}
             />
           </Link>
           <Link to="/myappointment">
@@ -67,7 +71,7 @@ const Menu = () => {
               className={rightDisable === true ? "menu__rightbutton__disabled" : "menu__rightbutton"}
               alt="my appointment"
               disabled={rightDisable === true ? true : false}
-              onClick={() => setRightDisabled(true)}
+              onClick={() => disableRightButton()}
             />
           </Link>
         </ul>
