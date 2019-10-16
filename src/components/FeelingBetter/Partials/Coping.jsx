@@ -45,13 +45,16 @@ const swipingRight = () => {
       </section>
     </Swipeable>
     <div className="coping__circle__container">
-          <span
-            className={
-              index == 0
-                ? "coping__section-active"
-                : "coping__section"
-            }
-          />
+      {circleArray.map((circle, i) => (
+        <span
+        className={
+          i == index
+          ? "coping__circle__active"
+          : "coping__circle"
+        }
+        />
+
+      ))}
       </div>
     </section>
   );
