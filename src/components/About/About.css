@@ -10,3 +10,7 @@
 .about__text__bold{
   font-weight: bold;
 }
+
+.about__text__main{
+  margin-bottom: 1em;
+}
