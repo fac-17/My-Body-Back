@@ -8,7 +8,7 @@ import "./Compassion.css";
 
 const Compassion = () => {
   const [compassionSection, setCompassionSection] = React.useState(0);
-  // const circleArray = [1, 2, 3, 4, 5];
+  const circleArray = [1, 2, 3, 4, 5];
 
   const swipingLeft = () => {
     compassionSection < 4
@@ -47,7 +47,7 @@ const Compassion = () => {
         </p>
         </section>
       </section>
-      {/* <Fade top cascade> */}
+      <Fade top cascade> 
       <section id="compassion-section-page__two"> 
       <section
             className={
@@ -65,6 +65,7 @@ const Compassion = () => {
         </p>
       </section>
       </section>
+      </Fade>
       <section id="compassion-section-page__three">
       <section
             className={
@@ -91,6 +92,7 @@ const Compassion = () => {
             }
           >
         <h3>Other Ways to Build Self Compassion</h3>
+        <Fade top cascade> 
         <p>
           Act with compassion – this is not just ‘being nice’ but engaging in
           activities that reduce suffering and distress. This may include asking
@@ -126,7 +128,9 @@ const Compassion = () => {
           Above all, look after yourself the way you would care for someone you
           loved. Know what works best for you when you need comfort and care.
         </p>
+        </Fade>
       </section>
+      
       </section>
       <section id="compassion-section-page__five"> 
       <section
@@ -142,7 +146,7 @@ const Compassion = () => {
         </audio>
       </section>
       </section>
-      {/* </Fade> */}
+     
       </Swipeable>
       
     </section>
