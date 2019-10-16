@@ -8,6 +8,7 @@ import afterAudio from "../assets/audio/afterAudio.mp3";
 import duringAudio from "../assets/audio/duringAudio.wav";
 import PreparationTips from "./Partials/PreparationTips.jsx";
 import MyAppointmentCopy from "./MyAppointmentCopy.json";
+import { content } from "./MyAppointmentCopy2.json";
 
 const MyAppointment = () => {
   const [appointmentSection, setAppointmentSection] = React.useState(0);
@@ -38,7 +39,7 @@ const MyAppointment = () => {
             }
           >
             <h2>My Appointment</h2>
-            <p>{MyAppointmentCopy.pageOneContent[0].text}</p>
+            <p>{content[0].text}</p>
           </section>
           <section
             className={

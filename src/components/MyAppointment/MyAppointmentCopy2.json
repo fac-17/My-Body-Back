@@ -1,0 +1,33 @@
+{
+  "content": [
+    {
+      "text": "You may find that just thinking about the possibility of a smear test triggers some difficult memories. If these feel particularly distressing it is important to speak to someone you trust. Please check out our ‘I need help’ page for some suggestions of places you can contact for support. Find here some practical tips to prepare for your appointment."
+    },
+    {
+      "text": "Louise Cadman, Nurse Specialist outlines some practical tips for your screening appointment."
+    },
+    {
+      "text": "If you would like the smear taker to know that you have been sexually assaulted, but don’t want to say it out loud, then you could show them our appointment card on your phone. If these words aren’t right for you, you’ll be able to edit it and save it to your device."
+    },
+    {
+      "text": "This appointment may be difficult for me. I’ve sought information from My Body Back Project, which works with people who have experienced sexual assault to access healthcare. What might be helpful for me today:",
+      "cardContent": {
+        "context": "Please ask me what I need:",
+        "listItems": [
+          { "text": "I may need more time than usual" },
+          { "text": "Please take this slowly. Please stop if I say stop" },
+          {
+            "text": "I have been practising some strategies that may help with this appointment"
+          },
+          {
+            "text": "If I look really scared or upset, please stop and ask how and if we should continue."
+          },
+          { "text": "At the end, please check that I’m safe to go." },
+          {
+            "text": " If I am very upset, please help me to call a friend or family member"
+          }
+        ]
+      }
+    }
+  ]
+}
