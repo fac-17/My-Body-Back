@@ -36,7 +36,7 @@ const Welcome = () => {
           This icon will take you to the "My Appointment" section{" "}
         </p>
       </div>
-      <Menu />
+  
     </div>
   );
 };
