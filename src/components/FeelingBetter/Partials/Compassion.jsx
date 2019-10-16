@@ -148,7 +148,17 @@ const Compassion = () => {
       </section>
      
       </Swipeable>
-      
+      <div className="compassion__circle__container">
+        {circleArray.map((circle, i) => (
+          <span
+            className={
+              i == compassionSection
+                ? "compassion__circle__active"
+                : "compassion__circle"
+            }
+          />
+        ))}
+        </div>
     </section>
   );
 };
