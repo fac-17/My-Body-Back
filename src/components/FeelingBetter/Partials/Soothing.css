@@ -10,10 +10,10 @@
 
 }
 
-.soothingSection__section_active{
+.soothing-section__section_active{
   display: flex;
   justify-content: center;
   align-items: center;
   width: 18em;
-  height: 15em;
+  /* height: 15em; */
 }
