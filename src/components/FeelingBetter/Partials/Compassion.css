@@ -1,0 +1,15 @@
+#compassion-section__container {
+    height: 100vh;
+  }
+
+.compassion__section{
+  display: none;  
+
+}
+  
+  .compassion__section_active {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }

@@ -4,6 +4,7 @@ import focusAudio from "../../assets/audio/focusAudio.m4a";
 import voiceAudio from "../../assets/video/voiceVideo.mp4";
 import Fade from 'react-reveal/Fade';
 import { Swipeable } from "react-swipeable";
+import "./Compassion.css";
 
 const Compassion = () => {
   const [compassionSection, setCompassionSection] = React.useState(0);
@@ -27,7 +28,7 @@ const Compassion = () => {
     <section id="compassion-section__container">
       
       <Swipeable onSwipedLeft={swipingLeft} onSwipedRight={swipingRight}>
-      {/* <section id="compassion-section-page__one"> */}
+      <section id="compassion-section-page__one"> 
       <section
             className={
               compassionSection === 0
@@ -45,9 +46,9 @@ const Compassion = () => {
           threat, drive and soothing systems.
         </p>
         </section>
-      {/* </section> */}
-      <Fade top cascade>
-      {/* <section id="compassion-section-page__two"> */}
+      </section>
+      {/* <Fade top cascade> */}
+      <section id="compassion-section-page__two"> 
       <section
             className={
               compassionSection === 1
@@ -63,7 +64,8 @@ const Compassion = () => {
           taking action to make things better. Compassion takes courage.
         </p>
       </section>
-      {/* <section id="compassion-section-page__three"> */}
+      </section>
+      <section id="compassion-section-page__three">
       <section
             className={
               compassionSection === 2
@@ -79,7 +81,8 @@ const Compassion = () => {
           <source src={focusAudio} type="audio/mp4" />
         </audio>
       </section>
-      {/* <section id="compassion-section-page__four"> */}
+      </section>
+      <section id="compassion-section-page__four">
       <section
             className={
               compassionSection === 3
@@ -124,7 +127,8 @@ const Compassion = () => {
           loved. Know what works best for you when you need comfort and care.
         </p>
       </section>
-      {/* <section id="compassion-section-page__five"> */}
+      </section>
+      <section id="compassion-section-page__five"> 
       <section
             className={
               compassionSection === 4
@@ -137,7 +141,8 @@ const Compassion = () => {
           Audio cannot be displayed
         </audio>
       </section>
-      </Fade>
+      </section>
+      {/* </Fade> */}
       </Swipeable>
       
     </section>
