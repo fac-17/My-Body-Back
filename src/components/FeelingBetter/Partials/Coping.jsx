@@ -10,12 +10,9 @@ import pmrAudio from "../../assets/audio/pmrAudio.m4a";
 const Coping = () => {
 
   const [index, setIndex] = React.useState(0);
-<<<<<<< HEAD
   const circleArray = [1, 2, 3];
  
-=======
 
->>>>>>> master
   const swipingLeft = () => {
   index < 3 ? setIndex(index + 1) : setIndex(index);
 };
