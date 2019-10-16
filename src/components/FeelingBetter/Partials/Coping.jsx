@@ -8,10 +8,14 @@ import pmrAudio from "../../assets/audio/pmrAudio.m4a";
 
 
 const Coping = () => {
-  
+
   const [index, setIndex] = React.useState(0);
+<<<<<<< HEAD
   const circleArray = [1, 2, 3];
  
+=======
+
+>>>>>>> master
   const swipingLeft = () => {
   index < 3 ? setIndex(index + 1) : setIndex(index);
 };
@@ -22,23 +26,23 @@ const swipingRight = () => {
 
 
   return (
-  
+
   <section id="coping-section__container">
         <h3>Tips for coping with anxiety, panic, flashbacks and dissociation</h3>
         <Swipeable onSwipedLeft={swipingLeft} onSwipedRight={swipingRight}>
-        <section className={index == 0  ? "coping__section-active" : "coping__section"} id="0">
+        <section className={index === 0  ? "coping__section-active" : "coping__section"} id="0">
           <video className="coping-section__file" controls>
             <source src={groundingVideo} type="video/mp4" />
           </video>
         </section>
 
-      <section className={index == 1  ? "coping__section-active" : "coping__section"} id="1">
+      <section className={index === 1  ? "coping__section-active" : "coping__section"} id="1">
       <audio controls>
         <source src={pmrAudio} type="audio/mp4" />
       </audio>
       </section>
 
-      <section className={index == 2  ? "coping__section-active" : "coping__section"} id="2">
+      <section className={index === 2  ? "coping__section-active" : "coping__section"} id="2">
       <audio controls>
         <source src={groundingAudio} type="audio/mp4" />
       </audio>
