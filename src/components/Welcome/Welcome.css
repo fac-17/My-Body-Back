@@ -23,3 +23,7 @@
   filter: sepia(3.6) saturate(13.5);
   max-width: 13%;
 }
+
+.welcome__icon__butterfly{
+  filter:sepia(1.6) saturate(6.5) hue-rotate(89deg);
+}
