@@ -7,7 +7,7 @@ import "./Soothing.css";
 
 const Soothing = () => {
   const [soothingSection, setSoothingSection] = React.useState(0);
-  
+  const circleArray = [1, 2, 3, 4];
 
   const swipingLeft = () => {
     soothingSection < 3
@@ -97,6 +97,17 @@ const Soothing = () => {
         </section>
       </section>
       </Swipeable>
+      <div className="sooting-section__circle__container">
+        {circleArray.map((circle, i) => (
+          <span
+            className={
+              i == soothingSection
+                ? "soothing-section__circle__active"
+                : "soothing-section__circle"
+            }
+          />
+        ))}
+          </div>
     </section>
   );
 };
