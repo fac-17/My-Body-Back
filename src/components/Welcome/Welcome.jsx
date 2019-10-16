@@ -14,29 +14,29 @@ const Welcome = () => {
         Welcome
       </h2>
       <p className="welcome__text__main">
-        {" "}
-        Welcome to the My Body Back app! Here's an overview of how to navigate
-        the site.{" "}
+
+        Welcome to the My Body Back app. Here's an overview of how to navigate
+        the site.
       </p>
       <div className="welcome__icon__container">
         <img className="welcome__icon" src={brain} alt="brain"/>
         <p className="welcome__text">
-          This icon will take you to the "Support & Techniques" section{" "}
+          The "Helping Ourselves" section
         </p>
       </div>
       <div className="welcome__icon__container">
         <img className="welcome__icon" src={wave} alt="wave"/>
         <p className="welcome__text">
-          This icon will take you to the "Feeling Overwhelmed" section{" "}
+           The "Feeling Overwhelmed" section
         </p>
       </div>
       <div className="welcome__icon__container">
         <img className="welcome__icon" src={flower} alt="flower"/>
         <p className="welcome__text">
-          This icon will take you to the "My Appointment" section{" "}
+           The "My Appointment" section
         </p>
       </div>
-  
+
     </div>
   );
 };
