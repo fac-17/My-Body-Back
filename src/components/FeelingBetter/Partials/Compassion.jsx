@@ -3,12 +3,38 @@ import selfAudio from "../../assets/audio/selfAudio.m4a";
 import focusAudio from "../../assets/audio/focusAudio.m4a";
 import voiceAudio from "../../assets/video/voiceVideo.mp4";
 import Fade from 'react-reveal/Fade';
+import { Swipeable } from "react-swipeable";
 
 const Compassion = () => {
+  const [compassionSection, setCompassionSection] = React.useState(0);
+  // const circleArray = [1, 2, 3, 4, 5];
+
+  const swipingLeft = () => {
+    compassionSection < 4
+    ? setCompassionSection(compassionSection + 1)
+    : setCompassionSection(compassionSection);
+  }
+
+  const swipingRight = () => {
+    compassionSection > 0
+    ? setCompassionSection(compassionSection - 1)
+    : setCompassionSection(compassionSection);
+  };
+
+
+
   return (
     <section id="compassion-section__container">
-      <Fade top cascade>
-      <section id="compassion-section-page__one">
+      
+      <Swipeable onSwipedLeft={swipingLeft} onSwipedRight={swipingRight}>
+      {/* <section id="compassion-section-page__one"> */}
+      <section
+            className={
+              compassionSection === 0
+                ? "compassion__section_active"
+                : "compassion__section"
+            }
+          >
         <p>
           As human beings, we all need to feel cared for, protected and valued.
           Humans have a compassionate instinct... for others. We feel good when
@@ -18,8 +44,17 @@ const Compassion = () => {
           direct it inwards. Compassion helps to create a balance between the
           threat, drive and soothing systems.
         </p>
-      </section>
-      <section id="compassion-section-page__two">
+        </section>
+      {/* </section> */}
+      <Fade top cascade>
+      {/* <section id="compassion-section-page__two"> */}
+      <section
+            className={
+              compassionSection === 1
+                ? "compassion__section_active"
+                : "compassion__section"
+            }
+          >
         <h3>What is Compassion?</h3>
         <p>
           Compassion is a sensitivity to suffering, others’ suffering as well as
@@ -28,7 +63,14 @@ const Compassion = () => {
           taking action to make things better. Compassion takes courage.
         </p>
       </section>
-      <section id="compassion-section-page__three">
+      {/* <section id="compassion-section-page__three"> */}
+      <section
+            className={
+              compassionSection === 2
+                ? "compassion__section_active"
+                : "compassion__section"
+            }
+          >
         <h3>How do we build compassion for ourselves?</h3>
         <audio controls>
           <source src={selfAudio} type="audio/mp4" />
@@ -37,7 +79,14 @@ const Compassion = () => {
           <source src={focusAudio} type="audio/mp4" />
         </audio>
       </section>
-      <section id="compassion-section-page__four">
+      {/* <section id="compassion-section-page__four"> */}
+      <section
+            className={
+              compassionSection === 3
+                ? "compassion__section_active"
+                : "compassion__section"
+            }
+          >
         <h3>Other Ways to Build Self Compassion</h3>
         <p>
           Act with compassion – this is not just ‘being nice’ but engaging in
@@ -75,13 +124,22 @@ const Compassion = () => {
           loved. Know what works best for you when you need comfort and care.
         </p>
       </section>
-      <section id="compassion-section-page__five">
+      {/* <section id="compassion-section-page__five"> */}
+      <section
+            className={
+              compassionSection === 4
+                ? "compassion__section_active"
+                : "compassion__section"
+            }
+          >
         <audio controls>
           <source src={voiceAudio} type="audio/mp4" />
           Audio cannot be displayed
         </audio>
       </section>
       </Fade>
+      </Swipeable>
+      
     </section>
   );
 };
