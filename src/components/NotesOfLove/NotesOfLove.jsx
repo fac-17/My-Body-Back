@@ -35,20 +35,26 @@ const swipeRight = () => {
 <h2 className="notes-of-love__header">Notes of Love</h2>
   <Swipeable onSwipedLeft={swipeLeft} onSwipedRight={swipeRight}>
   {imageArray.map((image, i) => (
-    <div className="image__container"><img src={image}
-    className={i == index ? "notes-of-love__image__active" : "notes-of-love__image"}
-    />
+    <div className="image__container">
+    <img
+    src={image}
+    className={i === index ? "notes-of-love__image__active" : "notes-of-love__image"}
+    alt="Note of love"/>
     </div>
   ))}
   </Swipeable>
   <div className="notes-of-love__circle__container">
 {circleArray.map( (circle, i) =>
   <span
-  className={i == index ? "notes-of-love__circle__active" : "notes-of-love__circle"}>
+  className={i === index ? "notes-of-love__circle__active" : "notes-of-love__circle"}>
   </span>
  )}
   </div>
-  <a href="https://www.instagram.com/mybodybackproject/"><img src={instagram} alt="instagram"/></a>
+  <a href="https://www.instagram.com/mybodybackproject/">
+  <img
+  src={instagram}
+  alt="instagram"/>
+  </a>
   <p className="notes-of-love__small-text">See more on Instagram</p>
 <Menu />
 </section>

@@ -130,7 +130,7 @@ const MyAppointment = () => {
         {circleArray.map((circle, i) => (
           <span
             className={
-              i == appointmentSection
+              i === appointmentSection
                 ? "my-appointment__circle__active"
                 : "my-appointment__circle"
             }

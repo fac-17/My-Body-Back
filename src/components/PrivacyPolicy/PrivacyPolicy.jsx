@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Link } from "react-router-dom";
 import butterfly from "../assets/icons/butterfly-first-page.svg";
 import "./PrivacyPolicy.css";
 
@@ -7,7 +7,7 @@ import "./PrivacyPolicy.css";
 const PrivacyPolicy = () => {
   return (
     <div className="privacy__container">
-      <h2 className="privacy__title"> A note about privacy </h2>
+      <h2 className="privacy__title">A note about privacy</h2>
       <p className="privacy__text">
         {" "}
         Welcome to the My Body Back app. Before you begin to explore, we want to
