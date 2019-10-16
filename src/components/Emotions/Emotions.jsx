@@ -10,7 +10,7 @@ const Emotions = () => {
     <section id="emotions__container">
       <Header />
       <section id="emotions__body">
-        <h2> Trauma, the Brain and our Emotions </h2>
+        <h2> Trauma & our Emotions </h2>
         <section id="emotions__section-one">
           <h3>Why is this so difficult?!</h3>
           <figure className="emotions__figure">
@@ -43,7 +43,6 @@ const Emotions = () => {
           </figure>
         </section>
       </section>
-      <Menu />
     </section>
   );
 };
