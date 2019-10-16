@@ -8,8 +8,15 @@
 .feeling-better__button {
     width: 7em;
     height: 3em;
-    border-radius: 5em;
+    border-radius: 1em;
     margin: 1.5em;
-    background-color:614870;
-    
+    background-color:#FFC700;
+    border-color: #FFC700;
+    font-family: Montserrat, cursive;
+    text-align: center;
+    cursor: pointer;
+}
+
+.feeling-better__button:hover{
+  transform:translateY(-3px);
 }

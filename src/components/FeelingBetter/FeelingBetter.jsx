@@ -63,7 +63,7 @@ const FeelingBetter = () => {
           </button>
           <Soothing />
         </section>
-        <Menu />
+
       </section>
     );
   } else if (currentPage === "compassion") {
@@ -101,7 +101,7 @@ const FeelingBetter = () => {
           </button>
           <Coping />
         </section>
-        <Menu />
+        
       </section>
     );
   }
