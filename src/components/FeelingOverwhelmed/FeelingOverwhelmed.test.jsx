@@ -6,29 +6,20 @@ import FeelingOverwhelmed from "./FeelingOverwhelmed";
 
 afterEach(cleanup);
 
-describe("Feeling Overwhelmed component renders correctly", () => {
-  test("FO component renders header", () => {
-    const { getByTestId } = render(
-      <Router>
-        <FeelingOverwhelmed />
-      </Router>
-    );
-
-    const header = getByTestId("butterfly-header");
-    expect(header).toBeInTheDocument();
-  });
-
-  test("Check text is render for each icon", () => {
-    const { getByText } = render(
-      <Router>
-        <FeelingOverwhelmed />
-      </Router>
-    );
-
-    const NOL = getByText("Notes Of Love");
-    const HAS = getByText("Help & Support");
-
-    expect(NOL).toBeInTheDocument();
-    expect(HAS).toBeInTheDocument();
+describe("Feeling Overwhelmed renders correctly", () => {
+  test("You see on the page: title, logo, icons", () => {
+      const { getByText, getByAltText } = render(
+          <Router>
+              <FeelingOverwhelmed />
+          </Router>
+      );
+      const logo = getByAltText("My Body Back Logo");
+      const title = getByText("Feeling Overwhelmed");
+      const NOL = getByText("Notes Of Love");
+      const HAS = getByText("Help & Support");
+      expect(logo).toBeInTheDocument();
+      expect(title).toBeInTheDocument();
+      expect(NOL).toBeInTheDocument();
+      expect(HAS).toBeInTheDocument();
   });
 });

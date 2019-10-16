@@ -1,22 +1,13 @@
 import React from "react";
-import Header from "../Header/Header";
+import Header from "../Header/Header.jsx";
 import Menu from "../Menu/Menu";
 import email from "../assets/icons/email-mbb.svg";
 import call from "../assets/icons/call-mbb.svg";
+import { CopyToClipboard } from "react-copy-to-clipboard";
 
 import "./HelpSupport.css";
 
 const HelpSupport = () => {
-  const copyNumber = number => {
-    const numberToCopy = document.createElement("textarea");
-    numberToCopy.textContent = number;
-    document.body.appendChild(numberToCopy);
-    numberToCopy.select();
-    document.execCommand("copy");
-    alert(`Number was copied to clipboard: ${numberToCopy.textContent}`);
-    document.body.removeChild(numberToCopy);
-  };
-
   return (
     <div className="help-support__container">
       <Header />
@@ -33,17 +24,25 @@ const HelpSupport = () => {
       <p className="help-support__small-text">
         Below you’ll find a list of other trusted services you may find useful.
       </p>
+
+
       <ul className="help-support__list">
         <li className="help-support__list-item">
           <a href="mailto:jo@samaritans.org" target="_top">
-            <img src={email} className="help-support__icon" />
+            <img
+            src={email}
+            className="help-support__icon"
+            alt="email samaritans"/>
           </a>
 
-          <img
-            src={call}
-            className="help-support__icon"
-            onClick={() => copyNumber("116 123")}
-          />
+          <CopyToClipboard text="116 123">
+            <img
+              onClick={() => alert("number copied to clipboard")}
+              src={call}
+              className="help-support__icon"
+              alt="call samaritans"
+            />
+          </CopyToClipboard>
 
           <a href="https://www.samaritans.org/" target="_blank">
             <h3 className="help-support__heading">The Samaritans</h3>
@@ -54,13 +53,17 @@ const HelpSupport = () => {
           </p>
         </li>
 
+
         <li className="help-support__list-item">
           <a href="#">
-            <img
-              src={call}
-              className="help-support__icon"
-              onClick={() => copyNumber("0808 802 9999")}
-            />
+            <CopyToClipboard text="0808 802 9999">
+              <img
+                onClick={() => alert("number copied to clipboard")}
+                src={call}
+                className="help-support__icon"
+                alt="call rapecrisis UK"
+              />
+            </CopyToClipboard>
           </a>
           <a href="https://rapecrisis.org.uk" target="_blank">
             <h3 className="help-support__heading">Rape Crisis</h3>
@@ -72,16 +75,20 @@ const HelpSupport = () => {
           </p>
         </li>
 
+
         <li className="help-support__list-item">
           <a href="mailto:support@rapecrisisscotland.org.uk" target="_top">
             <img src={email} className="help-support__icon" />
           </a>
           <a href="#">
-            <img
-              src={call}
-              className="help-support__icon"
-              onClick={() => copyNumber("08088 01 03 02")}
-            />
+            <CopyToClipboard text="08088 01 03 02">
+              <img
+                onClick={() => alert("number copied to clipboard")}
+                src={call}
+                className="help-support__icon"
+                alt="call rapecrisis Scotland"
+              />
+            </CopyToClipboard>
           </a>
           <a href="https://www.rapecrisisscotland.org.uk/" target="_blank">
             <h3 className="help-support__heading">Rape Crisis</h3>
@@ -94,22 +101,24 @@ const HelpSupport = () => {
           </p>
         </li>
 
+
         <li className="help-support__list-item">
           <a href="mailto:office@womanstrust.org.uk" target="_top">
             <img src={email} className="help-support__icon" />
           </a>
           <a href="#">
-            <img
-              src={call}
-              className="help-support__icon"
-              onClick={() => copyNumber("020 7034 0303")}
-            />
+            <CopyToClipboard text="020 7034 0303">
+              <img
+                onClick={() => alert("number copied to clipboard")}
+                src={call}
+                className="help-support__icon"
+                alt="call womanstrust"
+              />
+            </CopyToClipboard>
           </a>
           <a
-            href="http://womanstrust.org.uk/
-"
-            target="_blank"
-          >
+            href="http://womanstrust.org.uk/"
+            target="_blank">
             <h3 className="help-support__heading">Women's Trust</h3>
           </a>
           <p className="help-supoprt__text">
@@ -119,41 +128,52 @@ const HelpSupport = () => {
           </p>
         </li>
 
+
         <li className="help-support__list-item">
           <a href="mailto:referrals@galop.org.uk" target="_top">
             <img src={email} className="help-support__icon" />
           </a>
           <a href="#">
-            <img
-              src={call}
-              className="help-support__icon"
-              onClick={() => copyNumber("0207 704 2040")}
-            />
+            <CopyToClipboard text="0207 704 2040">
+              <img
+                onClick={() => alert("number copied to clipboard")}
+                src={call}
+                className="help-support__icon"
+                alt="call galop"
+              />
+            </CopyToClipboard>
           </a>
           <a href="http://www.galop.org.uk/domesticabuse/" target="_blank">
             <h3 className="help-support__heading">
               London LGBT Domestic Abuse Partnership
             </h3>
           </a>
-          <p className="help-supoprt__text">
+          <p className="help-support__text">
             London LGBT Domestic Abuse Partnership offer practical, emotional
             and legal advice and signposting to LGBT + individuals who have
             experienced domestic abuse.
           </p>
         </li>
+
+
         <li>
           <h4 className="help-support__small-heading">
             If you're outside London:
           </h4>
           <a href="mailto:help@galop.org.uk" target="_top">
-            <img src={email} className="help-support__icon" />
-          </a>
-
-          <img
-            src={call}
+            <img
+            src={email}
             className="help-support__icon"
-            onClick={() => copyNumber("0800 999 5428")}
-          />
+            alt="email galop" />
+          </a>
+          <CopyToClipboard text="0800 999 5428">
+            <img
+              onClick={() => alert("number copied to clipboard")}
+              src={call}
+              className="help-support__icon"
+              alt="call galop"
+            />
+          </CopyToClipboard>
         </li>
         <p className="help-supoprt__text">
           {" "}

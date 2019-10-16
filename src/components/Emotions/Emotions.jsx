@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "../Header/Header";
+import Header from "../Header/Header.jsx";
 import Menu from "../Menu/Menu";
 import traumaVideo from "../assets/video/Trauma.mp4";
 import emotionsVideo from "../assets/video/Emotions.mp4";
