@@ -1,0 +1,19 @@
+.soothingSection__section {
+    display: none;
+  }
+  
+#soothing-section__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.soothingSection__section_active{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 18em;
+  height: 15em;
+}
