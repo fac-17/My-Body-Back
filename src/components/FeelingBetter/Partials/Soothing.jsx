@@ -2,6 +2,7 @@ import React from "react";
 import soothingAudio from "../../assets/audio/Soothing.m4a";
 import slowDownAudio from "../../assets/audio/slow-down.m4a";
 import { Swipeable } from "react-swipeable";
+import { Link } from "react-router-dom";
 import "./Soothing.css";
 
 
@@ -39,8 +40,9 @@ const Soothing = () => {
           an urge to fight or run away. This is not our fault – it is just how
           our minds and bodies work. But when this happens, we need to boost the
           soothing system emotionally and physically so that we’re able to slow
-          down and feel safe, and not so overwhelmed.
-        </p>
+          down and feel safe, and not so overwhelmed. </p>
+        <Link to="/emotions">  <p> click  here to learn more about our enotions systems.
+        </p> </Link>
         </section>
       </section>
       <section id="soothing-section-page__two">

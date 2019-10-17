@@ -56,7 +56,6 @@ const swipeRight = () => {
   alt="instagram"/>
   </a>
   <p className="notes-of-love__small-text">See more on Instagram</p>
-<Menu />
 </section>
 )
 }
