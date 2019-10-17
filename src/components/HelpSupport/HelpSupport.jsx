@@ -24,14 +24,14 @@ const HelpSupport = () => {
         Below you’ll find a list of other trusted services you may find useful.
       </p>
 
-
       <ul className="help-support__list">
         <li className="help-support__list-item">
           <a href="mailto:jo@samaritans.org" target="_top">
             <img
-            src={email}
-            className="help-support__icon"
-            alt="email samaritans"/>
+              src={email}
+              className="help-support__icon"
+              alt="email samaritans"
+            />
           </a>
 
           <CopyToClipboard text="116 123">
@@ -51,7 +51,6 @@ const HelpSupport = () => {
             listening.
           </p>
         </li>
-
 
         <li className="help-support__list-item">
           <a href="#">
@@ -74,10 +73,13 @@ const HelpSupport = () => {
           </p>
         </li>
 
-
         <li className="help-support__list-item">
           <a href="mailto:support@rapecrisisscotland.org.uk" target="_top">
-            <img src={email} className="help-support__icon" />
+            <img
+              src={email}
+              className="help-support__icon"
+              alt="email rape crisis Scotland"
+            />
           </a>
           <a href="#">
             <CopyToClipboard text="08088 01 03 02">
@@ -100,10 +102,13 @@ const HelpSupport = () => {
           </p>
         </li>
 
-
         <li className="help-support__list-item">
           <a href="mailto:office@womanstrust.org.uk" target="_top">
-            <img src={email} className="help-support__icon" />
+            <img
+              src={email}
+              className="help-support__icon"
+              alt="mail womans trust"
+            />
           </a>
           <a href="#">
             <CopyToClipboard text="020 7034 0303">
@@ -115,9 +120,7 @@ const HelpSupport = () => {
               />
             </CopyToClipboard>
           </a>
-          <a
-            href="http://womanstrust.org.uk/"
-            target="_blank">
+          <a href="http://womanstrust.org.uk/" target="_blank">
             <h3 className="help-support__heading">Woman's Trust</h3>
           </a>
           <p className="help-supoprt__text">
@@ -127,10 +130,9 @@ const HelpSupport = () => {
           </p>
         </li>
 
-
         <li className="help-support__list-item">
           <a href="mailto:referrals@galop.org.uk" target="_top">
-            <img src={email} className="help-support__icon" />
+            <img src={email} className="help-support__icon" alt="email galop" />
           </a>
           <a href="#">
             <CopyToClipboard text="0207 704 2040">
@@ -154,16 +156,12 @@ const HelpSupport = () => {
           </p>
         </li>
 
-
         <li>
           <h4 className="help-support__small-heading">
             If you're outside London:
           </h4>
           <a href="mailto:help@galop.org.uk" target="_top">
-            <img
-            src={email}
-            className="help-support__icon"
-            alt="email galop" />
+            <img src={email} className="help-support__icon" alt="email galop" />
           </a>
           <CopyToClipboard text="0800 999 5428">
             <img
@@ -174,8 +172,10 @@ const HelpSupport = () => {
             />
           </CopyToClipboard>
         </li>
-        <p>  -  -  -  </p>
-        <h3 className="help-support__final-header">NHS Psychological Therapy</h3>
+        <p> - - - </p>
+        <h3 className="help-support__final-header">
+          NHS Psychological Therapy
+        </h3>
 
         <p className="help-supoprt__text">
           {" "}
