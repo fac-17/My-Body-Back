@@ -105,12 +105,12 @@ const MyAppointment = () => {
             }
           >
             <h2>After your appointment</h2>
-            <h3 className="myAppointment__subtitle"> Please listen to this message from My Body Back</h3>
+            <h3 className="my-appointment__subtitle"> Please listen to this message from My Body Back</h3>
             <audio controls>
               <source src={afterAudio} type="audio/mp3" />
             </audio>
 
-            <p className="myAppointment__notes-of-love">
+            <p className="my-appointment__notes-of-love">
               See the <Link to="/notesoflove">Notes of LOVE</Link> section
               for some encouraging messages
             </p>
@@ -128,6 +128,8 @@ const MyAppointment = () => {
           />
         ))}
       </div>
+      <span onClick={swipingRight} className="my-appointment__arrow__left"> ⟵ </span>
+      <span onClick={swipingLeft} className="my-appointment__arrow__right"> ⟶ </span>
     </section>
   );
 };

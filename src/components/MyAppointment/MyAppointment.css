@@ -23,11 +23,11 @@ p {
   margin: 1em;
   align-content: flex-start;
 }
-.myAppointment__subtitle{
+.my-appointment__subtitle{
   font-size: 0.8em;
 }
 
-.myAppointment__notes-of-love{
+.my-appointment__notes-of-love{
   font-size: 0.6em;
   font-style: italic;
 }
@@ -85,4 +85,15 @@ p {
   background-color: #614870;
   border-radius: 50%;
   display: inline-block;
+}
+
+.my-appointment__arrow__left{
+  font-size: 2.5em;
+  cursor:pointer;
+
+}
+.my-appointment__arrow__right{
+  font-size: 2.5em;
+  cursor: pointer;
+
 }
