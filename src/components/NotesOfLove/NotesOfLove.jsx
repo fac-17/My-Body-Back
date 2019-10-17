@@ -55,6 +55,8 @@ const swipeRight = () => {
   alt="instagram"/>
   </a>
   <p className="notes-of-love__small-text">See more on Instagram</p>
+  <span onClick={swipeRight} className="notes-of-love__arrow__left"> ⟵ </span>
+  <span onClick={swipeLeft} className="notes-of-love__arrow__right"> ⟶ </span>
 </section>
 )
 }
