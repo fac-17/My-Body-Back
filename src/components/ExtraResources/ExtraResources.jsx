@@ -1,9 +1,14 @@
-import React, { Component } from "react";
+import React from "react";
 import Header from "../Header/Header";
-import Menu from "../Menu/Menu";
 
-const ExtraResources = () => {
+const ExtraResources = ({setMenuDisplay}) => {
+
   const [data, setData] = React.useState(null);
+
+  React.useEffect(() => {
+    setMenuDisplay(true);
+  }, [setMenuDisplay]);
+
   React.useMemo(() => {
     async function getInfo() {
       const response = await fetch("/.netlify/functions/getData");
@@ -45,7 +50,6 @@ const ExtraResources = () => {
             <p>{descriptionArray[i]}</p>
           </div>
         ))}
-        <Menu />
       </div>
     );
   }
