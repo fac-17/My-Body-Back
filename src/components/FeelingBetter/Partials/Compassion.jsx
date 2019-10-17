@@ -26,9 +26,9 @@ const Compassion = () => {
 
   return (
     <section id="compassion-section__container">
-      
+
       <Swipeable onSwipedLeft={swipingLeft} onSwipedRight={swipingRight}>
-      <section id="compassion-section-page__one"> 
+      <section id="compassion-section-page__one">
       <section
             className={
               compassionSection === 0
@@ -47,8 +47,8 @@ const Compassion = () => {
         </p>
         </section>
       </section>
-      <Fade top cascade> 
-      <section id="compassion-section-page__two"> 
+      <Fade top cascade>
+      <section id="compassion-section-page__two">
       <section
             className={
               compassionSection === 1
@@ -92,7 +92,7 @@ const Compassion = () => {
             }
           >
         <h3>Other Ways to Build Self Compassion</h3>
-        <Fade top cascade> 
+        <Fade top cascade>
         <p>
           Act with compassion – this is not just ‘being nice’ but engaging in
           activities that reduce suffering and distress. This may include asking
@@ -130,9 +130,9 @@ const Compassion = () => {
         </p>
         </Fade>
       </section>
-      
+
       </section>
-      <section id="compassion-section-page__five"> 
+      <section id="compassion-section-page__five">
       <section
             className={
               compassionSection === 4
@@ -146,7 +146,7 @@ const Compassion = () => {
         </audio>
       </section>
       </section>
-     
+
       </Swipeable>
       <div className="compassion__circle__container">
         {circleArray.map((circle, i) => (
@@ -159,6 +159,8 @@ const Compassion = () => {
           />
         ))}
         </div>
+        <span onClick={swipingRight} className="compassion__arrow__left"> ⟵ </span>
+        <span onClick={swipingLeft} className="compassion__arrow__right"> ⟶ </span>
     </section>
   );
 };
