@@ -111,6 +111,10 @@ const Soothing = () => {
           />
         ))}
           </div>
+          <div>
+          <span onClick={swipingRight} className="soothing__arrow__left"> ⟵ </span>
+          <span onClick={swipingLeft} className="soothing__arrow__right"> ⟶ </span>
+          </div>
     </section>
   );
 };
