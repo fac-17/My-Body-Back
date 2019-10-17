@@ -6,7 +6,6 @@ import { Swipeable } from "react-swipeable";
 import afterAudio from "../assets/audio/afterAudio.mp3";
 import duringAudio from "../assets/audio/duringAudio.wav";
 import PreparationTips from "./Partials/PreparationTips.jsx";
-import { motion } from "framer-motion";
 import { content } from "./MyAppointmentCopy.json";
 
 const MyAppointment = ({ setMenuDisplay }) => {

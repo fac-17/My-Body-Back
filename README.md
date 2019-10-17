@@ -37,3 +37,50 @@ The local site will open at:
 ```
 localhost:3000
 ```
+### Tech stack & dependencies 
+
+* React 
+* Airtable 
+* Netlify 
+
+* React-Router
+* Netlify-Lambda
+* React-Swipeable 
+* Jest 
+* React-Testing-Library
+* Enzyme 
+
+
+**The project was built over 3 weeks** 
+
+### Design Sprint 
+
+This is when we defined our main [user journey](https://github.com/fac-17/My-Body-Back/wiki/User-Journey) and [user stories](https://github.com/fac-17/My-Body-Back/wiki/User-Stories) as well as running user testing and collating feedback to adjust our approach. We had several iterations of our prototype build with Figma after receiving both peer and user feedback. 
+
+![](https://i.imgur.com/HwhbOzZ.png)
+![](https://i.imgur.com/4FJExsn.png)
+![](https://i.imgur.com/AGNNltS.png)
+
+### Build sprint one (1 week)
+
+**What we completed** 
+
+* Set up all key routes in app 
+* Render all core content to each page 
+* Basic styling on each page 
+* Tested key functionality 
+* researched and scoped Airtable implementation
+* More user testing 
+
+More details [here](https://github.com/fac-17/My-Body-Back/wiki/Build-Sprint-1)
+
+### Build sprint two (1 week)
+
+* Airtable setup & netlify-lambda implementation 
+* Extra styling: hover effects, icons, tidying 
+* Refactored code & tests
+* removed DOM manipulation and replaced with proper React implementations 
+* Abstracted large chunks of content into a JSON file 
+* re-organised file structure 
+
+

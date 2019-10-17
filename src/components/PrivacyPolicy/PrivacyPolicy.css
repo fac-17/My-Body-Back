@@ -11,8 +11,7 @@
 }
 
 .privacy__subtitle{
-  color: yellow;
-  /* put here the right yellow */
+  color: #FFC700;
 }
 
 .privacy__text{
@@ -28,9 +27,9 @@
 
 .privacy__button {
   cursor: pointer;
-  filter: sepia(3.6) saturate(13.5);
   height: 4em;
   margin-top: 2vh;
+/*   filter: sepia(3.6) saturate(13.5); */
 }
 
 .privacy__button:hover {opacity: 0.6}
