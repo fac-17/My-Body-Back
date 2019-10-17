@@ -36,7 +36,7 @@ const Welcome = ({ setMenuDisplay }) => {
       <div className="welcome__icon__container">
         <img className="welcome__icon" src={flower} alt="flower"/>
         <p className="welcome__text">
-           My Appointment section will help you to get prepare and open yourself, as a flower to professionals which will guide through in the path of acceptance and feeling better.
+           My Appointment section will help you to get prepared and open yourself, as a flower to professionals which will guide through in the path of acceptance and feeling better.
         </p>
       </div>
       <div className="welcome__icon__container">
