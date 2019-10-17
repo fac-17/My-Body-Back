@@ -22,3 +22,10 @@
   margin: 0.8em;
   cursor: pointer;
 }
+
+.privacy__subtitle{
+  font-weight: normal;
+  font-style: italic;
+  color: white;
+  font-family: Montserrat, sans-serif;
+}
