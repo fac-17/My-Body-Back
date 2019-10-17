@@ -2,6 +2,7 @@ import React from "react";
 import soothingAudio from "../../assets/audio/Soothing.m4a";
 import slowDownAudio from "../../assets/audio/slow-down.m4a";
 import { Swipeable } from "react-swipeable";
+import { Link } from "react-router-dom";
 import "./Soothing.css";
 
 
@@ -39,8 +40,9 @@ const Soothing = () => {
           an urge to fight or run away. This is not our fault – it is just how
           our minds and bodies work. But when this happens, we need to boost the
           soothing system emotionally and physically so that we’re able to slow
-          down and feel safe, and not so overwhelmed.
-        </p>
+          down and feel safe, and not so overwhelmed. </p>
+        <Link to="/emotions">  <p> click  here to learn more about our enotions systems.
+        </p> </Link>
         </section>
       </section>
       <section id="soothing-section-page__two">
@@ -87,10 +89,12 @@ const Soothing = () => {
                 : "soothingSection__section"
             }
           >
-        <audio controls>
+          <h3 className="soothingSection__subtitle">Soothing rhythm breathing</h3>
+        <audio controls className="soothingSection__audio">
           <source src={soothingAudio} type="audio/mp4" />
         </audio>
-        <audio controls>
+          <h3 className="soothingSection__subtitle">Learning to slow down</h3>
+        <audio controls className="soothingSection__audio">
           <source src={slowDownAudio} type="audio/mp4" />
         </audio>
         </section>
@@ -106,6 +110,10 @@ const Soothing = () => {
             }
           />
         ))}
+          </div>
+          <div>
+          <span onClick={swipingRight} className="soothing__arrow__left"> ⟵ </span>
+          <span onClick={swipingLeft} className="soothing__arrow__right"> ⟶ </span>
           </div>
     </section>
   );

@@ -1,6 +1,5 @@
 import React from "react";
 import Header from "../Header/Header.jsx";
-import Menu from "../Menu/Menu";
 import "./FeelingBetter.css";
 import Soothing from "./Partials/Soothing";
 import Compassion from "./Partials/Compassion";
@@ -45,7 +44,6 @@ const FeelingBetter = () => {
           </button>
           </Fade>
         </section>
-        <Menu />
       </section>
     );
   } else if (currentPage === "soothing") {
@@ -81,7 +79,6 @@ const FeelingBetter = () => {
           </button>
           <Compassion />
         </section>
-        <Menu />
       </section>
     );
   } else if (currentPage === "coping") {
@@ -101,7 +98,7 @@ const FeelingBetter = () => {
           </button>
           <Coping />
         </section>
-        
+
       </section>
     );
   }

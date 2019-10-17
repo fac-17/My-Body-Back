@@ -23,3 +23,10 @@
   cursor: pointer;
   filter: sepia(3.6) saturate(13.5);
 }
+
+.privacy__subtitle{
+  font-weight: normal;
+  font-style: italic;
+  color: white;
+  font-family: Montserrat, sans-serif;
+}

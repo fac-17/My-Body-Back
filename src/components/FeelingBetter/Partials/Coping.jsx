@@ -11,7 +11,7 @@ const Coping = () => {
 
   const [index, setIndex] = React.useState(0);
   const circleArray = [1, 2, 3];
- 
+
 
   const swipingLeft = () => {
   index < 3 ? setIndex(index + 1) : setIndex(index);
@@ -56,6 +56,10 @@ const swipingRight = () => {
         />
 
       ))}
+      </div>
+      <div>
+      <span onClick={swipingRight} className="coping__arrow__left"> ⟵ </span>
+      <span onClick={swipingLeft} className="coping__arrow__right"> ⟶ </span>
       </div>
     </section>
   );

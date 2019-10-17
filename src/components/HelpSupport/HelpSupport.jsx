@@ -1,6 +1,5 @@
 import React from "react";
 import Header from "../Header/Header.jsx";
-import Menu from "../Menu/Menu";
 import email from "../assets/icons/email-mbb.svg";
 import call from "../assets/icons/call-mbb.svg";
 import { CopyToClipboard } from "react-copy-to-clipboard";
@@ -124,7 +123,7 @@ const HelpSupport = () => {
           <a
             href="http://womanstrust.org.uk/"
             target="_blank">
-            <h3 className="help-support__heading">Women's Trust</h3>
+            <h3 className="help-support__heading">Woman's Trust</h3>
           </a>
           <p className="help-supoprt__text">
             Woman’s Trust is a charity that provides free counselling and
@@ -181,6 +180,9 @@ const HelpSupport = () => {
             />
           </CopyToClipboard>
         </li>
+        <p>  -  -  -  </p>
+        <h3 className="help-support__final-header">NHS Psychological Therapy</h3>
+
         <p className="help-supoprt__text">
           {" "}
           If you are experiencing emotional distress and would like to access
@@ -195,7 +197,6 @@ const HelpSupport = () => {
       </ul>
       
       </section>
-      <Menu />
     </div>
   );
 };

@@ -43,6 +43,15 @@
   padding: 0.4em 3.3em 0 3.3em;
 }
 
+.help-support__final-header{
+  text-transform: uppercase;
+}
+
+.help-supoprt__text{
+  margin-top: 0.3em;
+
+}
+
 .help-support__small-heading{
   font-size:
   0.8em;
