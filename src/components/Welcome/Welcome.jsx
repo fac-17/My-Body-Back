@@ -1,6 +1,5 @@
 import React from "react";
 import Header from "../Header/Header";
-import Menu from "../Menu/Menu";
 import brain from "../assets/icons/brain.svg";
 import wave from "../assets/icons/wave.svg";
 import flower from "../assets/icons/flower.svg";

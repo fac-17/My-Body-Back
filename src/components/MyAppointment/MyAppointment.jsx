@@ -1,7 +1,6 @@
 import React from "react";
 import "./MyAppointment.css";
 import Header from "../Header/Header";
-import Menu from "../Menu/Menu";
 import { Link } from "react-router-dom";
 import { Swipeable } from "react-swipeable";
 import afterAudio from "../assets/audio/afterAudio.mp3";
@@ -94,7 +93,7 @@ const MyAppointment = () => {
                   ))}
                 </ul>
               </div>
-              <button className="my-appointment__button">Download</button> 
+              <button className="my-appointment__button">Download</button>
             </form>
           </section>
 
@@ -106,13 +105,14 @@ const MyAppointment = () => {
             }
           >
             <h2>After your appointment</h2>
+            <h3 className="my-appointment__subtitle"> Please listen to this message from My Body Back</h3>
             <audio controls>
               <source src={afterAudio} type="audio/mp3" />
             </audio>
 
-            <p>
+            <p className="my-appointment__notes-of-love">
               See the <Link to="/notesoflove">Notes of LOVE</Link> section
-              before your appointment
+              for some encouraging messages
             </p>
           </section>
         </section>
@@ -128,7 +128,8 @@ const MyAppointment = () => {
           />
         ))}
       </div>
-      <Menu />
+      <span onClick={swipingRight} className="my-appointment__arrow__left"> ⟵ </span>
+      <span onClick={swipingLeft} className="my-appointment__arrow__right"> ⟶ </span>
     </section>
   );
 };

@@ -26,3 +26,10 @@
   height: 4em;
   margin-top: 2vh;
 }
+
+.privacy__subtitle{
+  font-weight: normal;
+  font-style: italic;
+  color: white;
+  font-family: Montserrat, sans-serif;
+}

@@ -3,10 +3,10 @@
 }
 
 .compassion__section {
-    display: none;  
+    display: none;
 
 }
-  
+
 .compassion__section_active {
     display: flex;
     flex-direction: column;
@@ -17,7 +17,7 @@
 .compassion__circle__container {
     margin-top: 1em;
 }
-  
+
 .compassion__circle {
     margin: 0.1em;
     height: 0.5em;
@@ -26,7 +26,7 @@
     border-radius: 50%;
     display: inline-block;
 }
-  
+
 .compassion__circle__active {
     margin: 0.1em;
     height: 0.5em;
@@ -34,4 +34,29 @@
     background-color: #614870;
     border-radius: 50%;
     display: inline-block;
+}
+
+.compassion__arrow__left{
+  display: none;
+}
+
+.compassion__arrow__right{
+  display: none
+}
+
+@media screen and (min-width: 992px){
+  .compassion__arrow__left{
+    font-size: 2.5em;
+    cursor:pointer;
+    display: inline-block;
+    margin: 0.5em;
+
+  }
+  .compassion__arrow__right{
+    font-size: 2.5em;
+    cursor: pointer;
+    display: inline-block;
+    margin:0.5em;
+
+  }
 }
