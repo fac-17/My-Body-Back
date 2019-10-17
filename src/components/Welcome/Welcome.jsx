@@ -5,6 +5,7 @@ import brain from "../assets/icons/brain.svg";
 import wave from "../assets/icons/wave.svg";
 import flower from "../assets/icons/flower.svg";
 import butterfly from "../assets/icons/butterfly.svg";
+import butterflyicon from "../assets/icons/butterfly-first-page.svg";
 
 import "./Welcome.css";
 
@@ -39,7 +40,7 @@ const Welcome = () => {
         </p>
       </div>
       <div className="welcome__icon__container">
-        <img className="welcome__icon welcome__icon__butterfly" src={butterfly} alt="butterly"/>
+        <img className="welcome__icon welcome__icon__butterfly" src={butterflyicon} alt="butterly"/>
         <p className="welcome__text">
            Find out more abot the app here
         </p>
