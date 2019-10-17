@@ -3,7 +3,6 @@ import Header from "../Header/Header.jsx";
 import email from "../assets/icons/email-mbb.svg";
 import call from "../assets/icons/call-mbb.svg";
 import { CopyToClipboard } from "react-copy-to-clipboard";
-
 import "./HelpSupport.css";
 
 const HelpSupport = ({ setMenuDisplay }) => {

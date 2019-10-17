@@ -16,7 +16,16 @@ h3 {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.4em;
   color: black;
+  /* margin: 1em;  */
+}
+
+h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.7em;
+  color: black;
+  font-weight: 600;
   /* margin: 1em; */
+  margin: 0;
 }
 
 figcaption {
@@ -32,11 +41,27 @@ p {
   font-size: 1em;
   font-weight: 300;
   color: black;
-  /* margin: 0 1.5em 0.3em 1.5em; */
-  margin-left: 2em;
-  margin-right: 2em;
+   margin: 0 1.5em 0.3em 1.5em; 
 }
 
 .App {
   text-align: center;
 }
+
+/* .my-appointment__button {
+  width: 40vw;
+  height: 33px;
+  background-color: #614870;
+  border-radius: 0 0.8em;
+  margin: 2em;
+  color: white;
+}
+
+.my-appointment__button {
+  width: 40vw;
+  height: 33px;
+  background-color: #614870;
+  border-radius: 0 0.8em;
+  margin: 2em;
+  color: white;
+} */

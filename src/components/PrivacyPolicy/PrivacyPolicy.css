@@ -10,6 +10,11 @@
   color: #ffffff;
 }
 
+.privacy__subtitle{
+  color: yellow;
+  /* put here the right yellow */
+}
+
 .privacy__text{
   color: white;
 }

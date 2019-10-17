@@ -56,15 +56,6 @@ p {
   color: white;
 }
 
-.my-appointment__button {
-  width: 40vw;
-  height: 33px;
-  background-color: #614870;
-  border-radius: 0 0.8em;
-  margin: 2em;
-  color: white;
-}
-
 .my-appointment__circle__container {
   margin-top: 0.3em;
 }

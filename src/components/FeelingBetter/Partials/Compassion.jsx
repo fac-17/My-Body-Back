@@ -47,7 +47,7 @@ const Compassion = () => {
         </p>
         </section>
       </section>
-      <Fade top cascade>
+     
       <section id="compassion-section-page__two">
       <section
             className={
@@ -65,7 +65,7 @@ const Compassion = () => {
         </p>
       </section>
       </section>
-      </Fade>
+      
       <section id="compassion-section-page__three">
       <section
             className={
