@@ -44,26 +44,26 @@ const Compassion = () => {
             </p>
           </section>
         </section>
-        <Fade top cascade>
-          <section id="compassion-section-page__two">
-            <section
-              className={
-                compassionSection === 1
-                  ? "compassion__section_active"
-                  : "compassion__section"
-              }
-            >
-              <h3>What is Compassion?</h3>
-              <p>
-                Compassion is a sensitivity to suffering, others’ suffering as
-                well as our own, with a commitment to relieving and preventing
-                it. So it is paying attention to what is difficult, engaging
-                with it, and then taking action to make things better.
-                Compassion takes courage.
-              </p>
-            </section>
+
+        <section id="compassion-section-page__two">
+          <section
+            className={
+              compassionSection === 1
+                ? "compassion__section_active"
+                : "compassion__section"
+            }
+          >
+            <h3>What is Compassion?</h3>
+            <p>
+              Compassion is a sensitivity to suffering, others’ suffering as
+              well as our own, with a commitment to relieving and preventing it.
+              So it is paying attention to what is difficult, engaging with it,
+              and then taking action to make things better. Compassion takes
+              courage.
+            </p>
           </section>
-        </Fade>
+        </section>
+
         <section id="compassion-section-page__three">
           <section
             className={

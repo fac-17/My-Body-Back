@@ -29,7 +29,6 @@
   filter: sepia(3.6) saturate(13.5);
 }
 
-
 .menu__leftbutton:active{
   filter: sepia(3.6) saturate(13.5);
 }

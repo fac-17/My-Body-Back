@@ -17,7 +17,8 @@ const PrivacyPolicy = ({ setMenuDisplay }) => {
         assure you that this app does not collect any personally-identifiable
         information and does not use cookies to track users.
       </p>
-      <Link to="/welcome">
+
+      <Link to="/welcome" >
         <img
           data-testid="butterfly-test-id"
           className="privacy__button"

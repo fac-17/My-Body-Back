@@ -3,7 +3,6 @@ import Header from "../Header/Header.jsx";
 import email from "../assets/icons/email-mbb.svg";
 import call from "../assets/icons/call-mbb.svg";
 import { CopyToClipboard } from "react-copy-to-clipboard";
-
 import "./HelpSupport.css";
 
 const HelpSupport = ({ setMenuDisplay }) => {
@@ -26,8 +25,10 @@ const HelpSupport = ({ setMenuDisplay }) => {
       <p className="help-support__small-text">
         Below you’ll find a list of other trusted services you may find useful.
       </p>
-
+      
+      <section className="Help-support-list__container">
       <ul className="help-support__list">
+        <section className="help-support-list__item">
         <li className="help-support__list-item">
           <a href="mailto:jo@samaritans.org" target="_top">
             <img
@@ -58,7 +59,10 @@ const HelpSupport = ({ setMenuDisplay }) => {
             listening.
           </p>
         </li>
+        </section>
 
+
+        <section className="help-support-list__item">
         <li className="help-support__list-item">
           <CopyToClipboard text="0808 802 9999">
             <img
@@ -82,7 +86,9 @@ const HelpSupport = ({ setMenuDisplay }) => {
             advocacy, information and counselling.
           </p>
         </li>
+        </section>
 
+        <section className="help-support-list__item">
         <li className="help-support__list-item">
           <a href="mailto:support@rapecrisisscotland.org.uk" target="_top">
             <img
@@ -115,7 +121,9 @@ const HelpSupport = ({ setMenuDisplay }) => {
             member centres across Scotland.
           </p>
         </li>
+        </section>
 
+        <section className="help-support-list__item">
         <li className="help-support__list-item">
           <a href="mailto:office@womanstrust.org.uk" target="_top">
             <img
@@ -147,7 +155,9 @@ const HelpSupport = ({ setMenuDisplay }) => {
             sexual abuse, and other forms of domestic abuse.
           </p>
         </li>
+        </section>
 
+        <section className="help-support-list__item">
         <li className="help-support__list-item">
           <a href="mailto:referrals@galop.org.uk" target="_top">
             <img src={email} className="help-support__icon" alt="email galop" />
@@ -177,6 +187,7 @@ const HelpSupport = ({ setMenuDisplay }) => {
             experienced domestic abuse.
           </p>
         </li>
+        </section>
 
         <li>
           <h4 className="help-support__small-heading">
@@ -214,6 +225,8 @@ const HelpSupport = ({ setMenuDisplay }) => {
           many of these services accept self-referrals{" "}
         </p>
       </ul>
+      
+      </section>
     </div>
   );
 };

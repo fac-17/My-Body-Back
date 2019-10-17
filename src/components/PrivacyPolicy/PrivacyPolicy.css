@@ -29,4 +29,14 @@
   cursor: pointer;
   height: 4em;
   margin-top: 2vh;
+/*   filter: sepia(3.6) saturate(13.5); */
+}
+
+.privacy__button:hover {opacity: 0.6}
+
+.privacy__subtitle{
+  font-weight: normal;
+  font-style: italic;
+  color: white;
+  font-family: Montserrat, sans-serif;
 }
