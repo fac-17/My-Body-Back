@@ -31,11 +31,15 @@ const About = () => {
           people find this hard too.
         </p>
 
-        <p className="about__text__main">Everything about</p>
+        <p className="about__text__main">Privacy policy</p>
         <Link to="/">
-          <p>privacy</p>
+          <p>here</p>
         </Link>
         {/* </Zoom> */}
+        <p className="about__text_main">Find extra resources</p>
+        <Link to="/extraresources">
+        <p>here</p>
+        </Link> 
       </div>
 
       <Menu />

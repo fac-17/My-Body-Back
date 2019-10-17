@@ -6,7 +6,7 @@ const ExtraResources = () => {
   const [data, setData] = React.useState(null);
   React.useMemo(() => {
     async function getInfo() {
-      const response = await fetch("http://localhost:9000/getData");
+      const response = await fetch("/.netlify/src/functions/getData");
       const json = await response.json();
       return json;
     }

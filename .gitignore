@@ -62,3 +62,7 @@ typings/
 
 # command file to run lambda funtion locally
 devrun.command
+
+# functions file
+
+src/functions
