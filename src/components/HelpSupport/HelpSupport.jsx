@@ -6,7 +6,10 @@ import { CopyToClipboard } from "react-copy-to-clipboard";
 
 import "./HelpSupport.css";
 
-const HelpSupport = () => {
+const HelpSupport = ({ setMenuDisplay }) => {
+  React.useEffect(() => {
+    setMenuDisplay(true);
+  }, [setMenuDisplay]);
   return (
     <div className="help-support__container">
       <Header />
@@ -30,9 +33,10 @@ const HelpSupport = () => {
         <li className="help-support__list-item">
           <a href="mailto:jo@samaritans.org" target="_top">
             <img
-            src={email}
-            className="help-support__icon"
-            alt="email samaritans"/>
+              src={email}
+              className="help-support__icon"
+              alt="email samaritans"
+            />
           </a>
 
           <CopyToClipboard text="116 123">
@@ -57,7 +61,6 @@ const HelpSupport = () => {
 
         <section className="help-support-list__item">
         <li className="help-support__list-item">
-          <a href="#">
             <CopyToClipboard text="0808 802 9999">
               <img
                 onClick={() => alert("number copied to clipboard")}
@@ -66,7 +69,6 @@ const HelpSupport = () => {
                 alt="call rapecrisis UK"
               />
             </CopyToClipboard>
-          </a>
           <a href="https://rapecrisis.org.uk" target="_blank">
             <h3 className="help-support__heading">Rape Crisis</h3>
           </a>
@@ -83,7 +85,6 @@ const HelpSupport = () => {
           <a href="mailto:support@rapecrisisscotland.org.uk" target="_top">
             <img src={email} className="help-support__icon" />
           </a>
-          <a href="#">
             <CopyToClipboard text="08088 01 03 02">
               <img
                 onClick={() => alert("number copied to clipboard")}
@@ -92,7 +93,6 @@ const HelpSupport = () => {
                 alt="call rapecrisis Scotland"
               />
             </CopyToClipboard>
-          </a>
           <a href="https://www.rapecrisisscotland.org.uk/" target="_blank">
             <h3 className="help-support__heading">Rape Crisis</h3>
           </a>
@@ -110,7 +110,6 @@ const HelpSupport = () => {
           <a href="mailto:office@womanstrust.org.uk" target="_top">
             <img src={email} className="help-support__icon" />
           </a>
-          <a href="#">
             <CopyToClipboard text="020 7034 0303">
               <img
                 onClick={() => alert("number copied to clipboard")}
@@ -119,10 +118,7 @@ const HelpSupport = () => {
                 alt="call womanstrust"
               />
             </CopyToClipboard>
-          </a>
-          <a
-            href="http://womanstrust.org.uk/"
-            target="_blank">
+          <a href="http://womanstrust.org.uk/" target="_blank">
             <h3 className="help-support__heading">Woman's Trust</h3>
           </a>
           <p className="help-supoprt__text">
@@ -138,7 +134,6 @@ const HelpSupport = () => {
           <a href="mailto:referrals@galop.org.uk" target="_top">
             <img src={email} className="help-support__icon" />
           </a>
-          <a href="#">
             <CopyToClipboard text="0207 704 2040">
               <img
                 onClick={() => alert("number copied to clipboard")}
@@ -147,7 +142,6 @@ const HelpSupport = () => {
                 alt="call galop"
               />
             </CopyToClipboard>
-          </a>
           <a href="http://www.galop.org.uk/domesticabuse/" target="_blank">
             <h3 className="help-support__heading">
               London LGBT Domestic Abuse Partnership
@@ -166,10 +160,7 @@ const HelpSupport = () => {
             If you're outside London:
           </h4>
           <a href="mailto:help@galop.org.uk" target="_top">
-            <img
-            src={email}
-            className="help-support__icon"
-            alt="email galop" />
+            <img src={email} className="help-support__icon" alt="email galop" />
           </a>
           <CopyToClipboard text="0800 999 5428">
             <img
@@ -180,8 +171,10 @@ const HelpSupport = () => {
             />
           </CopyToClipboard>
         </li>
-        <p>  -  -  -  </p>
-        <h3 className="help-support__final-header">NHS Psychological Therapy</h3>
+        <p> - - - </p>
+        <h3 className="help-support__final-header">
+          NHS Psychological Therapy
+        </h3>
 
         <p className="help-supoprt__text">
           {" "}

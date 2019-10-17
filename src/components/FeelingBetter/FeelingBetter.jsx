@@ -6,8 +6,10 @@ import Compassion from "./Partials/Compassion";
 import Coping from "./Partials/Coping";
 import Fade from "react-reveal/Fade";
 
-
-const FeelingBetter = () => {
+const FeelingBetter = ({ setMenuDisplay }) => {
+  React.useEffect(() => {
+    setMenuDisplay(true);
+  }, [setMenuDisplay]);
   const [currentPage, setCurrentPage] = React.useState("home");
 
   if (currentPage === "home") {
@@ -17,31 +19,31 @@ const FeelingBetter = () => {
         <section id="feeling-better__body">
           <h2>Feeling Better</h2>
           <Fade bottom>
-          <button
-            className="feeling-better__button"
-            id="soothing"
-            onClick={() => setCurrentPage("soothing")}
-          >
-            Soothing
-          </button>
+            <button
+              className="feeling-better__button"
+              id="soothing"
+              onClick={() => setCurrentPage("soothing")}
+            >
+              Soothing
+            </button>
           </Fade>
-          <Fade delay={0.500}>
-          <button
-            className="feeling-better__button"
-            id="compassion"
-            onClick={() => setCurrentPage("compassion")}
-          >
-            Compassion
-          </button>
+          <Fade delay={0.5}>
+            <button
+              className="feeling-better__button"
+              id="compassion"
+              onClick={() => setCurrentPage("compassion")}
+            >
+              Compassion
+            </button>
           </Fade>
           <Fade top>
-          <button
-            className="feeling-better__button"
-            id="coping"
-            onClick={() => setCurrentPage("coping")}
-          >
-            Coping
-          </button>
+            <button
+              className="feeling-better__button"
+              id="coping"
+              onClick={() => setCurrentPage("coping")}
+            >
+              Coping
+            </button>
           </Fade>
         </section>
       </section>
@@ -61,7 +63,6 @@ const FeelingBetter = () => {
           </button>
           <Soothing />
         </section>
-
       </section>
     );
   } else if (currentPage === "compassion") {
@@ -98,7 +99,6 @@ const FeelingBetter = () => {
           </button>
           <Coping />
         </section>
-
       </section>
     );
   }
