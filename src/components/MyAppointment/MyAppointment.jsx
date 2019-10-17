@@ -94,7 +94,7 @@ const MyAppointment = () => {
                   ))}
                 </ul>
               </div>
-              <button className="my-appointment__button">Download</button> 
+              <button className="my-appointment__button">Download</button>
             </form>
           </section>
 
@@ -106,13 +106,14 @@ const MyAppointment = () => {
             }
           >
             <h2>After your appointment</h2>
+            <h3 className="myAppointment__subtitle"> Please listen to this message from My Body Back</h3>
             <audio controls>
               <source src={afterAudio} type="audio/mp3" />
             </audio>
 
-            <p>
+            <p className="myAppointment__notes-of-love">
               See the <Link to="/notesoflove">Notes of LOVE</Link> section
-              before your appointment
+              for some encouraging messages
             </p>
           </section>
         </section>

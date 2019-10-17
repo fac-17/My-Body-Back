@@ -23,6 +23,14 @@ p {
   margin: 1em;
   align-content: flex-start;
 }
+.myAppointment__subtitle{
+  font-size: 0.8em;
+}
+
+.myAppointment__notes-of-love{
+  font-size: 0.6em;
+  font-style: italic;
+}
 
 /* ----- my appointment section n3 ----- */
 
@@ -54,7 +62,7 @@ p {
   background-color: #614870;
   border-radius: 0 0.8em;
   margin: 2em;
-  color: white; 
+  color: white;
 }
 
 .my-appointment__circle__container {
