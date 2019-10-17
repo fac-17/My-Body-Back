@@ -3,7 +3,10 @@ import { Link } from "react-router-dom";
 import butterfly from "../assets/icons/butterfly-first-page.svg";
 import "./PrivacyPolicy.css";
 
-const PrivacyPolicy = ({menuDisplay, setMenuDisplay}) => {
+const PrivacyPolicy = ({ menuDisplay, setMenuDisplay }) => {
+  React.useEffect(() => {
+    setMenuDisplay(false);
+  }, [setMenuDisplay]);
 
   return (
     <div className="privacy__container">
