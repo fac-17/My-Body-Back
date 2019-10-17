@@ -1,10 +1,18 @@
 .feeling-overwhelmed__icon {
-  width: 5vw;
-  filter:sepia(1.6) saturate(6.5) hue-rotate(89deg);
-  transition:0.5s ease-out;
+  width: 30vw;
+  height: 20vh;
+  filter:sepia(1.6) saturate(20) hue-rotate(-45deg);
 }
 
 #feeling-overwhelmed__icon-container {
   display: flex;
   justify-content: center;
+}
+
+.feeling-overwhelmed__arrow{
+  font-size: 2em;}
+
+.feeling-overwhelmed__image-text{
+  margin: 0;
+  padding: 0;
 }

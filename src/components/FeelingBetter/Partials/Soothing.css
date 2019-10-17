@@ -1,8 +1,8 @@
-.coping__section {
+.soothingSection__section {
     display: none;
   }
 
-#coping-section__container {
+#soothing-section__container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -10,7 +10,7 @@
 
 }
 
-.coping__section-active {
+.soothing-section__section_active{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,17 +18,11 @@
   height: 15em;
 }
 
-
-.coping-section__file {
-  width: 100%;
-  height: 100%;
-}
-
-.coping__circle__container {
+.soothing-section__circle__container {
   margin-top: 0.3em;
 }
 
-.coping__circle {
+.soothing-section__circle {
   margin: 0.1em;
   height: 0.5em;
   width: 0.5em;
@@ -37,7 +31,7 @@
   display: inline-block;
 }
 
-.coping__circle__active {
+.soothing-section__circle__active {
   margin: 0.1em;
   height: 0.5em;
   width: 0.5em;
@@ -45,23 +39,33 @@
   border-radius: 50%;
   display: inline-block;
 }
-.coping__arrow__left{
+
+.soothingSection__audio{
+  margin: 1em;
+}
+.soothingSection__subtitle{
+  margin: 0;
+  font-size: 0.8em;
+  font-style: italic;
+}
+
+.soothing__arrow__left{
   display: none;
 }
 
-.coping__arrow__right{
+.soothing__arrow__right{
   display: none
 }
 
 @media screen and (min-width: 992px){
-  .coping__arrow__left{
+  .soothing__arrow__left{
     font-size: 2.5em;
     cursor:pointer;
     display: inline-block;
     margin: 0.5em;
 
   }
-  .coping__arrow__right{
+  .soothing__arrow__right{
     font-size: 2.5em;
     cursor: pointer;
     display: inline-block;

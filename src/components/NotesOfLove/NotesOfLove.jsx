@@ -10,7 +10,6 @@ import noteSeven from "../assets/notes-of-love/notes-of-love-seven.png";
 import noteEight from "../assets/notes-of-love/notes-of-love-eight.png";
 import instagram from "../assets/notes-of-love/instagram.svg";
 import Header from "../Header/Header";
-import Menu from "../Menu/Menu";
 import "./NotesOfLove.css";
 
 
@@ -56,7 +55,8 @@ const swipeRight = () => {
   alt="instagram"/>
   </a>
   <p className="notes-of-love__small-text">See more on Instagram</p>
-<Menu />
+  <span onClick={swipeRight} className="notes-of-love__arrow__left"> ⟵ </span>
+  <span onClick={swipeLeft} className="notes-of-love__arrow__right"> ⟶ </span>
 </section>
 )
 }

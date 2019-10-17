@@ -1,6 +1,5 @@
 import React from "react";
 import Header from "../Header/Header.jsx";
-import Menu from "../Menu/Menu";
 import traumaVideo from "../assets/video/Trauma.mp4";
 import emotionsVideo from "../assets/video/Emotions.mp4";
 import "./Emotions.css";
@@ -10,7 +9,7 @@ const Emotions = () => {
     <section id="emotions__container">
       <Header />
       <section id="emotions__body">
-        <h2> Trauma, the Brain and our Emotions </h2>
+        <h2> Trauma & our Emotions </h2>
         <section id="emotions__section-one">
           <h3>Why is this so difficult?!</h3>
           <figure className="emotions__figure">
@@ -43,7 +42,6 @@ const Emotions = () => {
           </figure>
         </section>
       </section>
-      <Menu />
     </section>
   );
 };

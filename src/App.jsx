@@ -12,15 +12,21 @@ import Emotions from "./components/Emotions/Emotions";
 import FeelingBetter from "./components/FeelingBetter/FeelingBetter";
 import HelpSupport from "./components/HelpSupport/HelpSupport";
 import NotesOfLove from "./components/NotesOfLove/NotesOfLove";
+
 import ExtraResources from "./components/ExtraResources/ExtraResources";
 
 
+
+import Menu from "./components/Menu/Menu";
+
 function App() {
+
+    const [menuDisplay, setMenuDisplay] = React.useState(false);
   return (
     <div className="App">
       <Router>
         <Switch>
-          <Route exact path="/" component={PrivacyPolicy} />
+          <Route exact path="/" render={(props) => <PrivacyPolicy {...props} menuDisplay={menuDisplay} setMenuDisplay={setMenuDisplay} />} />
           <Route exact path="/welcome" component={Welcome} />
           <Route exact path="/about" component={About} />
           <Route exact path="/feelingoverwhelmed" component={FeelingOverwhelmed} />
@@ -33,6 +39,7 @@ function App() {
           <Route exact path="/extraresources" component={ExtraResources} />
           <Route path="*" component={PageNotFound} />
         </Switch>
+          <Menu menuDisplay={menuDisplay} setMenuDisplay={setMenuDisplay}/>
       </Router>
     </div>
   );

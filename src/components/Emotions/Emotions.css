@@ -3,6 +3,7 @@
   display:flex;
   flex-direction: column;
   align-items: center;
+
 }
 
 #emotions__section-one {
@@ -13,11 +14,12 @@
 }
 
 .emotions__video-wrapper {
-  width: 12.5em;
-  height: 9em;
+  width: 80%;
+  height: auto;
 }
 
 .emotions__video {
   width: 100%;
   height: 100%;
+  box-shadow: 2px 2px rgba(0, 0, 0, 0.4);
 }
