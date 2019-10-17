@@ -7,7 +7,10 @@ import butterfly from "../assets/icons/butterfly.svg";
 
 import "./Welcome.css";
 
-const Welcome = () => {
+const Welcome = ({ setMenuDisplay }) => {
+  React.useEffect(() => {
+    setMenuDisplay(true);
+  }, [setMenuDisplay]);
   return (
     <div className="welcome__container">
       <Header />
@@ -15,33 +18,28 @@ const Welcome = () => {
         Welcome
       </h2>
       <p className="welcome__text__main">
-
         Welcome to the My Body Back app. Here's an overview of how to navigate
         the site.
       </p>
       <div className="welcome__icon__container">
-        <img className="welcome__icon" src={brain} alt="brain"/>
-        <p className="welcome__text">
-          The "Helping Ourselves" section
-        </p>
+        <img className="welcome__icon" src={brain} alt="brain" />
+        <p className="welcome__text">The "Helping Ourselves" section</p>
       </div>
       <div className="welcome__icon__container">
-        <img className="welcome__icon" src={wave} alt="wave"/>
-        <p className="welcome__text">
-           The "Feeling Overwhelmed" section
-        </p>
+        <img className="welcome__icon" src={wave} alt="wave" />
+        <p className="welcome__text">The "Feeling Overwhelmed" section</p>
       </div>
       <div className="welcome__icon__container">
-        <img className="welcome__icon" src={flower} alt="flower"/>
-        <p className="welcome__text">
-           The "My Appointment" section
-        </p>
+        <img className="welcome__icon" src={flower} alt="flower" />
+        <p className="welcome__text">The "My Appointment" section</p>
       </div>
       <div className="welcome__icon__container">
-        <img className="welcome__icon welcome__icon__butterfly" src={butterfly} alt="butterly"/>
-        <p className="welcome__text">
-           Find out more abot the app here
-        </p>
+        <img
+          className="welcome__icon welcome__icon__butterfly"
+          src={butterfly}
+          alt="butterly"
+        />
+        <p className="welcome__text">Find out more abot the app here</p>
       </div>
     </div>
   );
