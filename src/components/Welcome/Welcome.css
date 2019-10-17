@@ -1,29 +1,28 @@
-.welcome__text {
-  text-align: left;
-  max-width: 60%;
-  font-size: 0.7em;
-   margin: 0.5em 0 0 0 ;
-}
-
-.welcome__text__main{
-  padding: 0.3em;
-}
-
 .welcome__container{
   background-color: white;
   margin: 0;
   padding: 0;
 }
-.welcome__icon__container{
+
+/* .welcome__text__main{
+  padding: 0.3em;
+} */
+
+/* .welcome__icon__container{
   display: flex;
   justify-content: space-evenly;
+} */
+
+.welcome__text {
+  text-align: center;
+  /* max-width: 60%; */
+  /* font-size: 0.7em; */
+  /* margin: 0.5em 0 0 0 ; */
+  margin-top: 0;
 }
 
 .welcome__icon{
   filter: sepia(3.6) saturate(13.5);
-  max-width: 13%;
-}
-
-.welcome__icon__butterfly{
-  filter:sepia(1.6) saturate(6.5) hue-rotate(89deg);
+  max-width: 20%;
+  margin-top: 1em;
 }

@@ -16,32 +16,30 @@ const Welcome = () => {
         Welcome
       </h2>
       <p className="welcome__text__main">
-
-        Welcome to the My Body Back app. Here's an overview of how to navigate
-        the site.
+        Welcome to My Body Back app. We are here to give you some support to handle the difficult experience you might have lived. We truly believe that understand ourselves is the key to get better. This is here an overview of how to navigate through the site.
       </p>
       <div className="welcome__icon__container">
         <img className="welcome__icon" src={brain} alt="brain"/>
         <p className="welcome__text">
-          The "Helping Ourselves" section
+          Tired, over thinking, need scientifique answers? Helping ourselves to understand how our emotions works and how to get better.
         </p>
       </div>
       <div className="welcome__icon__container">
         <img className="welcome__icon" src={wave} alt="wave"/>
         <p className="welcome__text">
-           The "Feeling Overwhelmed" section
+           Feeling overwhelmed and your emotions take over you like a wave? You are not alone...Get support from professionals and cheers yourself with notes of Love from all around the world.
         </p>
       </div>
       <div className="welcome__icon__container">
         <img className="welcome__icon" src={flower} alt="flower"/>
         <p className="welcome__text">
-           The "My Appointment" section
+           My Appointment section will help you to get prepare and open yourself, as a flower to professionals which will guide through in the path of acceptance and feeling better.
         </p>
       </div>
       <div className="welcome__icon__container">
-        <img className="welcome__icon welcome__icon__butterfly" src={butterflyicon} alt="butterly"/>
+        <img className="welcome__icon" src={butterflyicon} alt="butterfly"/>
         <p className="welcome__text">
-           Find out more abot the app here
+           Need help to navigate through the app? Find answers on the butterfly.
         </p>
       </div>
     </div>
