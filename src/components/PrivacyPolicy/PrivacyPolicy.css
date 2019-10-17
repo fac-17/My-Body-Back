@@ -10,6 +10,11 @@
   color: #ffffff;
 }
 
+.privacy__subtitle{
+  color: yellow;
+  /* put here the right yellow */
+}
+
 .privacy__text{
   color: white;
 }
@@ -25,11 +30,4 @@
   cursor: pointer;
   height: 4em;
   margin-top: 2vh;
-}
-
-.privacy__subtitle{
-  font-weight: normal;
-  font-style: italic;
-  color: white;
-  font-family: Montserrat, sans-serif;
 }
