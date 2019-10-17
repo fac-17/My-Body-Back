@@ -23,7 +23,6 @@ const Soothing = () => {
 
   return (
     <section id="soothing-section__container">
-      <h3>Activating Your Soothing System</h3>
       <Swipeable onSwipedLeft={swipingLeft} onSwipedRight={swipingRight}>
       <section id="soothing-section-page__one">
       <section

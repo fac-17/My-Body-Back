@@ -1,8 +1,8 @@
 .welcome__text {
   text-align: left;
   max-width: 60%;
-  /* font-size: 0.8em; */
-  /* font-family: 'Montserrat', sans-serif; */
+  font-size: 0.7em;
+   margin: 0.5em 0 0 0 ;
 }
 
 .welcome__text__main{
@@ -20,5 +20,10 @@
 }
 
 .welcome__icon{
-  max-width: 10%;
+  filter: sepia(3.6) saturate(13.5);
+  max-width: 13%;
+}
+
+.welcome__icon__butterfly{
+  filter:sepia(1.6) saturate(6.5) hue-rotate(89deg);
 }
