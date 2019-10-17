@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import butterfly from "../assets/icons/butterfly-first-page.svg";
 import "./PrivacyPolicy.css";
 
-const PrivacyPolicy = ({ menuDisplay, setMenuDisplay }) => {
+const PrivacyPolicy = ({ setMenuDisplay }) => {
   React.useEffect(() => {
     setMenuDisplay(false);
   }, [setMenuDisplay]);
@@ -22,7 +22,6 @@ const PrivacyPolicy = ({ menuDisplay, setMenuDisplay }) => {
       </span>
       <Link to="/welcome">
         <img
-          onClick={() => setMenuDisplay(true)}
           data-testid="butterfly-test-id"
           className="privacy__button"
           src={butterfly}

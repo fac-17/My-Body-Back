@@ -6,7 +6,10 @@ import { CopyToClipboard } from "react-copy-to-clipboard";
 
 import "./HelpSupport.css";
 
-const HelpSupport = () => {
+const HelpSupport = ({ setMenuDisplay }) => {
+  React.useEffect(() => {
+    setMenuDisplay(true);
+  }, [setMenuDisplay]);
   return (
     <div className="help-support__container">
       <Header />
@@ -24,14 +27,14 @@ const HelpSupport = () => {
         Below you’ll find a list of other trusted services you may find useful.
       </p>
 
-
       <ul className="help-support__list">
         <li className="help-support__list-item">
           <a href="mailto:jo@samaritans.org" target="_top">
             <img
-            src={email}
-            className="help-support__icon"
-            alt="email samaritans"/>
+              src={email}
+              className="help-support__icon"
+              alt="email samaritans"
+            />
           </a>
 
           <CopyToClipboard text="116 123">
@@ -51,7 +54,6 @@ const HelpSupport = () => {
             listening.
           </p>
         </li>
-
 
         <li className="help-support__list-item">
           <a href="#">
@@ -73,7 +75,6 @@ const HelpSupport = () => {
             advocacy, information and counselling.
           </p>
         </li>
-
 
         <li className="help-support__list-item">
           <a href="mailto:support@rapecrisisscotland.org.uk" target="_top">
@@ -100,7 +101,6 @@ const HelpSupport = () => {
           </p>
         </li>
 
-
         <li className="help-support__list-item">
           <a href="mailto:office@womanstrust.org.uk" target="_top">
             <img src={email} className="help-support__icon" />
@@ -115,9 +115,7 @@ const HelpSupport = () => {
               />
             </CopyToClipboard>
           </a>
-          <a
-            href="http://womanstrust.org.uk/"
-            target="_blank">
+          <a href="http://womanstrust.org.uk/" target="_blank">
             <h3 className="help-support__heading">Woman's Trust</h3>
           </a>
           <p className="help-supoprt__text">
@@ -126,7 +124,6 @@ const HelpSupport = () => {
             sexual abuse, and other forms of domestic abuse.
           </p>
         </li>
-
 
         <li className="help-support__list-item">
           <a href="mailto:referrals@galop.org.uk" target="_top">
@@ -154,16 +151,12 @@ const HelpSupport = () => {
           </p>
         </li>
 
-
         <li>
           <h4 className="help-support__small-heading">
             If you're outside London:
           </h4>
           <a href="mailto:help@galop.org.uk" target="_top">
-            <img
-            src={email}
-            className="help-support__icon"
-            alt="email galop" />
+            <img src={email} className="help-support__icon" alt="email galop" />
           </a>
           <CopyToClipboard text="0800 999 5428">
             <img
@@ -174,8 +167,10 @@ const HelpSupport = () => {
             />
           </CopyToClipboard>
         </li>
-        <p>  -  -  -  </p>
-        <h3 className="help-support__final-header">NHS Psychological Therapy</h3>
+        <p> - - - </p>
+        <h3 className="help-support__final-header">
+          NHS Psychological Therapy
+        </h3>
 
         <p className="help-supoprt__text">
           {" "}

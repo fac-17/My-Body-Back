@@ -6,7 +6,7 @@ import helpAndSupport from "../assets/icons/has.svg";
 import { Link } from "react-router-dom";
 import { Swipeable } from "react-swipeable";
 
-const FeelingOverwhelmed = ({ menuDisplay, setMenuDisplay }) => {
+const FeelingOverwhelmed = ({ setMenuDisplay }) => {
   React.useEffect(() => {
     setMenuDisplay(true);
   }, [setMenuDisplay]);
