@@ -14,9 +14,11 @@ h2 {
 
 h3 {
   font-family: 'Montserrat', sans-serif;
-  font-size: 1.4em;
-  color: black;
+  font-size: 1em;
+  color: #FFC700;
   /* margin: 1em; */
+  margin-top: 1.5em;
+  font-weight: 600;
 }
 
 h4 {
@@ -30,10 +32,13 @@ h4 {
 
 figcaption {
   font-family: 'Montserrat', sans-serif;
-  font-size: 1.4em;
+  font-size: 1em;
+  font-weight: 300;
   color: black;
   /* margin: 1em 1em 2em 1em; */
-  line-height: 1.2em;
+  /* line-height: 1.2em; */
+  margin-left: 2em;
+  margin-right: 2em;
 }
 
 p {
