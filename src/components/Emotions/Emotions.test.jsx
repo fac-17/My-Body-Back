@@ -14,7 +14,7 @@ describe("Emotions component renders correctly", () => {
           </Router>
       );
       const logo = getByAltText("My Body Back Logo");
-      const title1 = getByText("Trauma, the Brain and our Emotions");
+      const title1 = getByText("Trauma & our Emotions");
       const title2 = getByText("Why is this so difficult?!");
       // const video = getByText("Your browser does not support video.");
       // const audio = getByText("Your browser does not support video.");
