@@ -21,4 +21,5 @@
 .privacy__button {
   margin: 0.8em;
   cursor: pointer;
+  filter: sepia(3.6) saturate(13.5);
 }
