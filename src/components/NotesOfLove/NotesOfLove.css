@@ -54,3 +54,28 @@ display: inline-block;
   font-size:0.6em;
   font-style: italic;
 }
+
+.notes-of-love__arrow__left{
+  display: none;
+}
+
+.notes-of-love__arrow__right{
+  display: none;
+}
+
+@media screen and (min-width: 992px){
+  .notes-of-love__arrow__left{
+    font-size: 2.5em;
+    cursor:pointer;
+    display: inline-block;
+    margin: 0.5em;
+
+  }
+  .notes-of-love__arrow__right{
+    font-size: 2.5em;
+    cursor: pointer;
+    display: inline-block;
+    margin:0.5em;
+
+  }
+}

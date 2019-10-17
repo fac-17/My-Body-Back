@@ -1,7 +1,7 @@
 .coping__section {
     display: none;
   }
-  
+
 #coping-section__container {
   display: flex;
   flex-direction: column;
@@ -44,4 +44,28 @@
   background-color: #614870;
   border-radius: 50%;
   display: inline-block;
+}
+.coping__arrow__left{
+  display: none;
+}
+
+.coping__arrow__right{
+  display: none
+}
+
+@media screen and (min-width: 992px){
+  .coping__arrow__left{
+    font-size: 2.5em;
+    cursor:pointer;
+    display: inline-block;
+    margin: 0.5em;
+
+  }
+  .coping__arrow__right{
+    font-size: 2.5em;
+    cursor: pointer;
+    display: inline-block;
+    margin:0.5em;
+
+  }
 }

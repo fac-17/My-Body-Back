@@ -23,6 +23,14 @@ p {
   margin: 1em;
   align-content: flex-start;
 }
+.my-appointment__subtitle{
+  font-size: 0.8em;
+}
+
+.my-appointment__notes-of-love{
+  font-size: 0.6em;
+  font-style: italic;
+}
 
 /* ----- my appointment section n3 ----- */
 
@@ -54,7 +62,7 @@ p {
   background-color: #614870;
   border-radius: 0 0.8em;
   margin: 2em;
-  color: white; 
+  color: white;
 }
 
 .my-appointment__circle__container {
@@ -77,4 +85,30 @@ p {
   background-color: #614870;
   border-radius: 50%;
   display: inline-block;
+}
+
+
+.my-appointment__arrow__left{
+  display: none;
+
+}
+.my-appointment__arrow__right{
+  display: none;
+
+}
+@media screen and (min-width: 992px){
+  .my-appointment__arrow__left{
+    font-size: 2.5em;
+    cursor:pointer;
+    display: inline-block;
+    margin: 0.5em;
+
+  }
+  .my-appointment__arrow__right{
+    font-size: 2.5em;
+    cursor: pointer;
+    display: inline-block;
+    margin:0.5em;
+
+  }
 }
