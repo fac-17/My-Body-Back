@@ -24,10 +24,10 @@ const HelpSupport = () => {
       <p className="help-support__small-text">
         Below you’ll find a list of other trusted services you may find useful.
       </p>
-
-<section className="Help-support-list__container">
+      
+      <section className="Help-support-list__container">
       <ul className="help-support__list">
-        <section className="Help-support-list__item">
+        <section className="help-support-list__item">
         <li className="help-support__list-item">
           <a href="mailto:jo@samaritans.org" target="_top">
             <img
@@ -56,6 +56,7 @@ const HelpSupport = () => {
         </section>
 
 
+        <section className="help-support-list__item">
         <li className="help-support__list-item">
           <a href="#">
             <CopyToClipboard text="0808 802 9999">
@@ -76,8 +77,9 @@ const HelpSupport = () => {
             advocacy, information and counselling.
           </p>
         </li>
+        </section>
 
-
+        <section className="help-support-list__item">
         <li className="help-support__list-item">
           <a href="mailto:support@rapecrisisscotland.org.uk" target="_top">
             <img src={email} className="help-support__icon" />
@@ -102,8 +104,9 @@ const HelpSupport = () => {
             member centres across Scotland.
           </p>
         </li>
+        </section>
 
-
+        <section className="help-support-list__item">
         <li className="help-support__list-item">
           <a href="mailto:office@womanstrust.org.uk" target="_top">
             <img src={email} className="help-support__icon" />
@@ -129,8 +132,9 @@ const HelpSupport = () => {
             sexual abuse, and other forms of domestic abuse.
           </p>
         </li>
+        </section>
 
-
+        <section className="help-support-list__item">
         <li className="help-support__list-item">
           <a href="mailto:referrals@galop.org.uk" target="_top">
             <img src={email} className="help-support__icon" />
@@ -156,7 +160,7 @@ const HelpSupport = () => {
             experienced domestic abuse.
           </p>
         </li>
-
+        </section>
 
         <li>
           <h4 className="help-support__small-heading">
@@ -189,6 +193,7 @@ const HelpSupport = () => {
           many of these services accept self-referrals{" "}
         </p>
       </ul>
+      
       </section>
       <Menu />
     </div>
