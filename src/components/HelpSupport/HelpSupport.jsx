@@ -6,7 +6,10 @@ import { CopyToClipboard } from "react-copy-to-clipboard";
 
 import "./HelpSupport.css";
 
-const HelpSupport = () => {
+const HelpSupport = ({ setMenuDisplay }) => {
+  React.useEffect(() => {
+    setMenuDisplay(true);
+  }, [setMenuDisplay]);
   return (
     <div className="help-support__container">
       <Header />

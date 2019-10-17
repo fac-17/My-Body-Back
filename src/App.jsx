@@ -14,25 +14,66 @@ import HelpSupport from "./components/HelpSupport/HelpSupport";
 import NotesOfLove from "./components/NotesOfLove/NotesOfLove";
 import Menu from "./components/Menu/Menu";
 function App() {
-
-    const [menuDisplay, setMenuDisplay] = React.useState(false);
+  const [menuDisplay, setMenuDisplay] = React.useState(false);
   return (
     <div className="App">
       <Router>
         <Switch>
-          <Route exact path="/" render={(props) => <PrivacyPolicy {...props} menuDisplay={menuDisplay} setMenuDisplay={setMenuDisplay} />} />
-          <Route exact path="/welcome" component={Welcome} />
-          <Route exact path="/about" component={About} />
-          <Route exact path="/feelingoverwhelmed" component={FeelingOverwhelmed} />
-          <Route exact path="/helpingourselves" component={HelpingOurselves} />
-          <Route exact path="/myappointment" component={MyAppointment} />
-          <Route exact path="/emotions" component={Emotions} />
-          <Route exact path="/feelingbetter" component={FeelingBetter} />
-          <Route exact path="/helpandsupport" component={HelpSupport} />
-          <Route exact path="/notesoflove" component={NotesOfLove} />
+          <Route
+            exact
+            path="/"
+            render={() => <PrivacyPolicy setMenuDisplay={setMenuDisplay} />}
+          />
+          <Route
+            exact
+            path="/welcome"
+            render={() => <Welcome setMenuDisplay={setMenuDisplay} />}
+          />
+          <Route
+            exact
+            path="/about"
+            render={() => <About setMenuDisplay={setMenuDisplay} />}
+          />
+          <Route
+            exact
+            path="/feelingoverwhelmed"
+            render={() => (
+              <FeelingOverwhelmed setMenuDisplay={setMenuDisplay} />
+            )}
+          />
+          <Route
+            exact
+            path="/helpingourselves"
+            render={() => <HelpingOurselves setMenuDisplay={setMenuDisplay} />}
+          />
+          <Route
+            exact
+            path="/myappointment"
+            render={() => <MyAppointment setMenuDisplay={setMenuDisplay} />}
+          />
+          <Route
+            exact
+            path="/emotions"
+            render={() => <Emotions setMenuDisplay={setMenuDisplay} />}
+          />
+          <Route
+            exact
+            path="/feelingbetter"
+            render={() => <FeelingBetter setMenuDisplay={setMenuDisplay} />}
+          />
+          <Route
+            exact
+            path="/helpandsupport"
+            render={() => <HelpSupport setMenuDisplay={setMenuDisplay} />}
+          />
+          <Route
+            exact
+            path="/notesoflove"
+            render={() => <NotesOfLove setMenuDisplay={setMenuDisplay} />}
+          />
           <Route path="*" component={PageNotFound} />
         </Switch>
-          <Menu menuDisplay={menuDisplay} setMenuDisplay={setMenuDisplay}/>
+        <Menu menuDisplay={menuDisplay} />
       </Router>
     </div>
   );

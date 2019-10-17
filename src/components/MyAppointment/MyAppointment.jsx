@@ -9,7 +9,10 @@ import PreparationTips from "./Partials/PreparationTips.jsx";
 import { motion } from "framer-motion";
 import { content } from "./MyAppointmentCopy.json";
 
-const MyAppointment = () => {
+const MyAppointment = ({ setMenuDisplay }) => {
+  React.useEffect(() => {
+    setMenuDisplay(true);
+  }, [setMenuDisplay]);
   const [appointmentSection, setAppointmentSection] = React.useState(0);
   const circleArray = [1, 2, 3, 4, 5, 6];
 
@@ -105,14 +108,17 @@ const MyAppointment = () => {
             }
           >
             <h2>After your appointment</h2>
-            <h3 className="my-appointment__subtitle"> Please listen to this message from My Body Back</h3>
+            <h3 className="my-appointment__subtitle">
+              {" "}
+              Please listen to this message from My Body Back
+            </h3>
             <audio controls>
               <source src={afterAudio} type="audio/mp3" />
             </audio>
 
             <p className="my-appointment__notes-of-love">
-              See the <Link to="/notesoflove">Notes of LOVE</Link> section
-              for some encouraging messages
+              See the <Link to="/notesoflove">Notes of LOVE</Link> section for
+              some encouraging messages
             </p>
           </section>
         </section>
@@ -128,8 +134,14 @@ const MyAppointment = () => {
           />
         ))}
       </div>
-      <span onClick={swipingRight} className="my-appointment__arrow__left"> ⟵ </span>
-      <span onClick={swipingLeft} className="my-appointment__arrow__right"> ⟶ </span>
+      <span onClick={swipingRight} className="my-appointment__arrow__left">
+        {" "}
+        ⟵{" "}
+      </span>
+      <span onClick={swipingLeft} className="my-appointment__arrow__right">
+        {" "}
+        ⟶{" "}
+      </span>
     </section>
   );
 };

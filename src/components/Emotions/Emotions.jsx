@@ -4,7 +4,10 @@ import traumaVideo from "../assets/video/Trauma.mp4";
 import emotionsVideo from "../assets/video/Emotions.mp4";
 import "./Emotions.css";
 
-const Emotions = () => {
+const Emotions = ({ setMenuDisplay }) => {
+  React.useEffect(() => {
+    setMenuDisplay(true);
+  }, [setMenuDisplay]);
   return (
     <section id="emotions__container">
       <Header />
