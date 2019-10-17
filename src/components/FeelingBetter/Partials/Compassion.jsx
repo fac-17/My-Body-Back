@@ -152,7 +152,7 @@ const Compassion = () => {
         {circleArray.map((circle, i) => (
           <span
             className={
-              i == compassionSection
+              i === compassionSection
                 ? "compassion__circle__active"
                 : "compassion__circle"
             }
