@@ -6,7 +6,10 @@ import { CopyToClipboard } from "react-copy-to-clipboard";
 
 import "./HelpSupport.css";
 
-const HelpSupport = () => {
+const HelpSupport = ({ setMenuDisplay }) => {
+  React.useEffect(() => {
+    setMenuDisplay(true);
+  }, [setMenuDisplay]);
   return (
     <div className="help-support__container">
       <Header />
@@ -24,14 +27,14 @@ const HelpSupport = () => {
         Below you’ll find a list of other trusted services you may find useful.
       </p>
 
-
       <ul className="help-support__list">
         <li className="help-support__list-item">
           <a href="mailto:jo@samaritans.org" target="_top">
             <img
-            src={email}
-            className="help-support__icon"
-            alt="email samaritans"/>
+              src={email}
+              className="help-support__icon"
+              alt="email samaritans"
+            />
           </a>
 
           <CopyToClipboard text="116 123">
@@ -43,7 +46,11 @@ const HelpSupport = () => {
             />
           </CopyToClipboard>
 
-          <a href="https://www.samaritans.org/" target="_blank">
+          <a
+            href="https://www.samaritans.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <h3 className="help-support__heading">The Samaritans</h3>
           </a>
           <p className="help-supoprt__text">
@@ -52,19 +59,21 @@ const HelpSupport = () => {
           </p>
         </li>
 
-
         <li className="help-support__list-item">
-          <a href="#">
-            <CopyToClipboard text="0808 802 9999">
-              <img
-                onClick={() => alert("number copied to clipboard")}
-                src={call}
-                className="help-support__icon"
-                alt="call rapecrisis UK"
-              />
-            </CopyToClipboard>
-          </a>
-          <a href="https://rapecrisis.org.uk" target="_blank">
+          <CopyToClipboard text="0808 802 9999">
+            <img
+              onClick={() => alert("number copied to clipboard")}
+              src={call}
+              className="help-support__icon"
+              alt="call rapecrisis UK"
+            />
+          </CopyToClipboard>
+
+          <a
+            href="https://rapecrisis.org.uk"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <h3 className="help-support__heading">Rape Crisis</h3>
           </a>
           <p className="help-support__small-text">England & Wales</p>
@@ -74,22 +83,29 @@ const HelpSupport = () => {
           </p>
         </li>
 
-
         <li className="help-support__list-item">
           <a href="mailto:support@rapecrisisscotland.org.uk" target="_top">
-            <img src={email} className="help-support__icon" />
+            <img
+              src={email}
+              className="help-support__icon"
+              alt="email rape crisis Scotland"
+            />
           </a>
-          <a href="#">
-            <CopyToClipboard text="08088 01 03 02">
-              <img
-                onClick={() => alert("number copied to clipboard")}
-                src={call}
-                className="help-support__icon"
-                alt="call rapecrisis Scotland"
-              />
-            </CopyToClipboard>
-          </a>
-          <a href="https://www.rapecrisisscotland.org.uk/" target="_blank">
+
+          <CopyToClipboard text="08088 01 03 02">
+            <img
+              onClick={() => alert("number copied to clipboard")}
+              src={call}
+              className="help-support__icon"
+              alt="call rapecrisis Scotland"
+            />
+          </CopyToClipboard>
+
+          <a
+            href="https://www.rapecrisisscotland.org.uk/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <h3 className="help-support__heading">Rape Crisis</h3>
           </a>
           <p className="help-support__small-text">Scotland</p>
@@ -100,24 +116,29 @@ const HelpSupport = () => {
           </p>
         </li>
 
-
         <li className="help-support__list-item">
           <a href="mailto:office@womanstrust.org.uk" target="_top">
-            <img src={email} className="help-support__icon" />
+            <img
+              src={email}
+              className="help-support__icon"
+              alt="mail womans trust"
+            />
           </a>
-          <a href="#">
-            <CopyToClipboard text="020 7034 0303">
-              <img
-                onClick={() => alert("number copied to clipboard")}
-                src={call}
-                className="help-support__icon"
-                alt="call womanstrust"
-              />
-            </CopyToClipboard>
-          </a>
+
+          <CopyToClipboard text="020 7034 0303">
+            <img
+              onClick={() => alert("number copied to clipboard")}
+              src={call}
+              className="help-support__icon"
+              alt="call womanstrust"
+            />
+          </CopyToClipboard>
+
           <a
             href="http://womanstrust.org.uk/"
-            target="_blank">
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <h3 className="help-support__heading">Woman's Trust</h3>
           </a>
           <p className="help-supoprt__text">
@@ -127,22 +148,25 @@ const HelpSupport = () => {
           </p>
         </li>
 
-
         <li className="help-support__list-item">
           <a href="mailto:referrals@galop.org.uk" target="_top">
-            <img src={email} className="help-support__icon" />
+            <img src={email} className="help-support__icon" alt="email galop" />
           </a>
-          <a href="#">
-            <CopyToClipboard text="0207 704 2040">
-              <img
-                onClick={() => alert("number copied to clipboard")}
-                src={call}
-                className="help-support__icon"
-                alt="call galop"
-              />
-            </CopyToClipboard>
-          </a>
-          <a href="http://www.galop.org.uk/domesticabuse/" target="_blank">
+
+          <CopyToClipboard text="0207 704 2040">
+            <img
+              onClick={() => alert("number copied to clipboard")}
+              src={call}
+              className="help-support__icon"
+              alt="call galop"
+            />
+          </CopyToClipboard>
+
+          <a
+            href="http://www.galop.org.uk/domesticabuse/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <h3 className="help-support__heading">
               London LGBT Domestic Abuse Partnership
             </h3>
@@ -154,16 +178,12 @@ const HelpSupport = () => {
           </p>
         </li>
 
-
         <li>
           <h4 className="help-support__small-heading">
             If you're outside London:
           </h4>
           <a href="mailto:help@galop.org.uk" target="_top">
-            <img
-            src={email}
-            className="help-support__icon"
-            alt="email galop" />
+            <img src={email} className="help-support__icon" alt="email galop" />
           </a>
           <CopyToClipboard text="0800 999 5428">
             <img
@@ -174,14 +194,19 @@ const HelpSupport = () => {
             />
           </CopyToClipboard>
         </li>
-        <p>  -  -  -  </p>
-        <h3 className="help-support__final-header">NHS Psychological Therapy</h3>
+        <p> - - - </p>
+        <h3 className="help-support__final-header">
+          NHS Psychological Therapy
+        </h3>
 
         <p className="help-supoprt__text">
           {" "}
           If you are experiencing emotional distress and would like to access
           psychological therapy, you can find your local NHS Improving Access to
-          Psychological Therapies service online <a href="#">here.</a>
+          Psychological Therapies service online{" "}
+          <a href="https://www.nhs.uk/Service-Search/Psychological%20therapies%20(IAPT)/LocationSearch/10008">
+            here.
+          </a>
         </p>
 
         <p className="help-support__small-text">

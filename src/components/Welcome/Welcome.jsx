@@ -8,7 +8,10 @@ import butterflyicon from "../assets/icons/color-butterfly-first-page.svg";
 
 import "./Welcome.css";
 
-const Welcome = () => {
+const Welcome = ({ setMenuDisplay }) => {
+  React.useEffect(() => {
+    setMenuDisplay(true);
+  }, [setMenuDisplay]);
   return (
     <div className="welcome__container">
       <Header />
