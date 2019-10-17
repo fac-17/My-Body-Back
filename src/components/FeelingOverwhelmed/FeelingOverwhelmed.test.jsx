@@ -14,7 +14,7 @@ describe("Feeling Overwhelmed renders correctly", () => {
           </Router>
       );
       const logo = getByAltText("My Body Back Logo");
-      const title = getByText("Feeling Overwhelmed");
+      const title = getByText("Feeling Overwhelmed?");
       const NOL = getByText("Notes Of Love");
       const HAS = getByText("Help & Support");
       expect(logo).toBeInTheDocument();

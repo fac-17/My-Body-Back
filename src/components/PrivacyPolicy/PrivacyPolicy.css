@@ -10,19 +10,25 @@
   color: #ffffff;
 }
 
-.privacy__text,
-.privacy__instructions{
-  font-size: 0.8em;
-  font-family: 'Montserrat', sans-serif;
+.privacy__text{
   color: white;
-  margin-bottom: 1em;
+}
+.privacy__instructions{
+  font-size: 0.5em;
+  color: white;
+  font-weight: 500;
+  font-style: italic;
+  margin-top: 2vh;
 }
 
 .privacy__button {
-  margin: 0.8em;
   cursor: pointer;
   filter: sepia(3.6) saturate(13.5);
+  height: 4em;
+  margin-top: 2vh;
 }
+
+.privacy__button:hover {opacity: 0.6}
 
 .privacy__subtitle{
   font-weight: normal;
