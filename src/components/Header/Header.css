@@ -1,7 +1,9 @@
 .header {
     display: flex;
     justify-content: center;
-    background-color: #e8eaf6;
+    /* background-color: #e8eaf6;
+     */
+    background-color: #ffffe6;
     padding-top: 1em;
 }
 
