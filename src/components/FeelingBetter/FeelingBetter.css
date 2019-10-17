@@ -5,7 +5,7 @@
 
 }
 
-.feeling-better__button {
+/* .feeling-better__button {
     width: 7em;
     height: 3em;
     border-radius: 1em;
@@ -15,7 +15,7 @@
     font-family: Montserrat, cursive;
     text-align: center;
     cursor: pointer;
-}
+} */
 
 .feeling-better__button:hover{
   transform:translateY(-3px);

@@ -1,10 +1,10 @@
 import React from "react";
 import Header from "../Header/Header";
-import brain from "../assets/icons/brain.svg";
-import wave from "../assets/icons/wave.svg";
-import flower from "../assets/icons/flower.svg";
+import brain from "../assets/icons/color-brain.svg";
+import wave from "../assets/icons/color-wave.svg";
+import flower from "../assets/icons/color-flower.svg";
 import butterfly from "../assets/icons/butterfly.svg";
-import butterflyicon from "../assets/icons/butterfly-first-page.svg";
+import butterflyicon from "../assets/icons/color-butterfly-first-page.svg";
 
 import "./Welcome.css";
 
