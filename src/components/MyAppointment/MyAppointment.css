@@ -87,13 +87,28 @@ p {
   display: inline-block;
 }
 
+
 .my-appointment__arrow__left{
-  font-size: 2.5em;
-  cursor:pointer;
+  display: none;
 
 }
 .my-appointment__arrow__right{
-  font-size: 2.5em;
-  cursor: pointer;
+  display: none;
 
+}
+@media screen and (min-width: 992px){
+  .my-appointment__arrow__left{
+    font-size: 2.5em;
+    cursor:pointer;
+    display: inline-block;
+    margin: 0.5em;
+
+  }
+  .my-appointment__arrow__right{
+    font-size: 2.5em;
+    cursor: pointer;
+    display: inline-block;
+    margin:0.5em;
+
+  }
 }
