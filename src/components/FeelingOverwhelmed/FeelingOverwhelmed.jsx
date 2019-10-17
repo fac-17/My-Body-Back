@@ -22,8 +22,7 @@ const FeelingOverwhelmed = () => {
         <h2 id="feeling-overwhelmed__title">Feeling Overwhelmed?</h2>
         <p>
           This app is not about making you go for a cervical screening before
-          you are ready, but about helping you to take small steps, in your own
-          time. You may even decide that you don’t want to have a smear test at
+          you're ready, but intends to help you to take small steps. You may even decide that you don’t want to have a smear test at
           all. You have the right to make this choice.
         </p>
         <section id="feeling-overwhelmed__icon-container">
@@ -34,7 +33,8 @@ const FeelingOverwhelmed = () => {
                 alt="Notes of Love"
                 className="feeling-overwhelmed__icon"
               />
-              <figcaption>Notes Of Love</figcaption>
+              <figcaption className="feeling-overwhelmed__image-text">Notes Of Love</figcaption>
+                <span className="feeling-overwhelmed__arrow"> ⟵ </span>
             </Link>
           </figure>
           <figure>
@@ -44,7 +44,8 @@ const FeelingOverwhelmed = () => {
                 alt="Help and Support"
                 className="feeling-overwhelmed__icon"
               />
-              <figcaption>Help & Support</figcaption>
+              <figcaption className="feeling-overwhelmed__image-text">Help & Support</figcaption>
+              <span className="feeling-overwhelmed__arrow"> ⟶ </span>
             </Link>
           </figure>
         </section>
