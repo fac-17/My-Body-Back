@@ -95,7 +95,6 @@ const MyAppointment = ({ setMenuDisplay }) => {
                   ))}
                 </ul>
               </div>
-              <button className="my-appointment__button">Download</button>
             </form>
           </section>
 

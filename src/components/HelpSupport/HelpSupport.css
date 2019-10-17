@@ -1,9 +1,5 @@
-.help-support__container{
-  padding-bottom: 6em;
-}
-
 .help-support__main-text{
-  font-weight:bold;
+  font-weight:bold; 
   padding: 0.6em;
 }
 
@@ -12,7 +8,7 @@
   font-style:italic;
   font-size: 0.7em;
   padding-bottom: 0.7em;
-  margin: 0;
+  margin: 0 1.5em 0 1.5em;
 }
 
 .help-support__sub-text{
@@ -22,14 +18,16 @@
 .help-support__list{
   padding: 0;
   margin:0;
+  list-style-type:none;
 }
 
-.help-support__list-item{
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
+.help-support-list__item {
+  width : 80vw;
+  height: auto;
+  display:flex;
   justify-content: center;
-
+  margin: 1em 1.5em 2em 1.5em;
+  border-radius: 2em;
 }
 
 .help-support__icon{
@@ -43,7 +41,6 @@
   margin:0;
   font-size: 1em;
   padding: 0.4em 3.3em 0 3.3em;
-
 }
 
 .help-support__final-header{
@@ -51,7 +48,7 @@
 }
 
 .help-supoprt__text{
-  maring-top: 0.3em;
+  margin-top: 0.3em;
 
 }
 
