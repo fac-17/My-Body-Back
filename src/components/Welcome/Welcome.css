@@ -22,7 +22,7 @@
 }
 
 .welcome__icon{
-  filter: sepia(3.6) saturate(13.5);
+  /* filter: sepia(3.6) saturate(13.5); */
   max-width: 20%;
   margin-top: 1em;
 }

@@ -1,10 +1,10 @@
 import React from "react";
 import Header from "../Header/Header";
-import brain from "../assets/icons/brain.svg";
-import wave from "../assets/icons/wave.svg";
-import flower from "../assets/icons/flower.svg";
+import brain from "../assets/icons/color-brain.svg";
+import wave from "../assets/icons/color-wave.svg";
+import flower from "../assets/icons/color-flower.svg";
 import butterfly from "../assets/icons/butterfly.svg";
-import butterflyicon from "../assets/icons/butterfly-first-page.svg";
+import butterflyicon from "../assets/icons/color-butterfly-first-page.svg";
 
 import "./Welcome.css";
 
@@ -31,10 +31,10 @@ const Welcome = () => {
         </p>
       </div>
       <div className="welcome__icon__container">
-        <img className="welcome__icon" src={flower} alt="flower"/>
-        <p className="welcome__text">
+        <div><img className="welcome__icon" src={flower} alt="flower"/></div>
+        <div><p className="welcome__text">
            My Appointment section will help you to get prepare and open yourself, as a flower to professionals which will guide through in the path of acceptance and feeling better.
-        </p>
+        </p></div>
       </div>
       <div className="welcome__icon__container">
         <img className="welcome__icon" src={butterflyicon} alt="butterfly"/>
