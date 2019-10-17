@@ -25,8 +25,9 @@ const HelpSupport = () => {
         Below you’ll find a list of other trusted services you may find useful.
       </p>
 
-
+<section className="Help-support-list__container">
       <ul className="help-support__list">
+        <section className="Help-support-list__item">
         <li className="help-support__list-item">
           <a href="mailto:jo@samaritans.org" target="_top">
             <img
@@ -52,6 +53,7 @@ const HelpSupport = () => {
             listening.
           </p>
         </li>
+        </section>
 
 
         <li className="help-support__list-item">
@@ -187,6 +189,7 @@ const HelpSupport = () => {
           many of these services accept self-referrals{" "}
         </p>
       </ul>
+      </section>
       <Menu />
     </div>
   );
