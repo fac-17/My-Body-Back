@@ -51,6 +51,22 @@ p {
   margin-right: 2em;
 }
 
+button{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9em;
+  font-weight: 600;
+  color: white;
+  border-color: #FFC700;
+  background-color: #FFC700;
+  text-align: center;
+  cursor: pointer;
+  height: 3em;
+  border-radius: 1em 0 1em 0;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  margin: 1.5em;
+}
+
 .App {
   text-align: center;
 }
