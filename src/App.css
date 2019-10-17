@@ -7,33 +7,34 @@ html, body {
 h2 {
   font-family: 'Yellowtail', cursive;
   font-size: 2em;
+  font-weight: lighter;
   color: black;
-  font-weight: normal;
   margin-bottom: 0.5em;
 }
 
 h3 {
   font-family: 'Montserrat', sans-serif;
-  font-size: 1em;
+  font-size: 1.4em;
   color: black;
-  margin: 1em;
-  font-weight:normal;
-
+  /* margin: 1em; */
 }
 
 figcaption {
   font-family: 'Montserrat', sans-serif;
-  font-size: 0.8em;
+  font-size: 1.4em;
   color: black;
-  margin: 1em 1em 2em 1em;
+  /* margin: 1em 1em 2em 1em; */
   line-height: 1.2em;
 }
 
 p {
   font-family: 'Montserrat', sans-serif;
-  font-size: 0.7em;
+  font-size: 1em;
+  font-weight: 300;
   color: black;
-  margin: 0 1.5em 0.3em 1.5em;
+  /* margin: 0 1.5em 0.3em 1.5em; */
+  margin-left: 2em;
+  margin-right: 2em;
 }
 
 .App {
