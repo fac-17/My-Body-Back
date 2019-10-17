@@ -1,7 +1,6 @@
 import React from "react";
 import "./FeelingOverwhelmed.css";
 import Header from "../Header/Header.jsx";
-import Menu from "../Menu/Menu";
 import notesOfLove from "../assets/icons/nol.svg";
 import helpAndSupport from "../assets/icons/has.svg";
 import { Link } from "react-router-dom";
@@ -20,7 +19,7 @@ const FeelingOverwhelmed = () => {
       <Header />
       <Swipeable onSwipedLeft={swipingLeft} onSwipedRight={swipingRight}>
       <section id="feeling-overwhelmed__body">
-        <h2 id="feeling-overwhelmed__title">Feeling Overwhelmed</h2>
+        <h2 id="feeling-overwhelmed__title">Feeling Overwhelmed?</h2>
         <p>
           This app is not about making you go for a cervical screening before
           you are ready, but about helping you to take small steps, in your own
@@ -52,7 +51,7 @@ const FeelingOverwhelmed = () => {
       </section>
       </Swipeable>
 
-      <Menu />
+
     </section>
   );
 };

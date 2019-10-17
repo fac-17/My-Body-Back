@@ -4,7 +4,7 @@ import butterfly from "../assets/icons/butterfly-first-page.svg";
 import "./PrivacyPolicy.css";
 
 const PrivacyPolicy = ({menuDisplay, setMenuDisplay}) => {
-  console.log(menuDisplay)
+
   return (
     <div className="privacy__container">
       <h2 className="privacy__title">My Body Back</h2>

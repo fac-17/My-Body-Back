@@ -10,7 +10,6 @@ import noteSeven from "../assets/notes-of-love/notes-of-love-seven.png";
 import noteEight from "../assets/notes-of-love/notes-of-love-eight.png";
 import instagram from "../assets/notes-of-love/instagram.svg";
 import Header from "../Header/Header";
-import Menu from "../Menu/Menu";
 import "./NotesOfLove.css";
 
 
