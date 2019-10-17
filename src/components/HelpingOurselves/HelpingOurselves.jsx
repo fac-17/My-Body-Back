@@ -29,7 +29,7 @@ const HelpingOurselves = ({ setMenuDisplay }) => {
               In this section we explain what happens in the brain when you're
               faced with a triggering situation, like a cervical screening.
               After experiencing sexual assault, your emotions and body may
-              react strongly against it.
+              react strongly against it
             </p>
             <section id="helping-ourselves__icon-container">
               <Link to="/emotions">

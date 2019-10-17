@@ -24,7 +24,7 @@ const Emotions = ({ setMenuDisplay }) => {
             </div>
             <figcaption>
               A video about what happens in the brain when you are faced with a
-              triggering situation, like thinking about a cervical screening.
+              triggering situation, like thinking about a cervical screening
             </figcaption>
           </figure>
         </section>
@@ -40,7 +40,7 @@ const Emotions = ({ setMenuDisplay }) => {
             </div>
             <figcaption>
               Clinical Psychologist Dr Jane Vosper talks about the brain’s
-              emotion systems.
+              emotion systems
             </figcaption>
           </figure>
         </section>
