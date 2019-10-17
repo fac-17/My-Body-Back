@@ -77,7 +77,7 @@ function App() {
             path="/notesoflove"
             render={() => <NotesOfLove setMenuDisplay={setMenuDisplay} />}
           />
-            <Route exact path="/extraresources" {() => <ExtraResources setMenuDisplay={setMenuDisplay} />}/>
+            <Route exact path="/extraresources" render={() => <ExtraResources setMenuDisplay={setMenuDisplay} />}/>
           <Route path="*" component={PageNotFound} />
         </Switch>
         <Menu menuDisplay={menuDisplay} />

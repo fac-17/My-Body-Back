@@ -36,7 +36,6 @@ const ExtraResources = ({setMenuDisplay}) => {
       <div>
         <Header />
         <h1>...loading</h1>
-        <Menu />
       </div>
     );
   } else {
