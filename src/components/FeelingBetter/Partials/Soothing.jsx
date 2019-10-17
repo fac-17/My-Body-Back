@@ -87,10 +87,12 @@ const Soothing = () => {
                 : "soothingSection__section"
             }
           >
-        <audio controls>
+          <h3 className="soothingSection__subtitle">Soothing rhythm breathing</h3>
+        <audio controls className="soothingSection__audio">
           <source src={soothingAudio} type="audio/mp4" />
         </audio>
-        <audio controls>
+          <h3 className="soothingSection__subtitle">Learning to slow down</h3>
+        <audio controls className="soothingSection__audio">
           <source src={slowDownAudio} type="audio/mp4" />
         </audio>
         </section>

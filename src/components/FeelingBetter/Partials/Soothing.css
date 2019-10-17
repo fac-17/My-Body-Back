@@ -1,7 +1,7 @@
 .soothingSection__section {
     display: none;
   }
-  
+
 #soothing-section__container {
   display: flex;
   flex-direction: column;
@@ -40,3 +40,11 @@
   display: inline-block;
 }
 
+.soothingSection__audio{
+  margin: 1em;
+}
+.soothingSection__subtitle{
+  margin: 0;
+  font-size: 0.8em;
+  font-style: italic;
+}

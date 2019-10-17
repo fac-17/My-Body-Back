@@ -37,7 +37,7 @@ const rightLink = () => {
                 className="helping-ourselves__icon__right"
               />
               <figcaption className="helping-ourselves__image-text">Our Emotions</figcaption>
-              <span class="helping-ourselves__arrow"> ⟵ </span>
+              <span className="helping-ourselves__arrow"> ⟵ </span>
             </figure>
 
 
@@ -50,7 +50,7 @@ const rightLink = () => {
                 className="helping-ourselves__icon__left"
               />
               <figcaption className="helping-ourselves__image-text" >Feeling Better</figcaption>
-              <span class="helping-ourselves__arrow"> ⟶ </span>
+              <span className="helping-ourselves__arrow"> ⟶ </span>
             </figure>
           </Link>
         </section>
