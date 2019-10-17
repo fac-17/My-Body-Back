@@ -12,7 +12,13 @@ import Emotions from "./components/Emotions/Emotions";
 import FeelingBetter from "./components/FeelingBetter/FeelingBetter";
 import HelpSupport from "./components/HelpSupport/HelpSupport";
 import NotesOfLove from "./components/NotesOfLove/NotesOfLove";
+
+import ExtraResources from "./components/ExtraResources/ExtraResources";
+
+
+
 import Menu from "./components/Menu/Menu";
+
 function App() {
   const [menuDisplay, setMenuDisplay] = React.useState(false);
   return (
@@ -71,6 +77,7 @@ function App() {
             path="/notesoflove"
             render={() => <NotesOfLove setMenuDisplay={setMenuDisplay} />}
           />
+            <Route exact path="/extraresources" render={() => <ExtraResources setMenuDisplay={setMenuDisplay} />}/>
           <Route path="*" component={PageNotFound} />
         </Switch>
         <Menu menuDisplay={menuDisplay} />
