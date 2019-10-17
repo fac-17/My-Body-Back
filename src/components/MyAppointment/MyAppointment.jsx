@@ -1,7 +1,6 @@
 import React from "react";
 import "./MyAppointment.css";
 import Header from "../Header/Header";
-import Menu from "../Menu/Menu";
 import { Link } from "react-router-dom";
 import { Swipeable } from "react-swipeable";
 import afterAudio from "../assets/audio/afterAudio.mp3";
@@ -129,7 +128,6 @@ const MyAppointment = () => {
           />
         ))}
       </div>
-      <Menu />
     </section>
   );
 };
