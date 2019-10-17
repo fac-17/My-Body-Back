@@ -22,72 +22,54 @@ function App() {
           <Route
             exact
             path="/"
-            render={props => (
-              <PrivacyPolicy {...props} setMenuDisplay={setMenuDisplay} />
-            )}
+            render={() => <PrivacyPolicy setMenuDisplay={setMenuDisplay} />}
           />
           <Route
             exact
             path="/welcome"
-            render={props => (
-              <Welcome {...props} setMenuDisplay={setMenuDisplay} />
-            )}
+            render={() => <Welcome setMenuDisplay={setMenuDisplay} />}
           />
           <Route
             exact
             path="/about"
-            render={props => (
-              <About {...props} setMenuDisplay={setMenuDisplay} />
-            )}
+            render={() => <About setMenuDisplay={setMenuDisplay} />}
           />
           <Route
             exact
             path="/feelingoverwhelmed"
-            render={props => (
-              <FeelingOverwhelmed {...props} setMenuDisplay={setMenuDisplay} />
+            render={() => (
+              <FeelingOverwhelmed setMenuDisplay={setMenuDisplay} />
             )}
           />
           <Route
             exact
             path="/helpingourselves"
-            render={props => (
-              <HelpingOurselves {...props} setMenuDisplay={setMenuDisplay} />
-            )}
+            render={() => <HelpingOurselves setMenuDisplay={setMenuDisplay} />}
           />
           <Route
             exact
             path="/myappointment"
-            render={props => (
-              <MyAppointment {...props} setMenuDisplay={setMenuDisplay} />
-            )}
+            render={() => <MyAppointment setMenuDisplay={setMenuDisplay} />}
           />
           <Route
             exact
             path="/emotions"
-            render={props => (
-              <Emotions {...props} setMenuDisplay={setMenuDisplay} />
-            )}
+            render={() => <Emotions setMenuDisplay={setMenuDisplay} />}
           />
           <Route
             exact
             path="/feelingbetter"
-            render={props => (
-              <FeelingBetter {...props} setMenuDisplay={setMenuDisplay} />
-            )}
+            render={() => <FeelingBetter setMenuDisplay={setMenuDisplay} />}
           />
           <Route
             exact
             path="/helpandsupport"
-            render={props => (
-              <HelpSupport {...props} setMenuDisplay={setMenuDisplay} />
-            )}
+            render={() => <HelpSupport setMenuDisplay={setMenuDisplay} />}
           />
           <Route
             exact
             path="/notesoflove"
-            render={props => (
-              <NotesOfLove {...props} setMenuDisplay={setMenuDisplay} />
-            )}
+            render={() => <NotesOfLove setMenuDisplay={setMenuDisplay} />}
           />
           <Route path="*" component={PageNotFound} />
         </Switch>
