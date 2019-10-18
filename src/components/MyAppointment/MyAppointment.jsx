@@ -115,8 +115,11 @@ const MyAppointment = ({ setMenuDisplay }) => {
             </audio>
 
             <p className="my-appointment__notes-of-love">
-              See the <Link to="/notesoflove">Notes of LOVE</Link> section for
-              some encouraging messages
+              See the{" "}
+              <Link to="/notesoflove" className="note-of-love__alt">
+                Notes of LOVE
+              </Link>{" "}
+              section for some encouraging messages.
             </p>
           </section>
         </section>

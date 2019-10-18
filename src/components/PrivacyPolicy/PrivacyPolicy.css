@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   height: 100vh;
-  background-color: #614870;
+  background-color:#614870;
 }
 
 .privacy__title{
@@ -29,14 +29,18 @@
   cursor: pointer;
   height: 4em;
   margin-top: 2vh;
-/*   filter: sepia(3.6) saturate(13.5); */
+  filter: sepia(3.6) saturate(13.5);
 }
 
-.privacy__button:hover {opacity: 0.6}
+
+.privacy__button:hover {
+  opacity: 0.7;
+}
+
 
 .privacy__subtitle{
   font-weight: normal;
   font-style: italic;
-  color: white;
+  color: sepia(6.6);
   font-family: Montserrat, sans-serif;
 }

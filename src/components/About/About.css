@@ -1,16 +1,16 @@
 .about__container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    background-color: white;
-    margin:0.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #ffffff;
+  margin: 0.5em;
 }
 
-.about__text__bold{
+#about__text__links,
+.about__text__bold {
   font-weight: bold;
 }
 
-.about__text__main{
+.about__text__main {
   margin-bottom: 1em;
 }

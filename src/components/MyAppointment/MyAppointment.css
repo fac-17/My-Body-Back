@@ -2,9 +2,6 @@ p {
   line-height: 2em;
 }
 
-#my-appointment__container {
-  height: 100vh;
-}
 .my-appointment__section {
   display: none;
 }
@@ -20,16 +17,22 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 1em;
+  margin: 1em 1em 4em 1em;
   align-content: flex-start;
 }
-.my-appointment__subtitle{
+.my-appointment__subtitle {
   font-size: 0.8em;
+  margin-bottom: 2.5em;
+  margin-top: 2.5em;
 }
 
-.my-appointment__notes-of-love{
+.my-appointment__notes-of-love {
   font-size: 0.6em;
   font-style: italic;
+}
+
+.note-of-love__alt {
+  color: #bf55ec;
 }
 
 /* ----- my appointment section n3 ----- */
@@ -37,11 +40,12 @@ p {
 .my-appointment__card {
   display: flex;
   flex-direction: column;
-  margin: 2em;
+  margin: 2em 2em 7em 2em;
   align-items: center;
   width: 75vw;
   height: auto;
   background: #614870;
+
   border-radius: 0 2.5em;
 }
 
@@ -50,6 +54,7 @@ p {
   color: white;
   line-height: 1.6em;
   list-style-type: none;
+  font-family: "Montserrat", sans-serif;
 }
 
 .my-appointment__card p {
@@ -64,7 +69,7 @@ p {
   margin: 0.1em;
   height: 0.5em;
   width: 0.5em;
-  background-color: #bbb;
+  background-color: #fff0b3;
   border-radius: 50%;
   display: inline-block;
 }
@@ -73,33 +78,28 @@ p {
   margin: 0.1em;
   height: 0.5em;
   width: 0.5em;
-  background-color: #614870;
+  background-color: #ffcc00;
   border-radius: 50%;
   display: inline-block;
 }
 
-
-.my-appointment__arrow__left{
+.my-appointment__arrow__left {
   display: none;
-
 }
-.my-appointment__arrow__right{
+.my-appointment__arrow__right {
   display: none;
-
 }
-@media screen and (min-width: 992px){
-  .my-appointment__arrow__left{
-    font-size: 2.5em;
-    cursor:pointer;
-    display: inline-block;
-    margin: 0.5em;
-
-  }
-  .my-appointment__arrow__right{
+@media screen and (min-width: 992px) {
+  .my-appointment__arrow__left {
     font-size: 2.5em;
     cursor: pointer;
     display: inline-block;
-    margin:0.5em;
-
+    margin: 0.5em;
+  }
+  .my-appointment__arrow__right {
+    font-size: 2.5em;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0.5em;
   }
 }

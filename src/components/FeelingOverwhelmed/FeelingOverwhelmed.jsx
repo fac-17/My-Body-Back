@@ -30,8 +30,8 @@ const FeelingOverwhelmed = ({ setMenuDisplay }) => {
             have the right to make this choice.
           </p>
           <section id="feeling-overwhelmed__icon-container">
-            <figure>
-              <Link to="/notesoflove">
+            <Link to="/notesoflove" class="page-link">
+              <figure>
                 <img
                   src={notesOfLove}
                   alt="Notes of Love"
@@ -41,10 +41,10 @@ const FeelingOverwhelmed = ({ setMenuDisplay }) => {
                   Notes Of Love
                 </figcaption>
                 <span className="feeling-overwhelmed__arrow"> ⟵ </span>
-              </Link>
-            </figure>
-            <figure>
-              <Link to="/helpandsupport">
+              </figure>
+            </Link>
+            <Link to="/helpandsupport" class="page-link">
+              <figure>
                 <img
                   src={helpAndSupport}
                   alt="Help and Support"
@@ -54,8 +54,8 @@ const FeelingOverwhelmed = ({ setMenuDisplay }) => {
                   Help & Support
                 </figcaption>
                 <span className="feeling-overwhelmed__arrow"> ⟶ </span>
-              </Link>
-            </figure>
+              </figure>
+            </Link>
           </section>
         </section>
       </Swipeable>

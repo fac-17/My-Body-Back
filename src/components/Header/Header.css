@@ -1,13 +1,18 @@
 .header {
     display: flex;
     justify-content: center;
-    background-color: white;
-    margin-top: 1em;
+    /* background-color: #e8eaf6;
+     */
+    background-color: #ffffff;
+    padding-top: 1em;
 }
-.butterfly{
+
+.butterfly {
   /* filter:sepia(1.6) saturate(6.5) hue-rotate(89deg);
   transition:0.5s ease-out; */
+  filter: sepia(3.6) saturate(13.5);
 }
+
 .butterfly:hover{
   filter:sepia(1.6) saturate(6.5) hue-rotate(89deg);
   /* transition:0.5s ease-out; */

@@ -52,7 +52,9 @@
   width:85px;
   height:85px;
   border-radius:50px;
-  background-color:#614870;
+  /* background-color:#614870;
+   */
+   background-color: #614870;
   line-height:100px;
   position: fixed;
 }

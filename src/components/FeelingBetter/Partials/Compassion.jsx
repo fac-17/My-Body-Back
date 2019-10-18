@@ -90,13 +90,14 @@ const Compassion = () => {
             }
           >
             <h3>Other Ways to Build Self Compassion</h3>
-            <Fade top cascade>
               <p>
                 Act with compassion – this is not just ‘being nice’ but engaging
                 in activities that reduce suffering and distress. This may
                 include asking for, and accepting, support, and might even mean
                 saying ‘no’.
+                <br />- - -
               </p>
+              
               <p>
                 Show yourself empathy. When you are distressed, acknowledge how
                 you feel and recognise that you are doing the best you can in
@@ -105,6 +106,7 @@ const Compassion = () => {
                 is ok to feel anxious, sad or angry before, during and after a
                 cervical screening. Listening to these feelings might let you
                 and your health practitioner know what the best way forward is.
+                <br />- - -
               </p>
               <p>
                 Watch out for critical thoughts and try to gently challenge
@@ -112,7 +114,10 @@ const Compassion = () => {
                 thinking, especially when our soothing system is being dominated
                 by the threat and drive systems. This is not our fault, it is
                 just the way the brain works.
+                <br />- - -
               </p>
+              
+              <section className="ask-yourself__list">
               <ul>
                 Ask yourself:
                 <li>
@@ -123,12 +128,13 @@ const Compassion = () => {
                 <li>How can I be kinder to myself?</li>
                 <li>Am I expecting too much of myself?</li>
               </ul>
+              <br />- - -
+              </section>
               <p>
                 Above all, look after yourself the way you would care for
                 someone you loved. Know what works best for you when you need
                 comfort and care.
               </p>
-            </Fade>
           </section>
         </section>
         <section id="compassion-section-page__five">

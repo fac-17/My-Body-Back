@@ -22,6 +22,10 @@
 
 }
 
+.instagram__link {
+  padding-top: 1.5em;
+}
+
 .my-appointment__container{
   height: 100vh;
 }
@@ -34,7 +38,7 @@
 margin: 0.1em;
 height: 0.5em;
 width: 0.5em;
-background-color: #bbb;
+background-color: #fff0b3;
 border-radius: 50%;
 display: inline-block;
 }
@@ -43,7 +47,7 @@ display: inline-block;
   margin: 0.1em;
   height: 0.5em;
   width: 0.5em;
-  background-color: #614870;
+  background-color: #ffcc00;
   border-radius: 50%;
   display: inline-block;
 }
@@ -53,6 +57,7 @@ display: inline-block;
   padding: 0;
   font-size:0.6em;
   font-style: italic;
+  color: #bf55ec;
 }
 
 .notes-of-love__arrow__left{
