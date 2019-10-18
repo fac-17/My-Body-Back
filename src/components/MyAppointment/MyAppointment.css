@@ -23,13 +23,13 @@ p {
   margin: 1em 1em 4em 1em;
   align-content: flex-start;
 }
-.my-appointment__subtitle{
+.my-appointment__subtitle {
   font-size: 0.8em;
-  margin-bottom: 2.5em ;
+  margin-bottom: 2.5em;
   margin-top: 2.5em;
 }
 
-.my-appointment__notes-of-love{
+.my-appointment__notes-of-love {
   font-size: 0.6em;
   font-style: italic;
 }
@@ -47,28 +47,21 @@ p {
   align-items: center;
   width: 75vw;
   height: auto;
-  /* background: #ffcc00;
-   */
-  background:linear-gradient(to bottom left, #ff9933 49%, #660066 95%);
-  /* linear-gradient(to bottom left, #ccccff 34%, #660066 95%);  */
-   
+  background: #614870;
 
-  /* linear-gradient(to bottom left, #ffcc00 34%, #660066 95%); */ 
-  
-  /* linear-gradient(to bottom left, #cc6699 34%, #993399 95%); */
-  /* linear-gradient(to bottom right, #ff9966 34%, #990099 95%); */
   border-radius: 0 2.5em;
 }
 
 .my-appointment__card ul {
   padding: 1.5em;
-  color:black;
+  color: white;
   line-height: 1.6em;
   list-style-type: none;
+  font-family: "Montserrat", sans-serif;
 }
 
 .my-appointment__card p {
-  color: black;
+  color: white;
 }
 
 .my-appointment__circle__container {
@@ -79,7 +72,7 @@ p {
   margin: 0.1em;
   height: 0.5em;
   width: 0.5em;
-  background-color:#fff0b3;
+  background-color: #fff0b3;
   border-radius: 50%;
   display: inline-block;
 }
@@ -93,28 +86,23 @@ p {
   display: inline-block;
 }
 
-
-.my-appointment__arrow__left{
+.my-appointment__arrow__left {
   display: none;
-
 }
-.my-appointment__arrow__right{
+.my-appointment__arrow__right {
   display: none;
-
 }
-@media screen and (min-width: 992px){
-  .my-appointment__arrow__left{
-    font-size: 2.5em;
-    cursor:pointer;
-    display: inline-block;
-    margin: 0.5em;
-
-  }
-  .my-appointment__arrow__right{
+@media screen and (min-width: 992px) {
+  .my-appointment__arrow__left {
     font-size: 2.5em;
     cursor: pointer;
     display: inline-block;
-    margin:0.5em;
-
+    margin: 0.5em;
+  }
+  .my-appointment__arrow__right {
+    font-size: 2.5em;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0.5em;
   }
 }
