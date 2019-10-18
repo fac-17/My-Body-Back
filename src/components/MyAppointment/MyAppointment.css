@@ -20,7 +20,7 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 1em;
+  margin: 1em 1em 4em 1em;
   align-content: flex-start;
 }
 .my-appointment__subtitle{
@@ -37,11 +37,11 @@ p {
 .my-appointment__card {
   display: flex;
   flex-direction: column;
-  margin: 2em;
+  margin: 2em 2em 7em 2em;
   align-items: center;
   width: 75vw;
   height: auto;
-  background: #614870;
+  background: #ffcc00;
   border-radius: 0 2.5em;
 }
 
@@ -64,7 +64,7 @@ p {
   margin: 0.1em;
   height: 0.5em;
   width: 0.5em;
-  background-color: #bbb;
+  background-color:#fff0b3;
   border-radius: 50%;
   display: inline-block;
 }
@@ -73,7 +73,7 @@ p {
   margin: 0.1em;
   height: 0.5em;
   width: 0.5em;
-  background-color: #614870;
+  background-color: #ffcc00;
   border-radius: 50%;
   display: inline-block;
 }
