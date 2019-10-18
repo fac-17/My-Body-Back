@@ -1,13 +1,17 @@
 ul {
-  list-style-type:none;
+  list-style-type: none;
   padding: 0;
-  line-height: 0.9em;
-  
 }
 
 .ask-yourself__list {
-  /* display: flex;
-  justify-content: center; */
+  font-family: "Montserrat", sans-serif;
+  font-size: 1em;
+  font-weight: 300;
+  color: black;
+  /* margin: 0 1.5em 0.3em 1.5em; */
+  margin-left: 2em;
+  margin-right: 2em;
+  line-height: 2em;
 }
 
 #compassion-section__container {
@@ -16,7 +20,6 @@ ul {
 
 .compassion__section {
   display: none;
-
 }
 
 .compassion__section_active {
@@ -48,27 +51,25 @@ ul {
   display: inline-block;
 }
 
-.compassion__arrow__left{
+.compassion__arrow__left {
   display: none;
 }
 
-.compassion__arrow__right{
-  display: none
+.compassion__arrow__right {
+  display: none;
 }
 
-@media screen and (min-width: 992px){
-  .compassion__arrow__left{
-    font-size: 2.5em;
-    cursor:pointer;
-    display: inline-block;
-    margin: 0.5em;
-
-  }
-  .compassion__arrow__right{
+@media screen and (min-width: 992px) {
+  .compassion__arrow__left {
     font-size: 2.5em;
     cursor: pointer;
     display: inline-block;
-    margin:0.5em;
-
+    margin: 0.5em;
+  }
+  .compassion__arrow__right {
+    font-size: 2.5em;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0.5em;
   }
 }

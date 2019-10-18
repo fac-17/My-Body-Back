@@ -2,9 +2,6 @@ p {
   line-height: 2em;
 }
 
-#my-appointment__container {
-  height: 100vh;
-}
 .my-appointment__section {
   display: none;
 }
