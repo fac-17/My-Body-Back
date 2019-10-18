@@ -21,6 +21,10 @@ import Menu from "./components/Menu/Menu";
 
 function App() {
   const [menuDisplay, setMenuDisplay] = React.useState(false);
+  const [leftDisable, setLeftDisabled] = React.useState(false);
+  const [middleDisable, setMiddleDisabled] = React.useState(false);
+  const [rightDisable, setRightDisabled] = React.useState(false);
+
   return (
     <div className="App">
       <Router>
@@ -38,7 +42,7 @@ function App() {
           <Route
             exact
             path="/about"
-            render={() => <About setMenuDisplay={setMenuDisplay} />}
+            render={() => <About setMenuDisplay={setMenuDisplay} leftDisable={leftDisable} setLeftDisabled={setLeftDisabled} middleDisable={middleDisable} setMiddleDisabled={setMiddleDisabled} rightDisable={rightDisable} setRightDisabled={setRightDisabled}/>}
           />
           <Route
             exact
@@ -80,7 +84,7 @@ function App() {
             <Route exact path="/extraresources" render={() => <ExtraResources setMenuDisplay={setMenuDisplay} />}/>
           <Route path="*" component={PageNotFound} />
         </Switch>
-        <Menu menuDisplay={menuDisplay} />
+        <Menu menuDisplay={menuDisplay} leftDisable={leftDisable} setLeftDisabled={setLeftDisabled} middleDisable={middleDisable} setMiddleDisabled={setMiddleDisabled} rightDisable={rightDisable} setRightDisabled={setRightDisabled}/>
       </Router>
     </div>
   );

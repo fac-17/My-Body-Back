@@ -3,10 +3,14 @@ import "./About.css";
 import Header from "../Header/Header";
 import { Link } from "react-router-dom";
 
-const About = ({ setMenuDisplay }) => {
+const About = ({ setMenuDisplay, leftDisable, setLeftDisabled, middleDisable, setMiddleDisabled, rightDisable, setRightDisabled}) => {
   React.useEffect(() => {
     setMenuDisplay(true);
+    setLeftDisabled(false);
+    setMiddleDisabled(false);
+    setRightDisabled(false);
   }, [setMenuDisplay]);
+  
   return (
     <div>
       <Header />

@@ -8,10 +8,7 @@ import { configure } from "enzyme";
 import Adapter from "enzyme-adapter-react-16";
 configure({ adapter: new Adapter() });
 
-const Menu = ({ menuDisplay }) => {
-  const [leftDisable, setLeftDisabled] = React.useState(false);
-  const [middleDisable, setMiddleDisabled] = React.useState(false);
-  const [rightDisable, setRightDisabled] = React.useState(false);
+const Menu = ({ menuDisplay, leftDisable, setLeftDisabled, middleDisable, setMiddleDisabled, rightDisable, setRightDisabled }) => {
 
   const disableLeftButton = () => {
     setLeftDisabled(true);
