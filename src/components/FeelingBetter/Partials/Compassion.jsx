@@ -90,7 +90,6 @@ const Compassion = () => {
             }
           >
             <h3>Other Ways to Build Self Compassion</h3>
-            <Fade top cascade>
               <p>
                 Act with compassion – this is not just ‘being nice’ but engaging
                 in activities that reduce suffering and distress. This may
@@ -128,7 +127,6 @@ const Compassion = () => {
                 someone you loved. Know what works best for you when you need
                 comfort and care.
               </p>
-            </Fade>
           </section>
         </section>
         <section id="compassion-section-page__five">

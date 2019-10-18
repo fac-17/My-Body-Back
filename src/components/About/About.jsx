@@ -47,14 +47,15 @@ const About = ({ setMenuDisplay }) => {
           </span>
         </p>
 
-        <p className="about__text__main">Privacy policy</p>
+        
         <Link to="/">
-          <p>here</p>
+         <p className="about__text__main" id="about__text__links">Privacy policy</p>
         </Link>
-        {/* </Zoom> */}
-        <p className="about__text_main">Find extra resources</p>
+        
+        
+        
         <Link to="/extraresources">
-        <p>here</p>
+        <p className="about__text_main" id="about__text__links">Find extra resources</p>
         </Link>
       </div>
     </div>
