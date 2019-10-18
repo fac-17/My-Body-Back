@@ -25,11 +25,17 @@ p {
 }
 .my-appointment__subtitle{
   font-size: 0.8em;
+  margin-bottom: 2.5em ;
+  margin-top: 2.5em;
 }
 
 .my-appointment__notes-of-love{
   font-size: 0.6em;
   font-style: italic;
+}
+
+.note-of-love__alt {
+  color: #bf55ec;
 }
 
 /* ----- my appointment section n3 ----- */
@@ -41,19 +47,28 @@ p {
   align-items: center;
   width: 75vw;
   height: auto;
-  background: #ffcc00;
+  /* background: #ffcc00;
+   */
+  background:linear-gradient(to bottom left, #ff9933 49%, #660066 95%);
+  /* linear-gradient(to bottom left, #ccccff 34%, #660066 95%);  */
+   
+
+  /* linear-gradient(to bottom left, #ffcc00 34%, #660066 95%); */ 
+  
+  /* linear-gradient(to bottom left, #cc6699 34%, #993399 95%); */
+  /* linear-gradient(to bottom right, #ff9966 34%, #990099 95%); */
   border-radius: 0 2.5em;
 }
 
 .my-appointment__card ul {
   padding: 1.5em;
-  color: white;
+  color:black;
   line-height: 1.6em;
   list-style-type: none;
 }
 
 .my-appointment__card p {
-  color: white;
+  color: black;
 }
 
 .my-appointment__circle__container {
