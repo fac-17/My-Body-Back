@@ -24,10 +24,9 @@ const FeelingOverwhelmed = ({ setMenuDisplay }) => {
         <section id="feeling-overwhelmed__body">
           <h2 id="feeling-overwhelmed__title">Feeling Overwhelmed?</h2>
           <p>
-            This app is not about making you go for a cervical screening before
-            you're ready, but intends to help you to take small steps. You may
-            even decide that you don’t want to have a smear test at all. You
-            have the right to make this choice.
+          Are your emotions taking over you like a wave?
+          You're not alone. Here you can find support from professionals and encourage
+          yourself with Notes of Love. 
           </p>
           <section id="feeling-overwhelmed__icon-container">
             <figure>
