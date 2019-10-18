@@ -1,8 +1,7 @@
 import React from "react";
 import Header from "../Header/Header";
 
-const ExtraResources = ({setMenuDisplay}) => {
-
+const ExtraResources = ({ setMenuDisplay }) => {
   const [data, setData] = React.useState(null);
 
   React.useEffect(() => {
@@ -42,6 +41,7 @@ const ExtraResources = ({setMenuDisplay}) => {
     return (
       <div>
         <Header />
+        <h2>Extra Resources</h2>
         {titleArray.map((title, i) => (
           <div>
             <h2>{title}</h2>
