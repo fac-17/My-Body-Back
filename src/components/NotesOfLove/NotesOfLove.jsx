@@ -8,7 +8,7 @@ import noteFive from "../assets/notes-of-love/notes-of-love-five.png";
 import noteSix from "../assets/notes-of-love/notes-of-love-six.png";
 import noteSeven from "../assets/notes-of-love/notes-of-love-seven.png";
 import noteEight from "../assets/notes-of-love/notes-of-love-eight.png";
-import instagram from "../assets/notes-of-love/instagram.svg";
+import instagram from "../assets/notes-of-love/instagram1.svg";
 import Header from "../Header/Header";
 import "./NotesOfLove.css";
 
@@ -69,7 +69,7 @@ const NotesOfLove = ({ setMenuDisplay }) => {
         ))}
       </div>
       <a href="https://www.instagram.com/mybodybackproject/">
-        <img src={instagram} alt="instagram" />
+        <img src={instagram} alt="instagram" className="instagram__link"/>
       </a>
       <p className="notes-of-love__small-text">See more on Instagram</p>
       <span onClick={swipeRight} className="notes-of-love__arrow__left">
