@@ -1,39 +1,51 @@
+ul {
+  list-style-type:none;
+  padding: 0;
+  line-height: 0.9em;
+  
+}
+
+.ask-yourself__list {
+  /* display: flex;
+  justify-content: center; */
+}
+
 #compassion-section__container {
-    height: auto;
+  height: auto;
 }
 
 .compassion__section {
-    display: none;
+  display: none;
 
 }
 
 .compassion__section_active {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
 }
 
 .compassion__circle__container {
-    margin-top: 1em;
+  margin-top: 1em;
 }
 
 .compassion__circle {
-    margin: 0.1em;
-    height: 0.5em;
-    width: 0.5em;
-    background-color: #fff0b3;
-    border-radius: 50%;
-    display: inline-block;
+  margin: 0.1em;
+  height: 0.5em;
+  width: 0.5em;
+  background-color: #fff0b3;
+  border-radius: 50%;
+  display: inline-block;
 }
 
 .compassion__circle__active {
-    margin: 0.1em;
-    height: 0.5em;
-    width: 0.5em;
-    background-color: #ffcc00;
-    border-radius: 50%;
-    display: inline-block;
+  margin: 0.1em;
+  height: 0.5em;
+  width: 0.5em;
+  background-color: #ffcc00;
+  border-radius: 50%;
+  display: inline-block;
 }
 
 .compassion__arrow__left{
