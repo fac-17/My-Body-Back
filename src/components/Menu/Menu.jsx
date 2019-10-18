@@ -1,5 +1,4 @@
 import React from "react";
-
 import "./Menu.css";
 import brain from "../assets/icons/brain.svg";
 import wave from "../assets/icons/wave.svg";
