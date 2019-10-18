@@ -32,7 +32,7 @@ const HelpingOurselves = ({ setMenuDisplay }) => {
               react strongly against it
             </p>
             <section id="helping-ourselves__icon-container">
-              <Link to="/emotions">
+              <Link to="/emotions" className="page-link">
                 <figure>
                   <img
                     src={emotions}
@@ -45,7 +45,7 @@ const HelpingOurselves = ({ setMenuDisplay }) => {
                   <span className="helping-ourselves__arrow"> ⟵ </span>
                 </figure>
               </Link>
-              <Link to="/feelingbetter">
+              <Link to="/feelingbetter" className="page-link">
                 <figure>
                   <img
                     src={feelingbetter}
